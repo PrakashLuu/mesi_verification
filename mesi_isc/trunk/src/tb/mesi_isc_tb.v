@@ -169,7 +169,7 @@ reg [31:0]              stat_cpu_access_rd  [3:0];
 reg [31:0]              stat_cpu_access_wr  [3:0];
    
 
-`include "mesi_isc_tb_sanity_check.v"
+`include "mesi_isc_tb_sanity_check.sv"
    
 
 //$display("this is hard to decode");
