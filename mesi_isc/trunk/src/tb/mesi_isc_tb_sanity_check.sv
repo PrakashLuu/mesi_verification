@@ -122,9 +122,9 @@ begin
      $display("Message: check err 6. time:%d", $time);
 `endif 
   num_of_lines_in_m_e_state = 0; 
-    assert property ( 1 == 1);
+    assert ( 1 == 1);
     //make sure exlcusion is working
-  assert property ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E &&
+  assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E &&
             mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I) ||
