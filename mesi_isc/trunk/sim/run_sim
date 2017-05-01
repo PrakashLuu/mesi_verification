@@ -43,6 +43,7 @@ iverilog -o mesi_isc.out \
          -y ../src/tb    \
          -c sim.cmd      \
          -v              \
+         -gsystem-verilog\
          > iverilog.log
 grep error iverilog.log
 vvp -l sim.log \
