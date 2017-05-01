@@ -29,6 +29,13 @@ input                   cbus_ack1_i,  // Coherence bus1 acknowledge
 input                   cbus_ack0_i  // Coherence bus0 acknowledge
 );
 
+
+
+    property coher();  //check to see if cache is coherent
+        @(posedge clk)
+
+    endproperty
+
 endmodule
 
 module Wrapper;
