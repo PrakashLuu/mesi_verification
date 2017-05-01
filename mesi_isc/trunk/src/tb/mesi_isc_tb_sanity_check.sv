@@ -124,7 +124,7 @@ begin
   num_of_lines_in_m_e_state = 0; 
     //assert ( 1 == 1);
     //make sure exlcusion is working
-  exclusiveprop: assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E &&
+    assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E &&
             mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I) ||
@@ -147,7 +147,7 @@ begin
 
       );
         //make sure modified is working
-  modifiedprop: assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_M &&
+    assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_M &&
             mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&) ||
@@ -170,7 +170,7 @@ begin
 
       );
         //make sure shared is working
-  sharedprop: assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S &&
+    assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S &&
             (mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S ) &&
             (mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S ) &&
             (mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S )) ||
