@@ -169,7 +169,7 @@ reg [31:0]              stat_cpu_access_rd  [3:0];
 reg [31:0]              stat_cpu_access_wr  [3:0];
    
 
-`include "mesi_isc_tb_sanity_check.v"
+`include "mesi_isc_tb_sanity_check.sv"
    
 
 //$display("this is hard to decode");
@@ -314,6 +314,10 @@ begin
                                               stat_cpu_access_rd[1] +
                                               stat_cpu_access_wr[0] +
                                               stat_cpu_access_rd[0]);
+  $display ("Total count of passed exclusive states: %d", exgood);
+  $display ("Total count of passed modified states: %d", exgood);
+  $display ("Total count of passed shared states: %d", exgood);
+
   $finish;
 end
 

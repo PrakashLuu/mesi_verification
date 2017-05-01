@@ -108,15 +108,25 @@ endtask
 //================================
 // Checks that, at any time, there are not 2 cache lines or more, that contains
 // the same memory address, with stats M or state E.
+
+reg [31:0] exgood, modgood, sharegood;
+initial 
+begin
+    exgood = 0;
+    modgood = 0;
+    sharegood = 0;
+end
 always @(posedge clk or posedge rst)
   for (k=0; k < 4; k = k + 1)
-    if (mbus_ack[k]) sanity_check_cache_status(mbus_addr_array[k]);
+    if (mbus_ack[k]) sanity_check_cache_status(mbus_addr_array[k], exgood, modgood, sharegood);
 
 // task sanity_check_cache_status;
 task sanity_check_cache_status;
 input [ADDR_WIDTH-1:0]   mbus_addr;
+inout reg [31:0] exgood, modgood, sharegood;
 reg [1:0]                num_of_lines_in_m_e_state;
-   
+
+
 begin
 `ifdef messages
      $display("Message: check err 6. time:%d", $time);
@@ -124,7 +134,7 @@ begin
   num_of_lines_in_m_e_state = 0; 
     //assert ( 1 == 1);
     //make sure exlcusion is working
-    assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E &&
+    if ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E &&
             mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I) ||
@@ -145,12 +155,15 @@ begin
             mesi_isc_tb_cpu1.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_E &&
             mesi_isc_tb_cpu0.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_E) 
 
-      );
+      )
+        exgood = exgood + 1;
+      else
+          $display("error in exclusive");
         //make sure modified is working
-    /*assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_M &&
+    if ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_M &&
             mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
-            mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&) ||
+            mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I) ||
       (mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_M &&
             mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
             mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
@@ -168,9 +181,12 @@ begin
             mesi_isc_tb_cpu1.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_M &&
             mesi_isc_tb_cpu0.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_M) 
 
-      );*/
+    ) 
+        modgood = modgood + 1;
+      else 
+          $display("error in modified");
         //make sure shared is working
-    assert ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S &&
+    if ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S &&
             (mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S ) &&
             (mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S ) &&
             (mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu0.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S )) ||
@@ -186,8 +202,15 @@ begin
             (mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S ) &&
             (mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S ) &&
             (mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu1.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S )) ||
-      (mesi_isc_tb_cpu3.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_S)
-      );
+      ((mesi_isc_tb_cpu3.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_S) &&
+      (mesi_isc_tb_cpu1.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_S) &&
+      (mesi_isc_tb_cpu2.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_S) &&
+      (mesi_isc_tb_cpu0.cache_state[mbus_addr] != `MESI_ISC_TB_CPU_MESI_S))
+
+      )
+    sharegood = sharegood + 1;
+      else 
+          $display("error in shared");
   //               \ /
   if(mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E |
   //               \ /
@@ -216,6 +239,7 @@ begin
                                                  $time);
      @(negedge clk) $finish;
   end
+ // $strobe("ex good count is: %d", exgood);
 end
 endtask
 
