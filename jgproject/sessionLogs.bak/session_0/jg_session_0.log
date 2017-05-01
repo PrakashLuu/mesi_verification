@@ -1,0 +1,73 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2015.09
+# platform  : Linux 2.6.32-642.11.1.el6.x86_64
+# version   : 2015.09 FCS 64 bits
+# build date: 2015.09.29 22:07:32 PDT
+#----------------------------------------
+# started Sun Apr 30 14:02:47 CDT 2017
+# hostname  : luigi
+# pid       : 78196
+# arguments : '-label' 'session_0' '-console' 'luigi:41195' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2015 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fpv".
+INFO: reading configuration file "/home/ecelrc/students/blidsky/.config/jasper/jaspergold.conf".
+% analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_basic_fifo.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos_cntl.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad_cntl.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc.v} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_basic_fifo.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_basic_fifo.v(47): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos_cntl.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos_cntl.v(48): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos.v(66): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad_cntl.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad_cntl.v(46): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad.v(46): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc.v(46): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+% analyze -sv {/home/ecelrc/students/blidsky/mesi_verification/jgverif.sv} ; 
+[-- (VERI-1482)] Analyzing Verilog file /misc/linuxws/packages/cadence_2016/jasper_2015.09/lib/verilog/packages/std/std.sv into library std
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv
+[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(3): syntax error near ;
+Summary of errors detected:
+	[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(3): syntax error near ;
+ERROR (ENL034): 1 errors detected in the design file(s).
+
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

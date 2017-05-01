@@ -1,0 +1,175 @@
+#----------------------------------------
+# JasperGold Version Info
+# tool      : JasperGold 2015.09
+# platform  : Linux 2.6.32-642.11.1.el6.x86_64
+# version   : 2015.09 FCS 64 bits
+# build date: 2015.09.29 22:07:32 PDT
+#----------------------------------------
+# started Sun Apr 30 14:07:27 CDT 2017
+# hostname  : luigi
+# pid       : 1667
+# arguments : '-label' 'session_0' '-console' 'luigi:35872' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2015 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc. 
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+JasperGold Apps Analysis Session - /home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0
+
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fpv".
+INFO: reading configuration file "/home/ecelrc/students/blidsky/.config/jasper/jaspergold.conf".
+% analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_basic_fifo.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos_cntl.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad_cntl.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v} ; analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/mesi_isc.v} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_basic_fifo.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_basic_fifo.v(47): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos_cntl.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos_cntl.v(48): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_breq_fifos.v(66): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad_cntl.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad_cntl.v(46): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_broad.v(46): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc.v
+[INFO (VERI-1328)] /home/ecelrc/students/blidsky/mesi_verification/mesi_isc.v(46): analyzing included file /home/ecelrc/students/blidsky/mesi_verification/mesi_isc_define.v
+% analyze -sv {/home/ecelrc/students/blidsky/mesi_verification/jgverif.sv} ; 
+[-- (VERI-1482)] Analyzing Verilog file /misc/linuxws/packages/cadence_2016/jasper_2015.09/lib/verilog/packages/std/std.sv into library std
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv
+[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(4): syntax error near ;
+Summary of errors detected:
+	[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(4): syntax error near ;
+ERROR (ENL034): 1 errors detected in the design file(s).
+
+% analyze -verilog {/home/ecelrc/students/blidsky/mesi_verification/jgverif.v} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.v
+[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.v(3): syntax error near ;
+Summary of errors detected:
+	[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.v(3): syntax error near ;
+ERROR (ENL034): 1 errors detected in the design file(s).
+
+% analyze -sv {/home/ecelrc/students/blidsky/mesi_verification/jgverif.sv} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv
+[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(4): syntax error near ;
+Summary of errors detected:
+	[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(4): syntax error near ;
+ERROR (ENL034): 1 errors detected in the design file(s).
+
+% analyze -sv {/home/ecelrc/students/blidsky/mesi_verification/jgverif.sv} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(6): MBUS_CMD_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(6): range must be bounded by constant expressions
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(7): MBUS_CMD_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(7): range must be bounded by constant expressions
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(8): MBUS_CMD_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(8): range must be bounded by constant expressions
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(9): MBUS_CMD_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(9): range must be bounded by constant expressions
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(11): ADDR_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(11): range must be bounded by constant expressions
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(12): ADDR_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(12): range must be bounded by constant expressions
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(13): ADDR_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(13): range must be bounded by constant expressions
+[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(14): ADDR_WIDTH is not declared
+[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(14): range must be bounded by constant expressions
+[ERROR (VERI-1072)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(21): module v_mesi ignored due to previous errors
+[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(25): syntax error near bind
+Summary of errors detected:
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(6): MBUS_CMD_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(6): range must be bounded by constant expressions
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(7): MBUS_CMD_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(7): range must be bounded by constant expressions
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(8): MBUS_CMD_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(8): range must be bounded by constant expressions
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(9): MBUS_CMD_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(9): range must be bounded by constant expressions
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(11): ADDR_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(11): range must be bounded by constant expressions
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(12): ADDR_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(12): range must be bounded by constant expressions
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(13): ADDR_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(13): range must be bounded by constant expressions
+	[ERROR (VERI-1128)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(14): ADDR_WIDTH is not declared
+	[ERROR (VERI-1952)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(14): range must be bounded by constant expressions
+	[ERROR (VERI-1072)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(21): module v_mesi ignored due to previous errors
+	[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(25): syntax error near bind
+ERROR (ENL034): 18 errors detected in the design file(s).
+
+% analyze -sv {/home/ecelrc/students/blidsky/mesi_verification/jgverif.sv} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv
+[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(36): syntax error near bind
+Summary of errors detected:
+	[ERROR (VERI-1137)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(36): syntax error near bind
+ERROR (ENL034): 1 errors detected in the design file(s).
+
+% analyze -sv {/home/ecelrc/students/blidsky/mesi_verification/jgverif.sv} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(3): CBUS_CMD_WIDTH is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(3): previous declaration of CBUS_CMD_WIDTH is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(4): ADDR_WIDTH is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(4): previous declaration of ADDR_WIDTH is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(5): BROAD_TYPE_WIDTH is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(5): previous declaration of BROAD_TYPE_WIDTH is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(6): BROAD_ID_WIDTH is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(6): previous declaration of BROAD_ID_WIDTH is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(7): BROAD_REQ_FIFO_SIZE is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(7): previous declaration of BROAD_REQ_FIFO_SIZE is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(8): BROAD_REQ_FIFO_SIZE_LOG2 is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(8): previous declaration of BROAD_REQ_FIFO_SIZE_LOG2 is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(9): MBUS_CMD_WIDTH is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(9): previous declaration of MBUS_CMD_WIDTH is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(10): BREQ_FIFO_SIZE is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(10): previous declaration of BREQ_FIFO_SIZE is from here
+[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(11): BREQ_FIFO_SIZE_LOG2 is already declared
+[INFO (VERI-1967)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(11): previous declaration of BREQ_FIFO_SIZE_LOG2 is from here
+[ERROR (VERI-1072)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(32): module v_mesi ignored due to previous errors
+[ERROR (VERI-1072)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(63): module Wrapper ignored due to previous errors
+Summary of errors detected:
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(3): CBUS_CMD_WIDTH is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(4): ADDR_WIDTH is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(5): BROAD_TYPE_WIDTH is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(6): BROAD_ID_WIDTH is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(7): BROAD_REQ_FIFO_SIZE is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(8): BROAD_REQ_FIFO_SIZE_LOG2 is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(9): MBUS_CMD_WIDTH is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(10): BREQ_FIFO_SIZE is already declared
+	[ERROR (VERI-1116)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(11): BREQ_FIFO_SIZE_LOG2 is already declared
+	[ERROR (VERI-1072)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(32): module v_mesi ignored due to previous errors
+	[ERROR (VERI-1072)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(63): module Wrapper ignored due to previous errors
+ERROR (ENL034): 11 errors detected in the design file(s).
+
+% analyze -sv {/home/ecelrc/students/blidsky/mesi_verification/jgverif.sv} ; 
+[-- (VERI-1482)] Analyzing Verilog file /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv
+[WARN (VERI-1206)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(32): overwriting previous definition of module v_mesi
+[INFO (VERI-2142)] /home/ecelrc/students/blidsky/mesi_verification/jgverif.sv(32): previous definition of module v_mesi is here
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

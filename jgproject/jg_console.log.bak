@@ -1,0 +1,26 @@
+2017-04-30 14:02:42.426843 (78129) main____ INFO    ----------------------------------------
+2017-04-30 14:02:42.427406 (78129) main____ INFO    JasperGold version info
+2017-04-30 14:02:42.427434 (78129) main____ INFO      tool      : JasperGold 2015.09
+2017-04-30 14:02:42.427458 (78129) main____ INFO      version   : 2015.09 FCS 64 bits
+2017-04-30 14:02:42.427475 (78129) main____ INFO      build date: 2015.09.29 22:07:28 PDT
+2017-04-30 14:02:42.427486 (78129) main____ INFO    ----------------------------------------
+2017-04-30 14:02:42.427497 (78129) main____ INFO    Runtime info:
+2017-04-30 14:02:42.427513 (78129) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
+2017-04-30 14:02:42.427532 (78129) main____ INFO      hostname  : luigi
+2017-04-30 14:02:42.427543 (78129) main____ INFO      pid       : 78129
+2017-04-30 14:02:42.427556 (78129) main____ INFO      arguments : '-style' 'windows'
+2017-04-30 14:02:42.427566 (78129) main____ INFO    ----------------------------------------
+2017-04-30 14:02:42.432839 (78129) lic__man INFO    Claim 'main' for <ui>.
+2017-04-30 14:02:42.448971 (78129) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2017-04-30 14:02:42.503888 (78129) lic_core INFO    ... (1) checkout succeeded
+2017-04-30 14:02:42.504091 (78129) lic__man INFO    Claim 'fpv' for <ui>.
+2017-04-30 14:02:42.505172 (78129) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2017-04-30 14:02:42.556741 (78129) lic_core INFO    ... (2) checkout succeeded
+2017-04-30 14:02:45.437674 (78129) lic__man INFO    Claim 'fpv' for <ui>.
+2017-04-30 14:02:45.822809 (78129) lic__man INFO    Unclaim 'fpv' for <ui>.
+2017-04-30 14:02:45.822926 (78129) lic__man INFO    Claim 'fpv' for <ui>.
+2017-04-30 14:02:45.873883 (78129) session_ INFO    Starting analysis session with session id 'session_0' ...
+2017-04-30 14:02:45.880136 (78129) session_ INFO    Analysis session with session id 'session_0' started (pid: 78196)
+2017-04-30 14:03:00.461028 (78129) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.76:38066)
+2017-04-30 14:07:14.796707 (78129) main____ INFO    About to exit: requested from GUI
+2017-04-30 14:07:15.024897 (78129) main____ INFO    Exiting.

@@ -1,5 +1,5 @@
 
-parameter
+/*parameter
   CBUS_CMD_WIDTH           = 3,
   ADDR_WIDTH               = 32,
   BROAD_TYPE_WIDTH         = 2,
@@ -9,7 +9,7 @@ parameter
   MBUS_CMD_WIDTH           = 3,
   BREQ_FIFO_SIZE           = 2,
   BREQ_FIFO_SIZE_LOG2      = 1;
-
+*/
 module v_mesi(
 input                   clk,          // System clock
 input                   rst,          // Active high system reset
@@ -31,7 +31,7 @@ input                   cbus_ack0_i  // Coherence bus0 acknowledge
 
 endmodule
 
-module Wrapper
+module Wrapper;
 
 bind mesi_isc v_mesi mesi_props(
      // Inputs
