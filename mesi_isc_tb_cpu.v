@@ -63,7 +63,8 @@ module mesi_isc_tb_cpu
      mbus_addr_o,
      mbus_data_o,
      cbus_ack_o,
-     tb_ins_ack_o
+     tb_ins_ack_o,
+     cache_state
    );
    
 parameter
