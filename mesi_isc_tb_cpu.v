@@ -106,7 +106,7 @@ output                   cbus_ack_o;  // Coherence bus3 acknowledge
 // tb
 output                   tb_ins_ack_o; // Acknowledge for the
                                       //  CPU instruction
-output reg  [3:0]               cache_state [9:0];  // CPU cache MESI state
+output reg  [3:0][9:0]               cache_state;  // CPU cache MESI state
    
 // Regs & wires
 //================================
