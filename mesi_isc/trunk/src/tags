@@ -1,0 +1,387 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR_WIDTH	rtl/mesi_isc.v	/^  ADDR_WIDTH               = 32,$/;"	c
+ADDR_WIDTH	rtl/mesi_isc_breq_fifos.v	/^  ADDR_WIDTH               = 32,$/;"	c
+ADDR_WIDTH	rtl/mesi_isc_breq_fifos_cntl.v	/^  ADDR_WIDTH               = 32,$/;"	c
+ADDR_WIDTH	rtl/mesi_isc_broad.v	/^  ADDR_WIDTH               = 32,$/;"	c
+ADDR_WIDTH	tb/mesi_isc_tb.v	/^  ADDR_WIDTH               = 32,$/;"	c
+ADDR_WIDTH	tb/mesi_isc_tb_cpu.v	/^  ADDR_WIDTH               = 32,$/;"	c
+BREQ_FIFO_SIZE	rtl/mesi_isc.v	/^  BREQ_FIFO_SIZE           = 2,$/;"	c
+BREQ_FIFO_SIZE	rtl/mesi_isc_breq_fifos.v	/^  BREQ_FIFO_SIZE           = 2,$/;"	c
+BREQ_FIFO_SIZE	tb/mesi_isc_tb.v	/^  BREQ_FIFO_SIZE           = 2,$/;"	c
+BREQ_FIFO_SIZE	tb/mesi_isc_tb_cpu.v	/^  BREQ_FIFO_SIZE           = 2,$/;"	c
+BREQ_FIFO_SIZE_LOG2	rtl/mesi_isc.v	/^  BREQ_FIFO_SIZE_LOG2      = 1;$/;"	c
+BREQ_FIFO_SIZE_LOG2	rtl/mesi_isc_breq_fifos.v	/^  BREQ_FIFO_SIZE_LOG2      = 1;$/;"	c
+BREQ_FIFO_SIZE_LOG2	tb/mesi_isc_tb.v	/^  BREQ_FIFO_SIZE_LOG2      = 1;$/;"	c
+BREQ_FIFO_SIZE_LOG2	tb/mesi_isc_tb_cpu.v	/^  BREQ_FIFO_SIZE_LOG2      = 1;$/;"	c
+BROAD_ID_WIDTH	rtl/mesi_isc.v	/^  BROAD_ID_WIDTH           = 5,  $/;"	c
+BROAD_ID_WIDTH	rtl/mesi_isc_breq_fifos.v	/^  BROAD_ID_WIDTH           = 7,  $/;"	c
+BROAD_ID_WIDTH	rtl/mesi_isc_breq_fifos_cntl.v	/^  BROAD_ID_WIDTH           = 7;$/;"	c
+BROAD_ID_WIDTH	rtl/mesi_isc_broad.v	/^  BROAD_ID_WIDTH           = 5,  $/;"	c
+BROAD_ID_WIDTH	rtl/mesi_isc_broad_cntl.v	/^  BROAD_ID_WIDTH           = 5;$/;"	c
+BROAD_ID_WIDTH	tb/mesi_isc_tb.v	/^  BROAD_ID_WIDTH           = 5,  $/;"	c
+BROAD_ID_WIDTH	tb/mesi_isc_tb_cpu.v	/^  BROAD_ID_WIDTH           = 5,  $/;"	c
+BROAD_REQ_FIFO_SIZE	rtl/mesi_isc.v	/^  BROAD_REQ_FIFO_SIZE      = 4,$/;"	c
+BROAD_REQ_FIFO_SIZE	rtl/mesi_isc_broad.v	/^  BROAD_REQ_FIFO_SIZE      = 4,$/;"	c
+BROAD_REQ_FIFO_SIZE	tb/mesi_isc_tb.v	/^  BROAD_REQ_FIFO_SIZE      = 4,$/;"	c
+BROAD_REQ_FIFO_SIZE	tb/mesi_isc_tb_cpu.v	/^  BROAD_REQ_FIFO_SIZE      = 4,$/;"	c
+BROAD_REQ_FIFO_SIZE_LOG2	rtl/mesi_isc.v	/^  BROAD_REQ_FIFO_SIZE_LOG2 = 2,$/;"	c
+BROAD_REQ_FIFO_SIZE_LOG2	rtl/mesi_isc_broad.v	/^  BROAD_REQ_FIFO_SIZE_LOG2 = 2;$/;"	c
+BROAD_REQ_FIFO_SIZE_LOG2	tb/mesi_isc_tb.v	/^  BROAD_REQ_FIFO_SIZE_LOG2 = 2,$/;"	c
+BROAD_REQ_FIFO_SIZE_LOG2	tb/mesi_isc_tb_cpu.v	/^  BROAD_REQ_FIFO_SIZE_LOG2 = 2,$/;"	c
+BROAD_TYPE_WIDTH	rtl/mesi_isc.v	/^  BROAD_TYPE_WIDTH         = 2,$/;"	c
+BROAD_TYPE_WIDTH	rtl/mesi_isc_breq_fifos.v	/^  BROAD_TYPE_WIDTH         = 2,  $/;"	c
+BROAD_TYPE_WIDTH	rtl/mesi_isc_breq_fifos_cntl.v	/^  BROAD_TYPE_WIDTH         = 2,  $/;"	c
+BROAD_TYPE_WIDTH	rtl/mesi_isc_broad.v	/^  BROAD_TYPE_WIDTH         = 2,  $/;"	c
+BROAD_TYPE_WIDTH	rtl/mesi_isc_broad_cntl.v	/^  BROAD_TYPE_WIDTH         = 2,$/;"	c
+BROAD_TYPE_WIDTH	tb/mesi_isc_tb.v	/^  BROAD_TYPE_WIDTH         = 2,  $/;"	c
+BROAD_TYPE_WIDTH	tb/mesi_isc_tb_cpu.v	/^  BROAD_TYPE_WIDTH         = 2,$/;"	c
+CBUS_CMD_WIDTH	rtl/mesi_isc.v	/^  CBUS_CMD_WIDTH           = 3,$/;"	c
+CBUS_CMD_WIDTH	rtl/mesi_isc_broad.v	/^  CBUS_CMD_WIDTH           = 3,$/;"	c
+CBUS_CMD_WIDTH	rtl/mesi_isc_broad_cntl.v	/^  CBUS_CMD_WIDTH           = 3,$/;"	c
+CBUS_CMD_WIDTH	tb/mesi_isc_tb.v	/^  CBUS_CMD_WIDTH           = 3,$/;"	c
+CBUS_CMD_WIDTH	tb/mesi_isc_tb_cpu.v	/^  CBUS_CMD_WIDTH           = 3,$/;"	c
+DATA_WIDTH	rtl/mesi_isc_basic_fifo.v	/^  DATA_WIDTH        = 32,$/;"	c
+DATA_WIDTH	tb/mesi_isc_tb.v	/^  DATA_WIDTH               = 32,$/;"	c
+DATA_WIDTH	tb/mesi_isc_tb_cpu.v	/^  DATA_WIDTH               = 32,$/;"	c
+FIFO_SIZE	rtl/mesi_isc_basic_fifo.v	/^  FIFO_SIZE         = 4,$/;"	c
+FIFO_SIZE_LOG2	rtl/mesi_isc_basic_fifo.v	/^  FIFO_SIZE_LOG2    = 2;$/;"	c
+MBUS_CMD_WIDTH	rtl/mesi_isc.v	/^  MBUS_CMD_WIDTH           = 3,$/;"	c
+MBUS_CMD_WIDTH	rtl/mesi_isc_breq_fifos.v	/^  MBUS_CMD_WIDTH           = 3,$/;"	c
+MBUS_CMD_WIDTH	rtl/mesi_isc_breq_fifos_cntl.v	/^  MBUS_CMD_WIDTH           = 3,$/;"	c
+MBUS_CMD_WIDTH	tb/mesi_isc_tb.v	/^  MBUS_CMD_WIDTH           = 3,$/;"	c
+MBUS_CMD_WIDTH	tb/mesi_isc_tb_cpu.v	/^  MBUS_CMD_WIDTH           = 3,$/;"	c
+MESI_ISC_BREQ_TYPE_NOP	rtl/mesi_isc_define.v	/^`define MESI_ISC_BREQ_TYPE_NOP 2'd0$/;"	c
+MESI_ISC_BREQ_TYPE_RD	rtl/mesi_isc_define.v	/^`define MESI_ISC_BREQ_TYPE_RD  2'd2$/;"	c
+MESI_ISC_BREQ_TYPE_WR	rtl/mesi_isc_define.v	/^`define MESI_ISC_BREQ_TYPE_WR  2'd1$/;"	c
+MESI_ISC_CBUS_CMD_EN_RD	rtl/mesi_isc_define.v	/^`define MESI_ISC_CBUS_CMD_EN_RD    3'd4$/;"	c
+MESI_ISC_CBUS_CMD_EN_WR	rtl/mesi_isc_define.v	/^`define MESI_ISC_CBUS_CMD_EN_WR    3'd3$/;"	c
+MESI_ISC_CBUS_CMD_NOP	rtl/mesi_isc_define.v	/^`define MESI_ISC_CBUS_CMD_NOP      3'd0$/;"	c
+MESI_ISC_CBUS_CMD_RD_SNOOP	rtl/mesi_isc_define.v	/^`define MESI_ISC_CBUS_CMD_RD_SNOOP 3'd2$/;"	c
+MESI_ISC_CBUS_CMD_WR_SNOOP	rtl/mesi_isc_define.v	/^`define MESI_ISC_CBUS_CMD_WR_SNOOP 3'd1$/;"	c
+MESI_ISC_MBUS_CMD_NOP	rtl/mesi_isc_define.v	/^`define MESI_ISC_MBUS_CMD_NOP      3'd0$/;"	c
+MESI_ISC_MBUS_CMD_RD	rtl/mesi_isc_define.v	/^`define MESI_ISC_MBUS_CMD_RD       3'd2$/;"	c
+MESI_ISC_MBUS_CMD_RD_BROAD	rtl/mesi_isc_define.v	/^`define MESI_ISC_MBUS_CMD_RD_BROAD 3'd4$/;"	c
+MESI_ISC_MBUS_CMD_WR	rtl/mesi_isc_define.v	/^`define MESI_ISC_MBUS_CMD_WR       3'd1$/;"	c
+MESI_ISC_MBUS_CMD_WR_BROAD	rtl/mesi_isc_define.v	/^`define MESI_ISC_MBUS_CMD_WR_BROAD 3'd3$/;"	c
+MESI_ISC_TB_CPU_C_STATE_EVICT	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_EVICT       4$/;"	c
+MESI_ISC_TB_CPU_C_STATE_EVICT_INVALIDATE	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_EVICT_INVALIDATE 3$/;"	c
+MESI_ISC_TB_CPU_C_STATE_IDLE	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_IDLE        0$/;"	c
+MESI_ISC_TB_CPU_C_STATE_RD_CACHE	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_RD_CACHE    7$/;"	c
+MESI_ISC_TB_CPU_C_STATE_RD_LINE_RD	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_RD_LINE_RD  6$/;"	c
+MESI_ISC_TB_CPU_C_STATE_RD_LINE_WR	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_RD_LINE_WR  5$/;"	c
+MESI_ISC_TB_CPU_C_STATE_RD_SNOOP	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_RD_SNOOP    2$/;"	c
+MESI_ISC_TB_CPU_C_STATE_WR_CACHE	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_WR_CACHE    8$/;"	c
+MESI_ISC_TB_CPU_C_STATE_WR_SNOOP	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_C_STATE_WR_SNOOP    1$/;"	c
+MESI_ISC_TB_CPU_MESI_E	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_MESI_E              4'b0101$/;"	c
+MESI_ISC_TB_CPU_MESI_I	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_MESI_I              4'b0000$/;"	c
+MESI_ISC_TB_CPU_MESI_M	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_MESI_M              4'b1001$/;"	c
+MESI_ISC_TB_CPU_MESI_S	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_MESI_S              4'b0011$/;"	c
+MESI_ISC_TB_CPU_M_STATE_IDLE	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_M_STATE_IDLE        0$/;"	c
+MESI_ISC_TB_CPU_M_STATE_RD_CACHE	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_M_STATE_RD_CACHE    2$/;"	c
+MESI_ISC_TB_CPU_M_STATE_SEND_RD_BR	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_M_STATE_SEND_RD_BR  4$/;"	c
+MESI_ISC_TB_CPU_M_STATE_SEND_WR_BR	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_M_STATE_SEND_WR_BR  3$/;"	c
+MESI_ISC_TB_CPU_M_STATE_WR_CACHE	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_CPU_M_STATE_WR_CACHE    1$/;"	c
+MESI_ISC_TB_INS_NOP	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_INS_NOP 4'd0$/;"	c
+MESI_ISC_TB_INS_RD	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_INS_RD  4'd2$/;"	c
+MESI_ISC_TB_INS_WR	tb/mesi_isc_tb_define.v	/^`define MESI_ISC_TB_INS_WR  4'd1$/;"	c
+breq_cpu_id_array	rtl/mesi_isc_breq_fifos.v	/^wire [4*2-1:0]          breq_cpu_id_array;$/;"	n
+breq_cpu_id_array_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [4*2-1:0]              breq_cpu_id_array_o;$/;"	p
+breq_id_array	rtl/mesi_isc_breq_fifos.v	/^wire [4*BROAD_ID_WIDTH-1:0] breq_id_array;$/;"	n
+breq_id_array_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [4*BROAD_ID_WIDTH-1:0] breq_id_array_o;$/;"	p
+breq_id_base	rtl/mesi_isc_breq_fifos_cntl.v	/^reg  [BROAD_ID_WIDTH-3:0] breq_id_base; \/\/ breq_id_base is the base value of$/;"	r
+breq_type_array	rtl/mesi_isc_breq_fifos.v	/^wire [4*BROAD_TYPE_WIDTH-1:0] breq_type_array;$/;"	n
+breq_type_array_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [4*BROAD_TYPE_WIDTH-1:0] breq_type_array_o;$/;"	p
+breq_type_array_o	rtl/mesi_isc_breq_fifos_cntl.v	/^reg [4*BROAD_TYPE_WIDTH-1:0] breq_type_array_o;$/;"	r
+broad_addr	rtl/mesi_isc.v	/^wire [ADDR_WIDTH-1:0]   broad_addr;$/;"	n
+broad_addr_array	rtl/mesi_isc_breq_fifos.v	/^wire [4*ADDR_WIDTH-1:0] broad_addr_array;$/;"	n
+broad_addr_array_i	rtl/mesi_isc_breq_fifos_cntl.v	/^input [4*ADDR_WIDTH-1      :0] broad_addr_array_i;$/;"	p
+broad_addr_i	rtl/mesi_isc_broad.v	/^input [ADDR_WIDTH-1:0]  broad_addr_i; \/\/ Broad addresses$/;"	p
+broad_addr_o	rtl/mesi_isc_breq_fifos.v	/^output [ADDR_WIDTH-1:0]  broad_addr_o; \/\/ Address of the broadcast request$/;"	p
+broad_addr_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [ADDR_WIDTH-1      :0] broad_addr_o;$/;"	p
+broad_cpu_id	rtl/mesi_isc.v	/^wire [1:0]              broad_cpu_id;$/;"	n
+broad_cpu_id_array	rtl/mesi_isc_breq_fifos.v	/^wire [4*2-1:0] 		    broad_cpu_id_array;$/;"	n
+broad_cpu_id_i	rtl/mesi_isc_broad.v	/^input [1:0]             broad_cpu_id_i; \/\/ Initiators$/;"	p
+broad_cpu_id_o	rtl/mesi_isc_breq_fifos.v	/^output [1:0]             broad_cpu_id_o; \/\/ ID of the initiator CPU$/;"	p
+broad_cpu_id_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [1:0]                  broad_cpu_id_o;$/;"	p
+broad_fifo_entry0	tb/mesi_isc_tb.v	/^wire   [ADDR_WIDTH+BROAD_TYPE_WIDTH+2+BROAD_ID_WIDTH:0] broad_fifo_entry0;$/;"	n
+broad_fifo_entry1	tb/mesi_isc_tb.v	/^wire   [ADDR_WIDTH+BROAD_TYPE_WIDTH+2+BROAD_ID_WIDTH:0] broad_fifo_entry1;$/;"	n
+broad_fifo_entry2	tb/mesi_isc_tb.v	/^wire   [ADDR_WIDTH+BROAD_TYPE_WIDTH+2+BROAD_ID_WIDTH:0] broad_fifo_entry2;$/;"	n
+broad_fifo_entry3	tb/mesi_isc_tb.v	/^wire   [ADDR_WIDTH+BROAD_TYPE_WIDTH+2+BROAD_ID_WIDTH:0] broad_fifo_entry3;$/;"	n
+broad_fifo_rd	rtl/mesi_isc_broad.v	/^wire                    broad_fifo_rd; \/\/ Read broadcast$/;"	n
+broad_fifo_rd_o	rtl/mesi_isc_broad_cntl.v	/^output                  broad_fifo_rd_o;$/;"	p
+broad_fifo_rd_o	rtl/mesi_isc_broad_cntl.v	/^reg                       broad_fifo_rd_o; \/\/ output$/;"	r
+broad_fifo_status_full	rtl/mesi_isc.v	/^wire                    broad_fifo_status_full;$/;"	n
+broad_fifo_status_full_i	rtl/mesi_isc_breq_fifos.v	/^input                    broad_fifo_status_full_i; \/\/ The broad fifo is full$/;"	p
+broad_fifo_status_full_i	rtl/mesi_isc_breq_fifos_cntl.v	/^input                   broad_fifo_status_full_i;$/;"	p
+broad_fifo_wr	rtl/mesi_isc.v	/^wire                    broad_fifo_wr;$/;"	n
+broad_fifo_wr_i	rtl/mesi_isc_broad.v	/^input 		        broad_fifo_wr_i; \/\/ Write the broadcast request$/;"	p
+broad_fifo_wr_o	rtl/mesi_isc_breq_fifos.v	/^output                   broad_fifo_wr_o; \/\/ Write the broadcast request$/;"	p
+broad_fifo_wr_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output                  broad_fifo_wr_o;$/;"	p
+broad_id	rtl/mesi_isc.v	/^wire [BROAD_ID_WIDTH-1:0] broad_id;$/;"	n
+broad_id_array	rtl/mesi_isc_breq_fifos.v	/^wire [4*BROAD_ID_WIDTH-1:0] broad_id_array;$/;"	n
+broad_id_array_i	rtl/mesi_isc_breq_fifos_cntl.v	/^input [4*BROAD_ID_WIDTH-1  :0] broad_id_array_i;$/;"	p
+broad_id_i	rtl/mesi_isc_broad.v	/^input [BROAD_ID_WIDTH-1:0] broad_id_i; \/\/ Broadcast request ID array$/;"	p
+broad_id_o	rtl/mesi_isc_breq_fifos.v	/^output [BROAD_ID_WIDTH-1:0] broad_id_o; \/\/ The ID of the broadcast request$/;"	p
+broad_id_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [BROAD_ID_WIDTH-1:  0] broad_id_o;$/;"	p
+broad_snoop_addr	rtl/mesi_isc_broad.v	/^wire [ADDR_WIDTH-1:0]   broad_snoop_addr; \/\/ Address of broadcast snooping$/;"	n
+broad_snoop_cpu_id	rtl/mesi_isc_broad.v	/^wire [1:0]              broad_snoop_cpu_id; \/\/ ID of initiator of broadcast$/;"	n
+broad_snoop_cpu_id_i	rtl/mesi_isc_broad_cntl.v	/^input [1:0]             broad_snoop_cpu_id_i; \/\/ The ID of the initiator CPU$/;"	p
+broad_snoop_id	rtl/mesi_isc_broad.v	/^wire [BROAD_ID_WIDTH-1:0] broad_snoop_id; \/\/ Broadcast snooping ID$/;"	n
+broad_snoop_id_i	rtl/mesi_isc_broad_cntl.v	/^input [BROAD_ID_WIDTH-1:0] broad_snoop_id_i; \/\/ The ID of the broad$/;"	p
+broad_snoop_type	rtl/mesi_isc_broad.v	/^wire [BROAD_TYPE_WIDTH-1:0] broad_snoop_type;  \/\/ Type of broadcast snooping$/;"	n
+broad_snoop_type_i	rtl/mesi_isc_broad_cntl.v	/^input [BROAD_TYPE_WIDTH-1:0] broad_snoop_type_i; \/\/ The type of the broad$/;"	p
+broad_type	rtl/mesi_isc.v	/^wire [BROAD_TYPE_WIDTH-1:0] broad_type;$/;"	n
+broad_type_array	rtl/mesi_isc_breq_fifos.v	/^wire [4*BROAD_TYPE_WIDTH-1:0] broad_type_array;$/;"	n
+broad_type_array_i	rtl/mesi_isc_breq_fifos_cntl.v	/^input [4*BROAD_TYPE_WIDTH-1:0] broad_type_array_i;$/;"	p
+broad_type_i	rtl/mesi_isc_broad.v	/^input [BROAD_TYPE_WIDTH-1:0] broad_type_i; \/\/ Broad type$/;"	p
+broad_type_o	rtl/mesi_isc_breq_fifos.v	/^output [BROAD_TYPE_WIDTH-1:0] broad_type_o; \/\/ Type of the broadcast request$/;"	p
+broad_type_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [BROAD_TYPE_WIDTH-1:0] broad_type_o;$/;"	p
+broadcast_in_progress	rtl/mesi_isc_broad_cntl.v	/^reg 	                  broadcast_in_progress; \/\/ A broadcast process$/;"	r
+c_addr	tb/mesi_isc_tb_cpu.v	/^reg  [ADDR_WIDTH-1:0]    c_addr;$/;"	r
+c_state	tb/mesi_isc_tb_cpu.v	/^reg  [3:0]               c_state;$/;"	r
+cache	tb/mesi_isc_tb_cpu.v	/^reg  [31:0]              cache   [9:0];  \/\/ CPU cache$/;"	r
+cache0	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache0;$/;"	n
+cache1	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache1;$/;"	n
+cache2	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache2;$/;"	n
+cache3	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache3;$/;"	n
+cache4	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache4;$/;"	n
+cache5	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache5;$/;"	n
+cache6	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache6;$/;"	n
+cache7	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache7;$/;"	n
+cache8	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache8;$/;"	n
+cache9	tb/mesi_isc_tb_cpu.v	/^wire [31:0]              cache9;$/;"	n
+cache_state	tb/mesi_isc_tb_cpu.v	/^reg  [3:0]               cache_state [9:0];  \/\/ CPU cache MESI state$/;"	r
+cache_state0	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state0;$/;"	n
+cache_state1	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state1;$/;"	n
+cache_state2	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state2;$/;"	n
+cache_state3	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state3;$/;"	n
+cache_state4	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state4;$/;"	n
+cache_state5	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state5;$/;"	n
+cache_state6	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state6;$/;"	n
+cache_state7	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state7;$/;"	n
+cache_state8	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state8;$/;"	n
+cache_state9	tb/mesi_isc_tb_cpu.v	/^wire [3:0]               cache_state9;$/;"	n
+cache_state_valid_array	tb/mesi_isc_tb.v	/^wire   [5:0]            cache_state_valid_array [3:0];$/;"	n
+cbus_ack0	tb/mesi_isc_tb.v	/^wire                    cbus_ack0;  \/\/ Coherence bus0 acknowledge$/;"	n
+cbus_ack0_i	rtl/mesi_isc.v	/^input                   cbus_ack0_i;  \/\/ Coherence bus0 acknowledge$/;"	p
+cbus_ack1	tb/mesi_isc_tb.v	/^wire                    cbus_ack1;  \/\/ Coherence bus1 acknowledge$/;"	n
+cbus_ack1_i	rtl/mesi_isc.v	/^input                   cbus_ack1_i;  \/\/ Coherence bus1 acknowledge$/;"	p
+cbus_ack2	tb/mesi_isc_tb.v	/^wire                    cbus_ack2;  \/\/ Coherence bus2 acknowledge$/;"	n
+cbus_ack2_i	rtl/mesi_isc.v	/^input                   cbus_ack2_i;  \/\/ Coherence bus2 acknowledge$/;"	p
+cbus_ack3	tb/mesi_isc_tb.v	/^wire                    cbus_ack3;  \/\/ Coherence bus3 acknowledge$/;"	n
+cbus_ack3_i	rtl/mesi_isc.v	/^input                   cbus_ack3_i;  \/\/ Coherence bus3 acknowledge$/;"	p
+cbus_ack_array_i	rtl/mesi_isc_broad.v	/^input [3:0]             cbus_ack_array_i;$/;"	p
+cbus_ack_array_i	rtl/mesi_isc_broad_cntl.v	/^input [3:0]             cbus_ack_array_i;$/;"	p
+cbus_ack_o	tb/mesi_isc_tb_cpu.v	/^output                   cbus_ack_o;  \/\/ Coherence bus3 acknowledge$/;"	p
+cbus_ack_o	tb/mesi_isc_tb_cpu.v	/^reg                      cbus_ack_o;  \/\/ Coherence bus3 acknowledge$/;"	r
+cbus_active_broad_array	rtl/mesi_isc_broad_cntl.v	/^reg  [3:0]                cbus_active_broad_array; \/\/ For each bit, when high a$/;"	r
+cbus_active_en_access_and_not_cbus_ack_array	rtl/mesi_isc_broad_cntl.v	/^wire [3:0]                cbus_active_en_access_and_not_cbus_ack_array;$/;"	n
+cbus_active_en_access_array	rtl/mesi_isc_broad_cntl.v	/^reg  [3:0]                cbus_active_en_access_array; \/\/ For each bit, when$/;"	r
+cbus_addr	tb/mesi_isc_tb.v	/^wire   [ADDR_WIDTH-1:0] cbus_addr;  \/\/ Coherence bus address. All busses have$/;"	n
+cbus_addr_i	tb/mesi_isc_tb_cpu.v	/^input [ADDR_WIDTH-1:0] cbus_addr_i;   \/\/ Coherence bus address. All busses have$/;"	p
+cbus_addr_o	rtl/mesi_isc.v	/^output [ADDR_WIDTH-1:0] cbus_addr_o;  \/\/ Coherence bus address. All busses have$/;"	p
+cbus_addr_o	rtl/mesi_isc_broad.v	/^output [ADDR_WIDTH-1:0] cbus_addr_o;  \/\/ Coherence bus address. All busses have$/;"	p
+cbus_cmd0	rtl/mesi_isc_broad_cntl.v	/^wire [CBUS_CMD_WIDTH-1:0] cbus_cmd0;  \/\/ Command for coherence bus.$/;"	n
+cbus_cmd0	tb/mesi_isc_tb.v	/^wire   [CBUS_CMD_WIDTH-1:0] cbus_cmd0; \/\/ Coherence bus0 command$/;"	n
+cbus_cmd0_o	rtl/mesi_isc.v	/^output [CBUS_CMD_WIDTH-1:0] cbus_cmd0_o; \/\/ Coherence bus0 command$/;"	p
+cbus_cmd1	rtl/mesi_isc_broad_cntl.v	/^wire [CBUS_CMD_WIDTH-1:0] cbus_cmd1;  \/\/ Command for coherence bus.$/;"	n
+cbus_cmd1	tb/mesi_isc_tb.v	/^wire   [CBUS_CMD_WIDTH-1:0] cbus_cmd1; \/\/ Coherence bus1 command$/;"	n
+cbus_cmd1_o	rtl/mesi_isc.v	/^output [CBUS_CMD_WIDTH-1:0] cbus_cmd1_o; \/\/ Coherence bus1 command$/;"	p
+cbus_cmd2	rtl/mesi_isc_broad_cntl.v	/^wire [CBUS_CMD_WIDTH-1:0] cbus_cmd2;  \/\/ Command for coherence bus.$/;"	n
+cbus_cmd2	tb/mesi_isc_tb.v	/^wire   [CBUS_CMD_WIDTH-1:0] cbus_cmd2; \/\/ Coherence bus2 command$/;"	n
+cbus_cmd2_o	rtl/mesi_isc.v	/^output [CBUS_CMD_WIDTH-1:0] cbus_cmd2_o; \/\/ Coherence bus2 command$/;"	p
+cbus_cmd3	rtl/mesi_isc_broad_cntl.v	/^wire [CBUS_CMD_WIDTH-1:0] cbus_cmd3;  \/\/ Command for coherence bus.$/;"	n
+cbus_cmd3	tb/mesi_isc_tb.v	/^wire   [CBUS_CMD_WIDTH-1:0] cbus_cmd3; \/\/ Coherence bus3 command$/;"	n
+cbus_cmd3_o	rtl/mesi_isc.v	/^output [CBUS_CMD_WIDTH-1:0] cbus_cmd3_o; \/\/ Coherence bus3 command$/;"	p
+cbus_cmd_array_o	rtl/mesi_isc_broad.v	/^output [4*CBUS_CMD_WIDTH-1:0] cbus_cmd_array_o; \/\/ See broad_addr_i$/;"	p
+cbus_cmd_array_o	rtl/mesi_isc_broad_cntl.v	/^output [4*CBUS_CMD_WIDTH-1:0] cbus_cmd_array_o; \/\/ Command for coherence bus.$/;"	p
+cbus_cmd_i	tb/mesi_isc_tb_cpu.v	/^input [CBUS_CMD_WIDTH-1:0] cbus_cmd_i; \/\/ Coherence bus3 command$/;"	p
+clk	rtl/mesi_isc.v	/^input                   clk;          \/\/ System clock$/;"	p
+clk	rtl/mesi_isc_basic_fifo.v	/^input                   clk;          \/\/ System clock$/;"	p
+clk	rtl/mesi_isc_breq_fifos.v	/^input                   clk;          \/\/ System clock$/;"	p
+clk	rtl/mesi_isc_breq_fifos_cntl.v	/^input                   clk;          \/\/ System clock$/;"	p
+clk	rtl/mesi_isc_broad.v	/^input                   clk;          \/\/ System clock$/;"	p
+clk	rtl/mesi_isc_broad_cntl.v	/^input                   clk;          \/\/ System clock$/;"	p
+clk	tb/mesi_isc_tb.v	/^reg                   clk;          \/\/ System clock$/;"	r
+clk	tb/mesi_isc_tb_cpu.v	/^input                   clk;          \/\/ System clock$/;"	p
+cpu_id	tb/mesi_isc_tb_sanity_check.v	/^input [3:0]              cpu_id;$/;"	p
+cpu_id_i	tb/mesi_isc_tb_cpu.v	/^input [1:0]            cpu_id_i;$/;"	p
+cpu_priority	tb/mesi_isc_tb.v	/^reg    [1:0]            cpu_priority;$/;"	r
+cpu_selected	tb/mesi_isc_tb.v	/^reg    [3:0]            cpu_selected;   $/;"	r
+cur_mem_data	tb/mesi_isc_tb_sanity_check.v	/^reg   [DATA_WIDTH-1:0]   cur_mem_data;$/;"	r
+cur_stimulus_cpu	tb/mesi_isc_tb.v	/^integer                 cur_stimulus_cpu;$/;"	r
+data_i	rtl/mesi_isc_basic_fifo.v	/^input [DATA_WIDTH-1:0]  data_i;       \/\/ Data data in to be stored$/;"	p
+data_o	rtl/mesi_isc_basic_fifo.v	/^output [DATA_WIDTH-1:0] data_o;       \/\/ Data out to be rad $/;"	p
+data_o	rtl/mesi_isc_basic_fifo.v	/^reg  [DATA_WIDTH-1:0]   data_o;       \/\/ Data out to be rad $/;"	r
+dbg_fifo_overflow	rtl/mesi_isc_basic_fifo.v	/^reg dbg_fifo_overflow;		       \/\/ Sticky bit for fifo overflow$/;"	r
+dbg_fifo_underflow	rtl/mesi_isc_basic_fifo.v	/^reg dbg_fifo_underflow;		       \/\/ Sticky bit for fifo underflow$/;"	r
+entry	rtl/mesi_isc_basic_fifo.v	/^reg  [DATA_WIDTH-1:0]   entry [FIFO_SIZE-1:0];  \/\/ The fifo entries$/;"	r
+fifo_depth	rtl/mesi_isc_basic_fifo.v	/^wire [FIFO_SIZE_LOG2-1:0] fifo_depth;  \/\/ Number of used entries$/;"	n
+fifo_depth_decrease	rtl/mesi_isc_basic_fifo.v	/^wire                    fifo_depth_decrease;$/;"	n
+fifo_depth_increase	rtl/mesi_isc_basic_fifo.v	/^wire                    fifo_depth_increase;$/;"	n
+fifo_rd_array	rtl/mesi_isc_breq_fifos.v	/^wire [3:0] 		fifo_rd_array;$/;"	n
+fifo_rd_array_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [3:0]            fifo_rd_array_o; $/;"	p
+fifo_select_oh	rtl/mesi_isc_breq_fifos_cntl.v	/^wire [3:0]              fifo_select_oh; \/\/ A one hot control of the mux between$/;"	n
+fifo_status_empty	rtl/mesi_isc_broad.v	/^wire                    fifo_status_empty; \/\/ Status empty$/;"	n
+fifo_status_empty_array	rtl/mesi_isc_breq_fifos.v	/^wire [3:0] 		fifo_status_empty_array;$/;"	n
+fifo_status_empty_array_i	rtl/mesi_isc_breq_fifos_cntl.v	/^input [3:0]             fifo_status_empty_array_i;       $/;"	p
+fifo_status_empty_i	rtl/mesi_isc_broad_cntl.v	/^input                   fifo_status_empty_i;$/;"	p
+fifo_status_full	rtl/mesi_isc_broad.v	/^wire                    fifo_status_full; \/\/ The broad fifo is full$/;"	n
+fifo_status_full_array	rtl/mesi_isc_breq_fifos.v	/^wire [3:0]              fifo_status_full_array;$/;"	n
+fifo_status_full_array_i	rtl/mesi_isc_breq_fifos_cntl.v	/^input [3:0]             fifo_status_full_array_i;$/;"	p
+fifo_status_full_i	rtl/mesi_isc_broad_cntl.v	/^input                   fifo_status_full_i;$/;"	p
+fifo_status_full_o	rtl/mesi_isc_broad.v	/^output                  fifo_status_full_o; \/\/ The broad fifo is full$/;"	p
+fifo_wr_array	rtl/mesi_isc_breq_fifos.v	/^wire [3:0] 		fifo_wr_array;$/;"	n
+fifo_wr_array_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [3:0]            fifo_wr_array_o;$/;"	p
+fifos_priority	rtl/mesi_isc_breq_fifos_cntl.v	/^reg [3:0]               fifos_priority; \/\/ A one hot priority between the $/;"	r
+fifos_priority_barrel_shiftl_1	rtl/mesi_isc_breq_fifos_cntl.v	/^wire [3:0]              fifos_priority_barrel_shiftl_1,$/;"	n
+fifos_priority_barrel_shiftl_2	rtl/mesi_isc_breq_fifos_cntl.v	/^                        fifos_priority_barrel_shiftl_2,$/;"	n
+fifos_priority_barrel_shiftl_3	rtl/mesi_isc_breq_fifos_cntl.v	/^                        fifos_priority_barrel_shiftl_3;$/;"	n
+i	rtl/mesi_isc_basic_fifo.v	/^integer 		i;             \/\/ For loop$/;"	r
+i	tb/mesi_isc_tb.v	/^integer                 i, j, k, l, m, n, p;$/;"	r
+i	tb/mesi_isc_tb_cpu.v	/^integer                  i,j,k;     \/\/ Loop index$/;"	r
+j	tb/mesi_isc_tb.v	/^integer                 i, j, k, l, m, n, p;$/;"	r
+j	tb/mesi_isc_tb_cpu.v	/^integer                  i,j,k;     \/\/ Loop index$/;"	r
+k	tb/mesi_isc_tb.v	/^integer                 i, j, k, l, m, n, p;$/;"	r
+k	tb/mesi_isc_tb_cpu.v	/^integer                  i,j,k;     \/\/ Loop index$/;"	r
+l	tb/mesi_isc_tb.v	/^integer                 i, j, k, l, m, n, p;$/;"	r
+m	tb/mesi_isc_tb.v	/^integer                 i, j, k, l, m, n, p;$/;"	r
+m_addr	tb/mesi_isc_tb_cpu.v	/^reg  [ADDR_WIDTH-1:0]    m_addr;$/;"	r
+m_state	tb/mesi_isc_tb_cpu.v	/^reg  [2:0]               m_state;$/;"	r
+m_state_c_state_priority	tb/mesi_isc_tb_cpu.v	/^reg                      m_state_c_state_priority;$/;"	r
+m_state_send_rd_br_counter	tb/mesi_isc_tb_cpu.v	/^integer                  m_state_send_wr_br_counter,m_state_send_rd_br_counter;$/;"	r
+m_state_send_wr_br_counter	tb/mesi_isc_tb_cpu.v	/^integer                  m_state_send_wr_br_counter,m_state_send_rd_br_counter;$/;"	r
+mbus_ack	tb/mesi_isc_tb.v	/^wire   [3:0]            mbus_ack;  \/\/ Main bus3 acknowledge$/;"	n
+mbus_ack0_o	rtl/mesi_isc.v	/^output                  mbus_ack0_o;  \/\/ Main bus0 acknowledge$/;"	p
+mbus_ack1_o	rtl/mesi_isc.v	/^output                  mbus_ack1_o;  \/\/ Main bus1 acknowledge$/;"	p
+mbus_ack2_o	rtl/mesi_isc.v	/^output                  mbus_ack2_o;  \/\/ Main bus2 acknowledge$/;"	p
+mbus_ack3_o	rtl/mesi_isc.v	/^output                  mbus_ack3_o;  \/\/ Main bus3 acknowledge$/;"	p
+mbus_ack_array	rtl/mesi_isc_breq_fifos_cntl.v	/^reg [3:0]               mbus_ack_array;$/;"	r
+mbus_ack_array_o	rtl/mesi_isc_breq_fifos.v	/^output [3:0]             mbus_ack_array_o; \/\/ Bus acknowledge for receiving the$/;"	p
+mbus_ack_array_o	rtl/mesi_isc_breq_fifos_cntl.v	/^output [3:0]            mbus_ack_array_o;$/;"	p
+mbus_ack_i	tb/mesi_isc_tb_cpu.v	/^input                  mbus_ack_i;    \/\/ Main bus3 acknowledge$/;"	p
+mbus_ack_memory	tb/mesi_isc_tb.v	/^reg    [3:0]            mbus_ack_memory;$/;"	r
+mbus_ack_mesi_isc	tb/mesi_isc_tb.v	/^wire   [3:0]            mbus_ack_mesi_isc;$/;"	n
+mbus_addr	tb/mesi_isc_tb_sanity_check.v	/^input [ADDR_WIDTH-1:0]   mbus_addr;$/;"	p
+mbus_addr0	tb/mesi_isc_tb.v	/^wire  [ADDR_WIDTH-1:0]  mbus_addr0;  \/\/ Main bus0 address$/;"	n
+mbus_addr0_i	rtl/mesi_isc.v	/^input [ADDR_WIDTH-1:0]  mbus_addr0_i;  \/\/ Coherence bus0 address$/;"	p
+mbus_addr1	tb/mesi_isc_tb.v	/^wire  [ADDR_WIDTH-1:0]  mbus_addr1;  \/\/ Main bus1 address$/;"	n
+mbus_addr1_i	rtl/mesi_isc.v	/^input [ADDR_WIDTH-1:0]  mbus_addr1_i;  \/\/ Coherence bus1 address$/;"	p
+mbus_addr2	tb/mesi_isc_tb.v	/^wire  [ADDR_WIDTH-1:0]  mbus_addr2;  \/\/ Main bus2 address$/;"	n
+mbus_addr2_i	rtl/mesi_isc.v	/^input [ADDR_WIDTH-1:0]  mbus_addr2_i;  \/\/ Coherence bus2 address$/;"	p
+mbus_addr3	tb/mesi_isc_tb.v	/^wire  [ADDR_WIDTH-1:0]  mbus_addr3;  \/\/ Main bus3 address$/;"	n
+mbus_addr3_i	rtl/mesi_isc.v	/^input [ADDR_WIDTH-1:0]  mbus_addr3_i;  \/\/ Coherence bus3 address$/;"	p
+mbus_addr_array	tb/mesi_isc_tb.v	/^wire  [ADDR_WIDTH-1:0]  mbus_addr_array [3:0];  \/\/ Main bus3 address$/;"	n
+mbus_addr_array_i	rtl/mesi_isc_breq_fifos.v	/^input [4*ADDR_WIDTH-1:0] mbus_addr_array_i; \/\/ Main bus address (array)$/;"	p
+mbus_addr_o	tb/mesi_isc_tb_cpu.v	/^output [ADDR_WIDTH-1:0]  mbus_addr_o;  \/\/ Coherence bus3 address$/;"	p
+mbus_addr_o	tb/mesi_isc_tb_cpu.v	/^reg  [ADDR_WIDTH-1:0]    mbus_addr_o;  \/\/ Coherence bus3 address$/;"	r
+mbus_cmd0	tb/mesi_isc_tb.v	/^wire  [MBUS_CMD_WIDTH-1:0] mbus_cmd0; \/\/ Main bus0 command$/;"	n
+mbus_cmd0_i	rtl/mesi_isc.v	/^input [MBUS_CMD_WIDTH-1:0] mbus_cmd0_i; \/\/ Main bus0 command$/;"	p
+mbus_cmd1	tb/mesi_isc_tb.v	/^wire  [MBUS_CMD_WIDTH-1:0] mbus_cmd1; \/\/ Main bus1 command$/;"	n
+mbus_cmd1_i	rtl/mesi_isc.v	/^input [MBUS_CMD_WIDTH-1:0] mbus_cmd1_i; \/\/ Main bus1 command$/;"	p
+mbus_cmd2	tb/mesi_isc_tb.v	/^wire  [MBUS_CMD_WIDTH-1:0] mbus_cmd2; \/\/ Main bus2 command$/;"	n
+mbus_cmd2_i	rtl/mesi_isc.v	/^input [MBUS_CMD_WIDTH-1:0] mbus_cmd2_i; \/\/ Main bus2 command$/;"	p
+mbus_cmd3	tb/mesi_isc_tb.v	/^wire  [MBUS_CMD_WIDTH-1:0] mbus_cmd3; \/\/ Main bus2 command$/;"	n
+mbus_cmd3_i	rtl/mesi_isc.v	/^input [MBUS_CMD_WIDTH-1:0] mbus_cmd3_i; \/\/ Main bus3 command$/;"	p
+mbus_cmd_array	tb/mesi_isc_tb.v	/^wire  [MBUS_CMD_WIDTH-1:0] mbus_cmd_array [3:0]; \/\/ Main bus3 command$/;"	n
+mbus_cmd_array_i	rtl/mesi_isc_breq_fifos.v	/^input [4*MBUS_CMD_WIDTH-1:0] mbus_cmd_array_i; \/\/ Main bus command (array)$/;"	p
+mbus_cmd_array_i	rtl/mesi_isc_breq_fifos_cntl.v	/^input [4*MBUS_CMD_WIDTH-1:0] mbus_cmd_array_i;$/;"	p
+mbus_cmd_array_i_0	rtl/mesi_isc_breq_fifos_cntl.v	/^			  mbus_cmd_array_i_0;$/;"	n
+mbus_cmd_array_i_1	rtl/mesi_isc_breq_fifos_cntl.v	/^			  mbus_cmd_array_i_1,$/;"	n
+mbus_cmd_array_i_2	rtl/mesi_isc_breq_fifos_cntl.v	/^			  mbus_cmd_array_i_2,$/;"	n
+mbus_cmd_array_i_3	rtl/mesi_isc_breq_fifos_cntl.v	/^wire [MBUS_CMD_WIDTH-1:0] mbus_cmd_array_i_3,$/;"	n
+mbus_cmd_o	tb/mesi_isc_tb_cpu.v	/^output [MBUS_CMD_WIDTH-1:0] mbus_cmd_o; \/\/ Main bus3 command$/;"	p
+mbus_cmd_o	tb/mesi_isc_tb_cpu.v	/^reg  [MBUS_CMD_WIDTH-1:0] mbus_cmd_o; \/\/ Main bus3 command$/;"	r
+mbus_data_i	tb/mesi_isc_tb_cpu.v	/^input [DATA_WIDTH-1:0]  mbus_data_i; \/\/ Main bus read data$/;"	p
+mbus_data_o	tb/mesi_isc_tb_cpu.v	/^output [DATA_WIDTH-1:0]  mbus_data_o; \/\/ Main bus write data$/;"	p
+mbus_data_o	tb/mesi_isc_tb_cpu.v	/^reg  [DATA_WIDTH-1:0]    mbus_data_o; \/\/ Main bus write data$/;"	r
+mbus_data_rd	tb/mesi_isc_tb.v	/^reg   [DATA_WIDTH-1:0]  mbus_data_rd;  \/\/ Main bus data read$/;"	r
+mbus_data_rd_word_array	tb/mesi_isc_tb.v	/^wire  [7:0]             mbus_data_rd_word_array [3:0]; \/\/ Bus data read in words$/;"	n
+mbus_data_wr0	tb/mesi_isc_tb.v	/^wire  [DATA_WIDTH-1:0]  mbus_data_wr0;  \/\/ Main bus data read$/;"	n
+mbus_data_wr1	tb/mesi_isc_tb.v	/^wire  [DATA_WIDTH-1:0]  mbus_data_wr1;  \/\/ Main bus data read$/;"	n
+mbus_data_wr2	tb/mesi_isc_tb.v	/^wire  [DATA_WIDTH-1:0]  mbus_data_wr2;  \/\/ Main bus data read$/;"	n
+mbus_data_wr3	tb/mesi_isc_tb.v	/^wire  [DATA_WIDTH-1:0]  mbus_data_wr3;  \/\/ Main bus data read$/;"	n
+mbus_data_wr_array	tb/mesi_isc_tb.v	/^wire  [DATA_WIDTH-1:0]  mbus_data_wr_array [3:0];  \/\/ Main bus data read$/;"	n
+mbus_wr_data	tb/mesi_isc_tb_sanity_check.v	/^input [DATA_WIDTH-1:0]   mbus_wr_data;$/;"	p
+mem	tb/mesi_isc_tb.v	/^reg    [31:0]           mem   [9:0];  \/\/ Main memory$/;"	r
+mem0	tb/mesi_isc_tb.v	/^wire   [31:0]           mem0;$/;"	n
+mem1	tb/mesi_isc_tb.v	/^wire   [31:0]           mem1;$/;"	n
+mem2	tb/mesi_isc_tb.v	/^wire   [31:0]           mem2;$/;"	n
+mem3	tb/mesi_isc_tb.v	/^wire   [31:0]           mem3;$/;"	n
+mem4	tb/mesi_isc_tb.v	/^wire   [31:0]           mem4;$/;"	n
+mem5	tb/mesi_isc_tb.v	/^wire   [31:0]           mem5;$/;"	n
+mem6	tb/mesi_isc_tb.v	/^wire   [31:0]           mem6;$/;"	n
+mem7	tb/mesi_isc_tb.v	/^wire   [31:0]           mem7;$/;"	n
+mem8	tb/mesi_isc_tb.v	/^wire   [31:0]           mem8;$/;"	n
+mem9	tb/mesi_isc_tb.v	/^wire   [31:0]           mem9;$/;"	n
+mem_access	tb/mesi_isc_tb.v	/^reg                     mem_access;$/;"	r
+mesi_isc	rtl/mesi_isc.v	/^module mesi_isc$/;"	m
+mesi_isc_basic_fifo	rtl/mesi_isc_basic_fifo.v	/^module mesi_isc_basic_fifo$/;"	m
+mesi_isc_breq_fifos	rtl/mesi_isc_breq_fifos.v	/^module mesi_isc_breq_fifos$/;"	m
+mesi_isc_breq_fifos_cntl	rtl/mesi_isc_breq_fifos_cntl.v	/^module mesi_isc_breq_fifos_cntl$/;"	m
+mesi_isc_broad	rtl/mesi_isc_broad.v	/^module mesi_isc_broad$/;"	m
+mesi_isc_broad_cntl	rtl/mesi_isc_broad_cntl.v	/^module mesi_isc_broad_cntl$/;"	m
+mesi_isc_debug	tb/mesi_isc_tb_define.v	/^`define mesi_isc_debug$/;"	c
+mesi_isc_tb	tb/mesi_isc_tb.v	/^module mesi_isc_tb$/;"	m
+mesi_isc_tb_cpu	tb/mesi_isc_tb_cpu.v	/^module mesi_isc_tb_cpu$/;"	m
+n	tb/mesi_isc_tb.v	/^integer                 i, j, k, l, m, n, p;$/;"	r
+num_of_lines_in_m_e_state	tb/mesi_isc_tb_sanity_check.v	/^reg [1:0]                num_of_lines_in_m_e_state;$/;"	r
+p	tb/mesi_isc_tb.v	/^integer                 i, j, k, l, m, n, p;$/;"	r
+ptr_rd	rtl/mesi_isc_basic_fifo.v	/^reg  [FIFO_SIZE_LOG2-1:0] ptr_rd;      \/\/ Fifo read pointer$/;"	r
+ptr_rd_plus_1	rtl/mesi_isc_basic_fifo.v	/^wire [FIFO_SIZE_LOG2-1:0] ptr_rd_plus_1;$/;"	n
+ptr_wr	rtl/mesi_isc_basic_fifo.v	/^reg  [FIFO_SIZE_LOG2-1:0] ptr_wr;      \/\/ Fifo write pointer$/;"	r
+rd_i	rtl/mesi_isc_basic_fifo.v	/^input                   rd_i;         \/\/ Read data from the fifo. Data is erased$/;"	p
+rd_proc_addr	tb/mesi_isc_tb_cpu.v	/^reg  [ADDR_WIDTH-1:0]    rd_proc_addr;$/;"	r
+rd_proc_wait_for_en	tb/mesi_isc_tb_cpu.v	/^reg                      rd_proc_wait_for_en;$/;"	r
+rst	rtl/mesi_isc.v	/^input                   rst;          \/\/ Active high system reset$/;"	p
+rst	rtl/mesi_isc_basic_fifo.v	/^input                   rst;          \/\/ Active high system reset$/;"	p
+rst	rtl/mesi_isc_breq_fifos.v	/^input                   rst;          \/\/ Active high system reset$/;"	p
+rst	rtl/mesi_isc_breq_fifos_cntl.v	/^input                   rst;          \/\/ Active high system reset$/;"	p
+rst	rtl/mesi_isc_broad.v	/^input                   rst;          \/\/ Active high system reset$/;"	p
+rst	rtl/mesi_isc_broad_cntl.v	/^input                   rst;          \/\/ Active high system reset$/;"	p
+rst	tb/mesi_isc_tb.v	/^reg                   rst;          \/\/ Active high system reset$/;"	r
+rst	tb/mesi_isc_tb_cpu.v	/^input                   rst;          \/\/ Active high system reset$/;"	p
+sanity_check_cache_status	tb/mesi_isc_tb_sanity_check.v	/^task sanity_check_cache_status;$/;"	t
+sanity_check_rule1_rule2	tb/mesi_isc_tb_sanity_check.v	/^task sanity_check_rule1_rule2;$/;"	t
+seed	tb/mesi_isc_tb.v	/^integer                 seed;$/;"	r
+stat_cpu_access_nop	tb/mesi_isc_tb.v	/^reg [31:0]              stat_cpu_access_nop [3:0];$/;"	r
+stat_cpu_access_rd	tb/mesi_isc_tb.v	/^reg [31:0]              stat_cpu_access_rd  [3:0];$/;"	r
+stat_cpu_access_wr	tb/mesi_isc_tb.v	/^reg [31:0]              stat_cpu_access_wr  [3:0];$/;"	r
+status_empty	rtl/mesi_isc_basic_fifo.v	/^reg                     status_empty;$/;"	r
+status_empty_o	rtl/mesi_isc_basic_fifo.v	/^output                  status_empty_o; \/\/ There are no valid entries in the$/;"	p
+status_full	rtl/mesi_isc_basic_fifo.v	/^reg                     status_full;$/;"	r
+status_full_o	rtl/mesi_isc_basic_fifo.v	/^output                  status_full_o; \/\/ There are no free entries in the fifo$/;"	p
+stimulus_addr	tb/mesi_isc_tb.v	/^reg    [7:0]            stimulus_addr;$/;"	r
+stimulus_nop_period	tb/mesi_isc_tb.v	/^reg    [7:0]            stimulus_nop_period;$/;"	r
+stimulus_op	tb/mesi_isc_tb.v	/^reg    [1:0]            stimulus_op;$/;"	r
+stimulus_rand_cpu_select	tb/mesi_isc_tb.v	/^reg    [1:0]            stimulus_rand_cpu_select;$/;"	r
+stimulus_rand_numb	tb/mesi_isc_tb.v	/^integer                 stimulus_rand_numb [9:0];$/;"	r
+tb_ins0	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins0;$/;"	n
+tb_ins1	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins1;$/;"	n
+tb_ins2	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins2;$/;"	n
+tb_ins3	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins3;$/;"	n
+tb_ins_ack	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins_ack;$/;"	n
+tb_ins_ack_o	tb/mesi_isc_tb_cpu.v	/^output                   tb_ins_ack_o; \/\/ Acknowledge for the$/;"	p
+tb_ins_ack_o	tb/mesi_isc_tb_cpu.v	/^reg                          tb_ins_ack_o;   $/;"	r
+tb_ins_addr0	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins_addr0;$/;"	n
+tb_ins_addr1	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins_addr1;$/;"	n
+tb_ins_addr2	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins_addr2;$/;"	n
+tb_ins_addr3	tb/mesi_isc_tb.v	/^wire   [3:0]            tb_ins_addr3;$/;"	n
+tb_ins_addr_array	tb/mesi_isc_tb.v	/^reg    [3:0]            tb_ins_addr_array [3:0];$/;"	r
+tb_ins_addr_i	tb/mesi_isc_tb_cpu.v	/^input [3:0]            tb_ins_addr_i; \/\/ Instruction address$/;"	p
+tb_ins_array	tb/mesi_isc_tb.v	/^reg    [3:0]            tb_ins_array [3:0];$/;"	r
+tb_ins_i	tb/mesi_isc_tb_cpu.v	/^input [3:0]            tb_ins_i;      \/\/ Instruction for CPU to perform an$/;"	p
+tb_ins_nop_period	tb/mesi_isc_tb.v	/^reg    [7:0]            tb_ins_nop_period [3:0];$/;"	r
+tb_ins_nop_period0	tb/mesi_isc_tb.v	/^wire   [7:0]            tb_ins_nop_period0;$/;"	n
+tb_ins_nop_period1	tb/mesi_isc_tb.v	/^wire   [7:0]            tb_ins_nop_period1;$/;"	n
+tb_ins_nop_period2	tb/mesi_isc_tb.v	/^wire   [7:0]            tb_ins_nop_period2;$/;"	n
+tb_ins_nop_period3	tb/mesi_isc_tb.v	/^wire   [7:0]            tb_ins_nop_period3;$/;"	n
+wr_data	tb/mesi_isc_tb_cpu.v	/^reg  [7:0]               wr_data [5:0];$/;"	r
+wr_i	rtl/mesi_isc_basic_fifo.v	/^input                   wr_i;         \/\/ Write data to the fifo (store the data)$/;"	p
+wr_proc_addr	tb/mesi_isc_tb_cpu.v	/^reg  [ADDR_WIDTH-1:0]    wr_proc_addr;$/;"	r
+wr_proc_wait_for_en	tb/mesi_isc_tb_cpu.v	/^reg                      wr_proc_wait_for_en;$/;"	r
