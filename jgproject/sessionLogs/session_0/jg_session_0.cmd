@@ -11,3 +11,5 @@
 # arguments : '-label' 'session_0' '-console' 'luigi:46373' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
 include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
 include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl

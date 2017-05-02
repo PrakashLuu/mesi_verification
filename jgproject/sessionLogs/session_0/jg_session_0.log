@@ -133,3 +133,113 @@ Summary of errors detected:
 ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
 ERROR (ENL034): 3 errors detected in the design file(s).
 
+% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+%% #Tcl script which can be used with JasperGold
+%% #Use "source lab4.tcl" in the console to source this script
+%% 
+%% #Reading the files 
+%% analyze -verilog {mesi_isc.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
+[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
+%% analyze -sv {jgtest.sv};
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
+[WARN (VERI-1206)] jgtest.sv(27): overwriting previous definition of module v_mesi_isc
+[INFO (VERI-2142)] jgtest.sv(27): previous definition of module v_mesi_isc is here
+[WARN (VERI-1206)] jgtest.sv(59): overwriting previous definition of module Wrapper
+[INFO (VERI-2142)] jgtest.sv(59): previous definition of module Wrapper is here
+%% 
+%% #Elaborating the design
+%% elaborate -top {mesi_isc};
+INFO (ISW003): Top module name is "mesi_isc".
+[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
+[WARN (VERI-1063)] mesi_isc.v(164): instantiating unknown module mesi_isc_broad
+[WARN (VERI-1063)] mesi_isc.v(201): instantiating unknown module mesi_isc_breq_fifos
+[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
+[WARN (VERI-1330)] jgtest.sv(36): actual bit length 3 differs from formal bit length 1 for port mbus_cmd3_i
+[WARN (VERI-1330)] jgtest.sv(37): actual bit length 3 differs from formal bit length 1 for port mbus_cmd2_i
+[WARN (VERI-1330)] jgtest.sv(38): actual bit length 3 differs from formal bit length 1 for port mbus_cmd1_i
+[WARN (VERI-1330)] jgtest.sv(39): actual bit length 3 differs from formal bit length 1 for port mbus_cmd0_i
+[WARN (VERI-1330)] jgtest.sv(40): actual bit length 32 differs from formal bit length 1 for port mbus_addr3_i
+[WARN (VERI-1330)] jgtest.sv(41): actual bit length 32 differs from formal bit length 1 for port mbus_addr2_i
+[WARN (VERI-1330)] jgtest.sv(42): actual bit length 32 differs from formal bit length 1 for port mbus_addr1_i
+[WARN (VERI-1330)] jgtest.sv(43): actual bit length 32 differs from formal bit length 1 for port mbus_addr0_i
+[WARN (VERI-1330)] jgtest.sv(49): actual bit length 32 differs from formal bit length 1 for port cbus_addr_o
+[WARN (VERI-1330)] jgtest.sv(50): actual bit length 3 differs from formal bit length 1 for port cbus_cmd3_o
+[WARN (VERI-1330)] jgtest.sv(51): actual bit length 3 differs from formal bit length 1 for port cbus_cmd2_o
+[WARN (VERI-1330)] jgtest.sv(52): actual bit length 3 differs from formal bit length 1 for port cbus_cmd1_o
+[WARN (VERI-1330)] jgtest.sv(53): actual bit length 3 differs from formal bit length 1 for port cbus_cmd0_o
+[INFO] Beginning multiple driver analysis
+[INFO] Finished multiple driver analysis
+[INFO] Module Name mesi_isc
+ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
+WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
+ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
+WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
+WARNING (WNL009): Module "mesi_isc_broad" is not defined and is not black boxed.
+    Use "-bboxm mesi_isc_broad" if you want to black box this module/entity.
+WARNING (WNL009): Module "mesi_isc_breq_fifos" is not defined and is not black boxed.
+    Use "-bboxm mesi_isc_breq_fifos" if you want to black box this module/entity.
+Summary of errors detected:
+	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
+	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
+ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 2 errors detected in the design file(s).
+
+% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+%% #Tcl script which can be used with JasperGold
+%% #Use "source lab4.tcl" in the console to source this script
+%% 
+%% #Reading the files 
+%% analyze -verilog {mesi_isc.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
+[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
+[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
+%% analyze -sv {jgtest.sv};
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
+[WARN (VERI-1206)] jgtest.sv(31): overwriting previous definition of module v_mesi_isc
+[INFO (VERI-2142)] jgtest.sv(27): previous definition of module v_mesi_isc is here
+[WARN (VERI-1206)] jgtest.sv(63): overwriting previous definition of module Wrapper
+[INFO (VERI-2142)] jgtest.sv(59): previous definition of module Wrapper is here
+%% 
+%% #Elaborating the design
+%% elaborate -top {mesi_isc};
+INFO (ISW003): Top module name is "mesi_isc".
+[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
+[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
+[INFO (VERI-1108)] jgtest.sv(1): replacing existing cell v_mesi_isc
+[WARN (VERI-1330)] jgtest.sv(40): actual bit length 3 differs from formal bit length 1 for port mbus_cmd3_i
+[WARN (VERI-1330)] jgtest.sv(41): actual bit length 3 differs from formal bit length 1 for port mbus_cmd2_i
+[WARN (VERI-1330)] jgtest.sv(42): actual bit length 3 differs from formal bit length 1 for port mbus_cmd1_i
+[WARN (VERI-1330)] jgtest.sv(43): actual bit length 3 differs from formal bit length 1 for port mbus_cmd0_i
+[WARN (VERI-1330)] jgtest.sv(44): actual bit length 32 differs from formal bit length 1 for port mbus_addr3_i
+[WARN (VERI-1330)] jgtest.sv(45): actual bit length 32 differs from formal bit length 1 for port mbus_addr2_i
+[WARN (VERI-1330)] jgtest.sv(46): actual bit length 32 differs from formal bit length 1 for port mbus_addr1_i
+[WARN (VERI-1330)] jgtest.sv(47): actual bit length 32 differs from formal bit length 1 for port mbus_addr0_i
+[WARN (VERI-1330)] jgtest.sv(53): actual bit length 32 differs from formal bit length 1 for port cbus_addr_o
+[WARN (VERI-1330)] jgtest.sv(54): actual bit length 3 differs from formal bit length 1 for port cbus_cmd3_o
+[WARN (VERI-1330)] jgtest.sv(55): actual bit length 3 differs from formal bit length 1 for port cbus_cmd2_o
+[WARN (VERI-1330)] jgtest.sv(56): actual bit length 3 differs from formal bit length 1 for port cbus_cmd1_o
+[WARN (VERI-1330)] jgtest.sv(57): actual bit length 3 differs from formal bit length 1 for port cbus_cmd0_o
+[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
+[INFO] Beginning multiple driver analysis
+[INFO] Finished multiple driver analysis
+[INFO] Module Name mesi_isc
+ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
+WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
+ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
+WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
+Summary of errors detected:
+	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
+	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
+    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
+ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 2 errors detected in the design file(s).
+

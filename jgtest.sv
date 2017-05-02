@@ -1,29 +1,33 @@
 module v_mesi_isc(
     input clk,
     input rst,
-    input mbus_cmd3_i,
-    input mbus_cmd2_i,
-    input mbus_cmd1_i,
-    input mbus_cmd0_i,
-    input mbus_addr3_i, 
-    input mbus_addr2_i,
-    input mbus_addr1_i,
-    input mbus_addr0_i,
+    input [2:0] mbus_cmd3_i,
+    input [2:0] mbus_cmd2_i,
+    input [2:0] mbus_cmd1_i,
+    input [2:0] mbus_cmd0_i,
+    input [31:0] mbus_addr3_i, 
+    input [31:0] mbus_addr2_i,
+    input [31:0] mbus_addr1_i,
+    input [31:0] mbus_addr0_i,
     input cbus_ack3_i,
     input cbus_ack2_i,
     input cbus_ack1_i,
     input cbus_ack0_i,
      // Outputs of rtl
     input cbus_addr_o,
-    input cbus_cmd3_o,
-    input cbus_cmd2_o,
-    input cbus_cmd1_o,
-    input cbus_cmd0_o,
+    input [2:0] cbus_cmd3_o,
+    input [2:0] cbus_cmd2_o,
+    input [2:0] cbus_cmd1_o,
+    input [2:0] cbus_cmd0_o,
     input mbus_ack3_o,
     input mbus_ack2_o,
     input mbus_ack1_o,
     input mbus_ack0_o
 );
+
+    begin
+
+    end
 endmodule
 
 module Wrapper;
