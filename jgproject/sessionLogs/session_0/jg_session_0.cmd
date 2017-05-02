@@ -14,3 +14,6 @@ include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
 include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
 include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
 include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl

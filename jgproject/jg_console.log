@@ -22,3 +22,7 @@
 2017-05-02 17:05:48.349912 (79712) session_ INFO    Starting analysis session with session id 'session_0' ...
 2017-05-02 17:05:48.354471 (79712) session_ INFO    Analysis session with session id 'session_0' started (pid: 79735)
 2017-05-02 17:05:53.178108 (79712) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.76:60522)
+2017-05-02 17:30:40.683063 (79712) lic__man INFO    Unclaim everything for 'session_0*'.
+2017-05-02 17:30:40.841176 (79712) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2017-05-02 17:32:03.756438 (79712) main____ INFO    About to exit: requested from GUI
+2017-05-02 17:32:03.898159 (79712) main____ INFO    Exiting.
