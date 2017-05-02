@@ -14,7 +14,7 @@ module v_mesi_isc(
     input cbus_ack1_i,
     input cbus_ack0_i,
      // Outputs of rtl
-    input cbus_addr_o,
+    input [31:0] cbus_addr_o,
     input [2:0] cbus_cmd3_o,
     input [2:0] cbus_cmd2_o,
     input [2:0] cbus_cmd1_o,
