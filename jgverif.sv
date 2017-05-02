@@ -1,5 +1,5 @@
-
-/*parameter
+/*
+parameter
   CBUS_CMD_WIDTH           = 3,
   ADDR_WIDTH               = 32,
   BROAD_TYPE_WIDTH         = 2,
@@ -8,23 +8,24 @@
   BROAD_REQ_FIFO_SIZE_LOG2 = 2,
   MBUS_CMD_WIDTH           = 3,
   BREQ_FIFO_SIZE           = 2,
-  BREQ_FIFO_SIZE_LOG2      = 1;
+  BREQ_FIFO_SIZE_LOG2      = 1,
+  DATA_WIDTH	 	   = 32;
 */
 module v_mesi(
 input                       clk,          // System clock
 input                       rst,          // Active high system reset
-input       [MBUS_CMD_WIDTH-1:0] mbus_cmd_array [3:0], // Main bus3 command
-input       [ADDR_WIDTH-1:0]  mbus_addr_array [3:0],  // Main bus3 address
-input       [DATA_WIDTH-1:0]  mbus_data_rd,  // Main bus data read
-input       [DATA_WIDTH-1:0]  mbus_data_wr_array [3:0],  // Main bus data read
-input       [DATA_WIDTH-1:0]  mbus_data_wr3,  // Main bus data read
+input       [3-1:0] mbus_cmd_array [3:0], // Main bus3 command
+input       [32-1:0]  mbus_addr_array [3:0],  // Main bus3 address
+input       [32-1:0]  mbus_data_rd,  // Main bus data read
+input       [32-1:0]  mbus_data_wr_array [3:0],  // Main bus data read
+input       [32-1:0]  mbus_data_wr3,  // Main bus data read
 input                         cbus_ack3,  // Coherence bus3 acknowledge
-input        [ADDR_WIDTH-1:0] cbus_addr,  // Coherence bus address. All busses have
-input        [CBUS_CMD_WIDTH-1:0] cbus_cmd3, // Coherence bus3 command
+input        [32-1:0] cbus_addr,  // Coherence bus address. All busses have
+input        [3-1:0] cbus_cmd3, // Coherence bus3 command
 input        [3:0]            mbus_ack,  // Main bus3 acknowledge
 input        [3:0]            tb_ins_array [3:0],
 input        [3:0]            tb_ins_addr3,
-input        [3:0]            tb_ins_ack
+input        [3:0]            tb_ins_ack,
 input        [3:0]               cache_state0,
 input        [3:0]               cache_state1,
 input        [3:0]               cache_state2,
@@ -39,10 +40,10 @@ input        [3:0]               cache_state9
 
 
 
-    property coher();  //check to see if cache is coherent
+    /*property coher();  //check to see if cache is coherent
         @(posedge clk)
 
-    endproperty
+    endproperty*/
 
 endmodule
 
