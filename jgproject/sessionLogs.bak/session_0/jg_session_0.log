@@ -5,10 +5,10 @@
 # version   : 2015.09 FCS 64 bits
 # build date: 2015.09.29 22:07:32 PDT
 #----------------------------------------
-# started Tue May 02 12:42:04 CDT 2017
+# started Tue May 02 16:56:24 CDT 2017
 # hostname  : luigi
-# pid       : 47921
-# arguments : '-label' 'session_0' '-console' 'luigi:45220' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
+# pid       : 66228
+# arguments : '-label' 'session_0' '-console' 'luigi:34056' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -56,18 +56,52 @@ INFO: reading configuration file "/home/ecelrc/students/blidsky/.config/jasper/j
 [-- (VERI-1482)] Analyzing Verilog file mesi_isc_tb_cpu.v
 [INFO (VERI-1328)] mesi_isc_tb_cpu.v(46): analyzing included file mesi_isc_define.v
 [INFO (VERI-1328)] mesi_isc_tb_cpu.v(47): analyzing included file mesi_isc_tb_define.v
-%% analyze -sv {jgverif.sv};
+%% analyze -sv {jgtest.sv};
 [-- (VERI-1482)] Analyzing Verilog file /misc/linuxws/packages/cadence_2016/jasper_2015.09/lib/verilog/packages/std/std.sv into library std
-[-- (VERI-1482)] Analyzing Verilog file jgverif.sv
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
+[ERROR (VERI-1138)] jgtest.sv(59): unexpected EOF
+Summary of errors detected:
+	[ERROR (VERI-1138)] jgtest.sv(59): unexpected EOF
+ERROR at line 6 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 1 errors detected in the design file(s).
+
+% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+%% #Tcl script which can be used with JasperGold
+%% #Use "source lab4.tcl" in the console to source this script
+%% 
+%% #Reading the files 
+%% analyze -verilog {mesi_isc_tb_cpu.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_tb_cpu.v
+[INFO (VERI-1328)] mesi_isc_tb_cpu.v(46): analyzing included file mesi_isc_define.v
+[INFO (VERI-1328)] mesi_isc_tb_cpu.v(47): analyzing included file mesi_isc_tb_define.v
+[WARN (VERI-1206)] mesi_isc_tb_cpu.v(713): overwriting previous definition of module mesi_isc_tb_cpu
+[INFO (VERI-2142)] mesi_isc_tb_cpu.v(713): previous definition of module mesi_isc_tb_cpu is here
+%% analyze -sv {jgtest.sv};
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
+[ERROR (VERI-1138)] jgtest.sv(58): unexpected EOF
+Summary of errors detected:
+	[ERROR (VERI-1138)] jgtest.sv(58): unexpected EOF
+ERROR at line 6 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 1 errors detected in the design file(s).
+
+% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+%% #Tcl script which can be used with JasperGold
+%% #Use "source lab4.tcl" in the console to source this script
+%% 
+%% #Reading the files 
+%% analyze -verilog {mesi_isc_tb_cpu.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_tb_cpu.v
+[INFO (VERI-1328)] mesi_isc_tb_cpu.v(46): analyzing included file mesi_isc_define.v
+[INFO (VERI-1328)] mesi_isc_tb_cpu.v(47): analyzing included file mesi_isc_tb_define.v
+[WARN (VERI-1206)] mesi_isc_tb_cpu.v(713): overwriting previous definition of module mesi_isc_tb_cpu
+[INFO (VERI-2142)] mesi_isc_tb_cpu.v(713): previous definition of module mesi_isc_tb_cpu is here
+%% analyze -sv {jgtest.sv};
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
 %% 
 %% #Elaborating the design
 %% elaborate -top {mesi_isc_tb_cpu};
 INFO (ISW003): Top module name is "mesi_isc_tb_cpu".
-[ERROR (VERI-1128)] jgverif.sv(72): mbus_cmd_i is not declared
-[ERROR (VERI-1128)] jgverif.sv(78): cbus_ack_0 is not declared
-[ERROR (VERI-1010)] jgverif.sv(66): cannot find port cpu_id_i on this module
-[INFO (VERI-1310)] jgverif.sv(14): v_mesi is declared here
-[WARN (VERI-1927)] jgverif.sv(94): port mbus_data_wr3 remains unconnected for this instance
+[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
 [INFO (VERI-1018)] mesi_isc_tb_cpu.v(49): compiling module mesi_isc_tb_cpu
 [WARN (VERI-1060)] mesi_isc_tb_cpu.v(191): 'initial' construct ignored
 [WARN (VERI-1166)] mesi_isc_tb_cpu.v(288): case condition never applies
@@ -100,13 +134,11 @@ INFO (ISW003): Top module name is "mesi_isc_tb_cpu".
 [INFO (VERI-1073)] mesi_isc_tb_cpu.v(49): module mesi_isc_tb_cpu remains a blackbox, due to errors in its contents
 ERROR (ENL134): Unable to elaborate design as top module "mesi_isc_tb_cpu" is black boxed.
 Summary of errors detected:
-	[ERROR (VERI-1128)] jgverif.sv(72): mbus_cmd_i is not declared
-	[ERROR (VERI-1128)] jgverif.sv(78): cbus_ack_0 is not declared
-	[ERROR (VERI-1010)] jgverif.sv(66): cannot find port cpu_id_i on this module
+	[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
 	[ERROR (VERI-1279)] mesi_isc_tb_cpu.v(566): multiple event control statements not supported for synthesis
 	ERROR (ENL134): Unable to elaborate design as top module "mesi_isc_tb_cpu" is black boxed.
 ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 5 errors detected in the design file(s).
+ERROR (ENL034): 3 errors detected in the design file(s).
 
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.

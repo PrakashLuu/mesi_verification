@@ -6,7 +6,7 @@ analyze -verilog {mesi_isc_tb_cpu.v};
 analyze -sv {jgtest.sv};
 
 #Elaborating the design
-elaborate -top {mesi_isc_tb_cpu};
+elaborate -top {mesi_isc};
 
 #You will need to add commands below
 #Set the clock

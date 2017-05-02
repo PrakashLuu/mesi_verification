@@ -1,24 +1,24 @@
-2017-05-02 16:56:23.246204 (66161) main____ INFO    ----------------------------------------
-2017-05-02 16:56:23.246636 (66161) main____ INFO    JasperGold version info
-2017-05-02 16:56:23.246670 (66161) main____ INFO      tool      : JasperGold 2015.09
-2017-05-02 16:56:23.246694 (66161) main____ INFO      version   : 2015.09 FCS 64 bits
-2017-05-02 16:56:23.246710 (66161) main____ INFO      build date: 2015.09.29 22:07:28 PDT
-2017-05-02 16:56:23.246721 (66161) main____ INFO    ----------------------------------------
-2017-05-02 16:56:23.246731 (66161) main____ INFO    Runtime info:
-2017-05-02 16:56:23.246746 (66161) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
-2017-05-02 16:56:23.246763 (66161) main____ INFO      hostname  : luigi
-2017-05-02 16:56:23.246775 (66161) main____ INFO      pid       : 66161
-2017-05-02 16:56:23.246788 (66161) main____ INFO      arguments : '-style' 'windows'
-2017-05-02 16:56:23.246798 (66161) main____ INFO    ----------------------------------------
-2017-05-02 16:56:23.250077 (66161) lic__man INFO    Claim 'main' for <ui>.
-2017-05-02 16:56:23.254806 (66161) lic_core INFO    (1) checking out 'jasper_interactive' ...
-2017-05-02 16:56:23.276040 (66161) lic_core INFO    ... (1) checkout succeeded
-2017-05-02 16:56:23.276172 (66161) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-02 16:56:23.276215 (66161) lic_core INFO    (2) checking out 'jasper_fpv' ...
-2017-05-02 16:56:23.294470 (66161) lic_core INFO    ... (2) checkout succeeded
-2017-05-02 16:56:24.118220 (66161) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-02 16:56:24.249178 (66161) lic__man INFO    Unclaim 'fpv' for <ui>.
-2017-05-02 16:56:24.249242 (66161) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-02 16:56:24.286327 (66161) session_ INFO    Starting analysis session with session id 'session_0' ...
-2017-05-02 16:56:24.291267 (66161) session_ INFO    Analysis session with session id 'session_0' started (pid: 66228)
-2017-05-02 16:56:29.504527 (66161) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.76:51106)
+2017-05-02 17:05:47.375535 (79712) main____ INFO    ----------------------------------------
+2017-05-02 17:05:47.375804 (79712) main____ INFO    JasperGold version info
+2017-05-02 17:05:47.375828 (79712) main____ INFO      tool      : JasperGold 2015.09
+2017-05-02 17:05:47.375849 (79712) main____ INFO      version   : 2015.09 FCS 64 bits
+2017-05-02 17:05:47.375866 (79712) main____ INFO      build date: 2015.09.29 22:07:28 PDT
+2017-05-02 17:05:47.375877 (79712) main____ INFO    ----------------------------------------
+2017-05-02 17:05:47.375887 (79712) main____ INFO    Runtime info:
+2017-05-02 17:05:47.375901 (79712) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
+2017-05-02 17:05:47.375917 (79712) main____ INFO      hostname  : luigi
+2017-05-02 17:05:47.375928 (79712) main____ INFO      pid       : 79712
+2017-05-02 17:05:47.375940 (79712) main____ INFO      arguments : '-style' 'windows'
+2017-05-02 17:05:47.375950 (79712) main____ INFO    ----------------------------------------
+2017-05-02 17:05:47.378835 (79712) lic__man INFO    Claim 'main' for <ui>.
+2017-05-02 17:05:47.383497 (79712) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2017-05-02 17:05:47.404802 (79712) lic_core INFO    ... (1) checkout succeeded
+2017-05-02 17:05:47.404914 (79712) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-02 17:05:47.404959 (79712) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2017-05-02 17:05:47.423263 (79712) lic_core INFO    ... (2) checkout succeeded
+2017-05-02 17:05:48.193620 (79712) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-02 17:05:48.329140 (79712) lic__man INFO    Unclaim 'fpv' for <ui>.
+2017-05-02 17:05:48.329203 (79712) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-02 17:05:48.349912 (79712) session_ INFO    Starting analysis session with session id 'session_0' ...
+2017-05-02 17:05:48.354471 (79712) session_ INFO    Analysis session with session id 'session_0' started (pid: 79735)
+2017-05-02 17:05:53.178108 (79712) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.76:60522)
