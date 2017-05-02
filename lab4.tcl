@@ -3,7 +3,7 @@
 
 #Reading the files 
 analyze -verilog {mesi_isc_tb_cpu.v};
-analyze -sv {jgverif.sv};
+analyze -sv {jgtest.sv};
 
 #Elaborating the design
 elaborate -top {mesi_isc_tb_cpu};

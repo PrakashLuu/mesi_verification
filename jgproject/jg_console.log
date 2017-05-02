@@ -1,23 +1,24 @@
-2017-05-01 22:27:57.996658 (44931) main____ INFO    ----------------------------------------
-2017-05-01 22:27:57.997147 (44931) main____ INFO    JasperGold version info
-2017-05-01 22:27:57.997173 (44931) main____ INFO      tool      : JasperGold 2015.09
-2017-05-01 22:27:57.997196 (44931) main____ INFO      version   : 2015.09 FCS 64 bits
-2017-05-01 22:27:57.997212 (44931) main____ INFO      build date: 2015.09.29 22:07:28 PDT
-2017-05-01 22:27:57.997223 (44931) main____ INFO    ----------------------------------------
-2017-05-01 22:27:57.997233 (44931) main____ INFO    Runtime info:
-2017-05-01 22:27:57.997247 (44931) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
-2017-05-01 22:27:57.997263 (44931) main____ INFO      hostname  : luigi
-2017-05-01 22:27:57.997275 (44931) main____ INFO      pid       : 44931
-2017-05-01 22:27:57.997287 (44931) main____ INFO      arguments : '-style' 'windows'
-2017-05-01 22:27:57.997297 (44931) main____ INFO    ----------------------------------------
-2017-05-01 22:27:57.999395 (44931) lic__man INFO    Claim 'main' for <ui>.
-2017-05-01 22:27:58.004863 (44931) lic_core INFO    (1) checking out 'jasper_interactive' ...
-2017-05-01 22:27:58.030329 (44931) lic_core INFO    ... (1) checkout succeeded
-2017-05-01 22:27:58.030450 (44931) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-01 22:27:58.030502 (44931) lic_core INFO    (2) checking out 'jasper_fpv' ...
-2017-05-01 22:27:58.089900 (44931) lic_core INFO    ... (2) checkout succeeded
-2017-05-01 22:28:00.645638 (44931) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-01 22:28:00.909882 (44931) lic__man INFO    Unclaim 'fpv' for <ui>.
-2017-05-01 22:28:00.909944 (44931) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-01 22:28:00.961394 (44931) session_ INFO    Starting analysis session with session id 'session_0' ...
-2017-05-01 22:28:00.965716 (44931) session_ INFO    Analysis session with session id 'session_0' started (pid: 45433)
+2017-05-02 16:56:23.246204 (66161) main____ INFO    ----------------------------------------
+2017-05-02 16:56:23.246636 (66161) main____ INFO    JasperGold version info
+2017-05-02 16:56:23.246670 (66161) main____ INFO      tool      : JasperGold 2015.09
+2017-05-02 16:56:23.246694 (66161) main____ INFO      version   : 2015.09 FCS 64 bits
+2017-05-02 16:56:23.246710 (66161) main____ INFO      build date: 2015.09.29 22:07:28 PDT
+2017-05-02 16:56:23.246721 (66161) main____ INFO    ----------------------------------------
+2017-05-02 16:56:23.246731 (66161) main____ INFO    Runtime info:
+2017-05-02 16:56:23.246746 (66161) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
+2017-05-02 16:56:23.246763 (66161) main____ INFO      hostname  : luigi
+2017-05-02 16:56:23.246775 (66161) main____ INFO      pid       : 66161
+2017-05-02 16:56:23.246788 (66161) main____ INFO      arguments : '-style' 'windows'
+2017-05-02 16:56:23.246798 (66161) main____ INFO    ----------------------------------------
+2017-05-02 16:56:23.250077 (66161) lic__man INFO    Claim 'main' for <ui>.
+2017-05-02 16:56:23.254806 (66161) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2017-05-02 16:56:23.276040 (66161) lic_core INFO    ... (1) checkout succeeded
+2017-05-02 16:56:23.276172 (66161) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-02 16:56:23.276215 (66161) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2017-05-02 16:56:23.294470 (66161) lic_core INFO    ... (2) checkout succeeded
+2017-05-02 16:56:24.118220 (66161) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-02 16:56:24.249178 (66161) lic__man INFO    Unclaim 'fpv' for <ui>.
+2017-05-02 16:56:24.249242 (66161) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-02 16:56:24.286327 (66161) session_ INFO    Starting analysis session with session id 'session_0' ...
+2017-05-02 16:56:24.291267 (66161) session_ INFO    Analysis session with session id 'session_0' started (pid: 66228)
+2017-05-02 16:56:29.504527 (66161) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.76:51106)
