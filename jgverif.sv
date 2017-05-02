@@ -25,7 +25,16 @@ input        [3:0]            mbus_ack,  // Main bus3 acknowledge
 input        [3:0]            tb_ins_array [3:0],
 input        [3:0]            tb_ins_addr3,
 input        [3:0]            tb_ins_ack
-input        [3:0]            cache_state [9:0]
+input        [3:0]               cache_state0,
+input        [3:0]               cache_state1,
+input        [3:0]               cache_state2,
+input        [3:0]               cache_state3,
+input        [3:0]               cache_state4,
+input        [3:0]               cache_state5,
+input        [3:0]               cache_state6,
+input        [3:0]               cache_state7,
+input        [3:0]               cache_state8,
+input        [3:0]               cache_state9
 );
 
 
@@ -69,7 +78,17 @@ bind mesi_isc v_mesi mesi_props(
      //                          \ /
      .tb_ins_ack_o     (tb_ins_ack[3]),
 
-     .cache_state      (cache_state)
+     .cache_state0      (cache_state0),
+     .cache_state1      (cache_state1),
+     .cache_state2      (cache_state2),
+     .cache_state3      (cache_state3),
+     .cache_state4      (cache_state4),
+     .cache_state5      (cache_state5),
+     .cache_state6      (cache_state6),
+     .cache_state7      (cache_state7),
+     .cache_state8      (cache_state8),
+     .cache_state9      (cache_state9)
+
 
  );
 endmodule

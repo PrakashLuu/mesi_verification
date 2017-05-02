@@ -64,7 +64,16 @@ module mesi_isc_tb_cpu
      mbus_data_o,
      cbus_ack_o,
      tb_ins_ack_o,
-     cache_state
+     cache_state0,
+cache_state1,
+cache_state2,
+cache_state3,
+cache_state4,
+cache_state5,
+cache_state6,
+cache_state7,
+cache_state8,
+cache_state9
    );
    
 parameter
@@ -106,8 +115,17 @@ output                   cbus_ack_o;  // Coherence bus3 acknowledge
 // tb
 output                   tb_ins_ack_o; // Acknowledge for the
                                       //  CPU instruction
-output reg  [3:0][9:0]               cache_state;  // CPU cache MESI state
-   
+output [3:0]               cache_state0;
+output [3:0]               cache_state1;
+output [3:0]               cache_state2;
+output [3:0]               cache_state3;
+output [3:0]               cache_state4;
+output [3:0]               cache_state5;
+output [3:0]               cache_state6;
+output [3:0]               cache_state7;
+output [3:0]               cache_state8;
+output [3:0]               cache_state9;
+
 // Regs & wires
 //================================
 reg                          tb_ins_ack_o;   
@@ -122,17 +140,8 @@ wire [31:0]              cache6;
 wire [31:0]              cache7;
 wire [31:0]              cache8;
 wire [31:0]              cache9;
+reg                      cache_state [9:0];  // CPU cache MESI state
 
-wire [3:0]               cache_state0;
-wire [3:0]               cache_state1;
-wire [3:0]               cache_state2;
-wire [3:0]               cache_state3;
-wire [3:0]               cache_state4;
-wire [3:0]               cache_state5;
-wire [3:0]               cache_state6;
-wire [3:0]               cache_state7;
-wire [3:0]               cache_state8;
-wire [3:0]               cache_state9;
 reg  [MBUS_CMD_WIDTH-1:0] mbus_cmd_o; // Main bus3 command
 reg  [ADDR_WIDTH-1:0]    mbus_addr_o;  // Coherence bus3 address
 reg  [2:0]               m_state;
