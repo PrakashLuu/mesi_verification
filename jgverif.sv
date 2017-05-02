@@ -49,7 +49,7 @@ endmodule
 
 module Wrapper;
 
-bind mesi_isc v_mesi mesi_props(
+bind mesi_isc_tb_cpu v_mesi mesi_props(
      // Inputs
      
      // Inputs
