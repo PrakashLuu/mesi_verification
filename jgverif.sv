@@ -14,18 +14,18 @@ parameter
 module v_mesi(
 input                       clk,          // System clock
 input                       rst,          // Active high system reset
-input       [3-1:0] mbus_cmd_array [3:0], // Main bus3 command
-input       [32-1:0]  mbus_addr_array [3:0],  // Main bus3 address
+input       [3-1:0] mbus_cmd_array , // Main bus3 command
+input       [32-1:0]  mbus_addr_array ,  // Main bus3 address
 input       [32-1:0]  mbus_data_rd,  // Main bus data read
-input       [32-1:0]  mbus_data_wr_array [3:0],  // Main bus data read
+input       [32-1:0]  mbus_data_wr_array ,  // Main bus data read
 input       [32-1:0]  mbus_data_wr3,  // Main bus data read
 input                         cbus_ack3,  // Coherence bus3 acknowledge
 input        [32-1:0] cbus_addr,  // Coherence bus address. All busses have
 input        [3-1:0] cbus_cmd3, // Coherence bus3 command
-input        [3:0]            mbus_ack,  // Main bus3 acknowledge
-input        [3:0]            tb_ins_array [3:0],
+input                    mbus_ack,  // Main bus3 acknowledge
+input        [3:0]            tb_ins_array ,
 input        [3:0]            tb_ins_addr3,
-input        [3:0]            tb_ins_ack,
+input                    tb_ins_ack,
 input        [3:0]               cache_state0,
 input        [3:0]               cache_state1,
 input        [3:0]               cache_state2,
@@ -55,29 +55,29 @@ bind mesi_isc_tb_cpu v_mesi mesi_props(
      // Inputs
      .clk              (clk),
      .rst              (rst),
-     .cbus_addr_i      (cbus_addr),
+     .cbus_addr      (cbus_addr_i),
      //                        \ /
-     .cbus_cmd_i       (cbus_cmd3),
+     .cbus_cmd3       (cbus_cmd_i),
      //                             \ /
-     .mbus_data_i      (mbus_data_rd),
+     .mbus_data_rd      (mbus_data_i),
      //                        \ /
-     .mbus_ack_i       (mbus_ack[3]),
+     .mbus_ack       (mbus_ack_i),
      //                   \ /
-     .cpu_id_i         (2'd3),
+     .cpu_id_i         (2'b11),
      //                      \ /
-     .tb_ins_i         (tb_ins_array[3]),
+     .tb_ins_array         (tb_ins_i),
      //                           \ /
-     .tb_ins_addr_i    (tb_ins_addr3),
+     .tb_ins_addr3    (tb_ins_addr_i),
      // Outputs                \ /
-     .mbus_cmd_o       (mbus_cmd_array[3]),
+     .mbus_cmd_array       (mbus_cmd_i),
       //                        \ /
-     .mbus_addr_o      (mbus_addr_array[3]),
+     .mbus_addr_array      (mbus_addr_o),
       //                        \ /
-     .mbus_data_o      (mbus_data_wr_array[3]),
+     .mbus_data_wr_array      (mbus_data_o),
      //                        \ /
-     .cbus_ack_o       (cbus_ack3),
+     .cbus_ack3       (cbus_ack_0),
      //                          \ /
-     .tb_ins_ack_o     (tb_ins_ack[3]),
+     .tb_ins_ack     (tb_ins_ack_o),
 
      .cache_state0      (cache_state0),
      .cache_state1      (cache_state1),
