@@ -2,7 +2,7 @@
 #Use "source lab4.tcl" in the console to source this script
 
 #Reading the files 
-analyze -verilog {mesi_isc_tb_cpu.v};
+analyze -verilog {mesi_isc.v};
 analyze -sv {jgtest.sv};
 
 #Elaborating the design

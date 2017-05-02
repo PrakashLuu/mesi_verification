@@ -102,3 +102,34 @@ Summary of errors detected:
 ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
 ERROR (ENL034): 3 errors detected in the design file(s).
 
+% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+%% #Tcl script which can be used with JasperGold
+%% #Use "source lab4.tcl" in the console to source this script
+%% 
+%% #Reading the files 
+%% analyze -verilog {mesi_isc_tb_cpu.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_tb_cpu.v
+[INFO (VERI-1328)] mesi_isc_tb_cpu.v(46): analyzing included file mesi_isc_define.v
+[INFO (VERI-1328)] mesi_isc_tb_cpu.v(47): analyzing included file mesi_isc_tb_define.v
+[WARN (VERI-1206)] mesi_isc_tb_cpu.v(713): overwriting previous definition of module mesi_isc_tb_cpu
+[INFO (VERI-2142)] mesi_isc_tb_cpu.v(713): previous definition of module mesi_isc_tb_cpu is here
+%% analyze -sv {jgtest.sv};
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
+[WARN (VERI-1206)] jgtest.sv(27): overwriting previous definition of module v_mesi_isc
+[INFO (VERI-2142)] jgtest.sv(27): previous definition of module v_mesi_isc is here
+[WARN (VERI-1206)] jgtest.sv(59): overwriting previous definition of module Wrapper
+[INFO (VERI-2142)] jgtest.sv(59): previous definition of module Wrapper is here
+%% 
+%% #Elaborating the design
+%% elaborate -top {mesi_isc};
+INFO (ISW003): Top module name is "mesi_isc".
+[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
+[ERROR (VERI-9029)] Module mesi_isc has not been analyzed yet
+[ERROR] Module mesi_isc could not be elaborated
+Summary of errors detected:
+	[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
+	[ERROR (VERI-9029)] Module mesi_isc has not been analyzed yet
+	[ERROR] Module mesi_isc could not be elaborated
+ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 3 errors detected in the design file(s).
+
