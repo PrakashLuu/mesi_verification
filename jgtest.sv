@@ -44,10 +44,23 @@ module v_mesi_isc(
 );
     property write_broad_response1;
         @(posedge clk)
-            ($rose(mbus_cmd3_i[1]) && $rose(mbus_cmd3_i[0]) ) |-> (cbus_cmd2_o == 3'b1 && cbus_cmd1_o == 3'b1 && cbus_cmd0_o == 3'b1); 
+            (mbus_cmd3_i == 3'd3 ) |-> ##[0:100] (cbus_cmd0_o == 3'd1);
     endproperty
 
-    assertcore3_broad_snoop: assert property(write_broad_response1);
+    property write_broad_response2;
+        @(posedge clk)
+            (mbus_cmd3_i == 3'd3 ) |-> ##[0:100] (cbus_cmd1_o == 3'd1);
+    endproperty
+    
+    property write_broad_response3;
+        @(posedge clk)
+            (mbus_cmd3_i == 3'd3 ) |-> ##[0:100] (cbus_cmd2_o == 3'd1);
+    endproperty
+
+    assertcore1_broad_snoop: assert property(write_broad_response1);
+    assertcore2_broad_snoop: assert property(write_broad_response2);
+    assertcore3_broad_snoop: assert property(write_broad_response3);
+
 
 endmodule
 

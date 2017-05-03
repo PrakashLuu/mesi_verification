@@ -5,10 +5,10 @@
 # version   : 2015.09 FCS 64 bits
 # build date: 2015.09.29 22:07:32 PDT
 #----------------------------------------
-# started Tue May 02 17:05:48 CDT 2017
+# started Tue May 02 22:14:07 CDT 2017
 # hostname  : luigi
-# pid       : 79735
-# arguments : '-label' 'session_0' '-console' 'luigi:46373' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
+# pid       : 28409
+# arguments : '-label' 'session_0' '-console' 'luigi:38230' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -52,85 +52,21 @@ INFO: reading configuration file "/home/ecelrc/students/blidsky/.config/jasper/j
 %% #Use "source lab4.tcl" in the console to source this script
 %% 
 %% #Reading the files 
-%% analyze -verilog {mesi_isc_tb_cpu.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc_tb_cpu.v
-[INFO (VERI-1328)] mesi_isc_tb_cpu.v(46): analyzing included file mesi_isc_define.v
-[INFO (VERI-1328)] mesi_isc_tb_cpu.v(47): analyzing included file mesi_isc_tb_define.v
+%% analyze -verilog {mesi_isc.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
+[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
 %% analyze -sv {jgtest.sv};
 [-- (VERI-1482)] Analyzing Verilog file /misc/linuxws/packages/cadence_2016/jasper_2015.09/lib/verilog/packages/std/std.sv into library std
 [-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-%% 
-%% #Elaborating the design
-%% elaborate -top {mesi_isc_tb_cpu};
-INFO (ISW003): Top module name is "mesi_isc_tb_cpu".
-[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
-[INFO (VERI-1018)] mesi_isc_tb_cpu.v(49): compiling module mesi_isc_tb_cpu
-[WARN (VERI-1060)] mesi_isc_tb_cpu.v(191): 'initial' construct ignored
-[WARN (VERI-1166)] mesi_isc_tb_cpu.v(288): case condition never applies
-[WARN (VERI-1166)] mesi_isc_tb_cpu.v(300): case condition never applies
-[WARN (VERI-1166)] mesi_isc_tb_cpu.v(312): case condition never applies
-[WARN (VERI-1209)] mesi_isc_tb_cpu.v(349): expression size 4 truncated to fit in target size 1
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(349): 32 bit index expression m_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(354): 32 bit index expression m_addr truncated to 3 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(354): 32 bit index expression m_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(355): 32 bit index expression m_addr truncated to 3 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(355): 32 bit index expression m_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(356): 32 bit index expression m_addr truncated to 3 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(356): 32 bit index expression m_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(357): 32 bit index expression m_addr truncated to 3 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(357): 32 bit index expression m_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(359): 32 bit index expression m_addr truncated to 3 bits
-[WARN (VERI-1209)] mesi_isc_tb_cpu.v(359): expression size 32 truncated to fit in target size 8
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(359): 32 bit index expression m_addr truncated to 3 bits
-[WARN (VERI-1142)] mesi_isc_tb_cpu.v(517): system task display ignored for synthesis
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(524): 32 bit index expression c_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(530): 32 bit index expression c_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(531): 32 bit index expression c_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(536): 32 bit index expression c_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(538): 32 bit index expression c_addr truncated to 4 bits
-[WARN (VERI-1209)] mesi_isc_tb_cpu.v(542): expression size 4 truncated to fit in target size 1
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(542): 32 bit index expression c_addr truncated to 4 bits
-[WARN (VERI-9005)] mesi_isc_tb_cpu.v(558): 32 bit index expression c_addr truncated to 4 bits
-[WARN (VERI-1142)] mesi_isc_tb_cpu.v(565): system task display ignored for synthesis
-[ERROR (VERI-1279)] mesi_isc_tb_cpu.v(566): multiple event control statements not supported for synthesis
-[INFO (VERI-1073)] mesi_isc_tb_cpu.v(49): module mesi_isc_tb_cpu remains a blackbox, due to errors in its contents
-ERROR (ENL134): Unable to elaborate design as top module "mesi_isc_tb_cpu" is black boxed.
+[ERROR (VERI-1137)] jgtest.sv(47): syntax error near #
+[WARN (VERI-1763)] jgtest.sv(50): the sva directive is not sensitive to clock. The directive will be sampled on the posedge of the fastest clock.
+[ERROR (VERI-1072)] jgtest.sv(52): module v_mesi_isc ignored due to previous errors
+[ERROR (VERI-1072)] jgtest.sv(84): module Wrapper ignored due to previous errors
 Summary of errors detected:
-	[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
-	[ERROR (VERI-1279)] mesi_isc_tb_cpu.v(566): multiple event control statements not supported for synthesis
-	ERROR (ENL134): Unable to elaborate design as top module "mesi_isc_tb_cpu" is black boxed.
-ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 3 errors detected in the design file(s).
-
-% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
-%% #Tcl script which can be used with JasperGold
-%% #Use "source lab4.tcl" in the console to source this script
-%% 
-%% #Reading the files 
-%% analyze -verilog {mesi_isc_tb_cpu.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc_tb_cpu.v
-[INFO (VERI-1328)] mesi_isc_tb_cpu.v(46): analyzing included file mesi_isc_define.v
-[INFO (VERI-1328)] mesi_isc_tb_cpu.v(47): analyzing included file mesi_isc_tb_define.v
-[WARN (VERI-1206)] mesi_isc_tb_cpu.v(713): overwriting previous definition of module mesi_isc_tb_cpu
-[INFO (VERI-2142)] mesi_isc_tb_cpu.v(713): previous definition of module mesi_isc_tb_cpu is here
-%% analyze -sv {jgtest.sv};
-[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[WARN (VERI-1206)] jgtest.sv(27): overwriting previous definition of module v_mesi_isc
-[INFO (VERI-2142)] jgtest.sv(27): previous definition of module v_mesi_isc is here
-[WARN (VERI-1206)] jgtest.sv(59): overwriting previous definition of module Wrapper
-[INFO (VERI-2142)] jgtest.sv(59): previous definition of module Wrapper is here
-%% 
-%% #Elaborating the design
-%% elaborate -top {mesi_isc};
-INFO (ISW003): Top module name is "mesi_isc".
-[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
-[ERROR (VERI-9029)] Module mesi_isc has not been analyzed yet
-[ERROR] Module mesi_isc could not be elaborated
-Summary of errors detected:
-	[ERROR (VERI-9008)] jgtest.sv(58): cannot find bind target mesi_isc or any instance of it
-	[ERROR (VERI-9029)] Module mesi_isc has not been analyzed yet
-	[ERROR] Module mesi_isc could not be elaborated
-ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+	[ERROR (VERI-1137)] jgtest.sv(47): syntax error near #
+	[ERROR (VERI-1072)] jgtest.sv(52): module v_mesi_isc ignored due to previous errors
+	[ERROR (VERI-1072)] jgtest.sv(84): module Wrapper ignored due to previous errors
+ERROR at line 6 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
 ERROR (ENL034): 3 errors detected in the design file(s).
 
 % include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
@@ -141,53 +77,20 @@ ERROR (ENL034): 3 errors detected in the design file(s).
 %% analyze -verilog {mesi_isc.v};
 [-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
 [INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
+[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
 %% analyze -sv {jgtest.sv};
 [-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[WARN (VERI-1206)] jgtest.sv(27): overwriting previous definition of module v_mesi_isc
-[INFO (VERI-2142)] jgtest.sv(27): previous definition of module v_mesi_isc is here
-[WARN (VERI-1206)] jgtest.sv(59): overwriting previous definition of module Wrapper
-[INFO (VERI-2142)] jgtest.sv(59): previous definition of module Wrapper is here
-%% 
-%% #Elaborating the design
-%% elaborate -top {mesi_isc};
-INFO (ISW003): Top module name is "mesi_isc".
-[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
-[WARN (VERI-1063)] mesi_isc.v(164): instantiating unknown module mesi_isc_broad
-[WARN (VERI-1063)] mesi_isc.v(201): instantiating unknown module mesi_isc_breq_fifos
-[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
-[WARN (VERI-1330)] jgtest.sv(36): actual bit length 3 differs from formal bit length 1 for port mbus_cmd3_i
-[WARN (VERI-1330)] jgtest.sv(37): actual bit length 3 differs from formal bit length 1 for port mbus_cmd2_i
-[WARN (VERI-1330)] jgtest.sv(38): actual bit length 3 differs from formal bit length 1 for port mbus_cmd1_i
-[WARN (VERI-1330)] jgtest.sv(39): actual bit length 3 differs from formal bit length 1 for port mbus_cmd0_i
-[WARN (VERI-1330)] jgtest.sv(40): actual bit length 32 differs from formal bit length 1 for port mbus_addr3_i
-[WARN (VERI-1330)] jgtest.sv(41): actual bit length 32 differs from formal bit length 1 for port mbus_addr2_i
-[WARN (VERI-1330)] jgtest.sv(42): actual bit length 32 differs from formal bit length 1 for port mbus_addr1_i
-[WARN (VERI-1330)] jgtest.sv(43): actual bit length 32 differs from formal bit length 1 for port mbus_addr0_i
-[WARN (VERI-1330)] jgtest.sv(49): actual bit length 32 differs from formal bit length 1 for port cbus_addr_o
-[WARN (VERI-1330)] jgtest.sv(50): actual bit length 3 differs from formal bit length 1 for port cbus_cmd3_o
-[WARN (VERI-1330)] jgtest.sv(51): actual bit length 3 differs from formal bit length 1 for port cbus_cmd2_o
-[WARN (VERI-1330)] jgtest.sv(52): actual bit length 3 differs from formal bit length 1 for port cbus_cmd1_o
-[WARN (VERI-1330)] jgtest.sv(53): actual bit length 3 differs from formal bit length 1 for port cbus_cmd0_o
-[INFO] Beginning multiple driver analysis
-[INFO] Finished multiple driver analysis
-[INFO] Module Name mesi_isc
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-WARNING (WNL009): Module "mesi_isc_broad" is not defined and is not black boxed.
-    Use "-bboxm mesi_isc_broad" if you want to black box this module/entity.
-WARNING (WNL009): Module "mesi_isc_breq_fifos" is not defined and is not black boxed.
-    Use "-bboxm mesi_isc_breq_fifos" if you want to black box this module/entity.
+[ERROR (VERI-1137)] jgtest.sv(47): syntax error near #
+[WARN (VERI-1763)] jgtest.sv(50): the sva directive is not sensitive to clock. The directive will be sampled on the posedge of the fastest clock.
+[ERROR (VERI-1072)] jgtest.sv(52): module v_mesi_isc ignored due to previous errors
+[ERROR (VERI-1072)] jgtest.sv(84): module Wrapper ignored due to previous errors
 Summary of errors detected:
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 2 errors detected in the design file(s).
+	[ERROR (VERI-1137)] jgtest.sv(47): syntax error near #
+	[ERROR (VERI-1072)] jgtest.sv(52): module v_mesi_isc ignored due to previous errors
+	[ERROR (VERI-1072)] jgtest.sv(84): module Wrapper ignored due to previous errors
+ERROR at line 6 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 3 errors detected in the design file(s).
 
 % include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
 %% #Tcl script which can be used with JasperGold
@@ -201,47 +104,16 @@ ERROR (ENL034): 2 errors detected in the design file(s).
 [INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
 %% analyze -sv {jgtest.sv};
 [-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[WARN (VERI-1206)] jgtest.sv(31): overwriting previous definition of module v_mesi_isc
-[INFO (VERI-2142)] jgtest.sv(27): previous definition of module v_mesi_isc is here
-[WARN (VERI-1206)] jgtest.sv(63): overwriting previous definition of module Wrapper
-[INFO (VERI-2142)] jgtest.sv(59): previous definition of module Wrapper is here
-%% 
-%% #Elaborating the design
-%% elaborate -top {mesi_isc};
-INFO (ISW003): Top module name is "mesi_isc".
-[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
-[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
-[INFO (VERI-1108)] jgtest.sv(1): replacing existing cell v_mesi_isc
-[WARN (VERI-1330)] jgtest.sv(40): actual bit length 3 differs from formal bit length 1 for port mbus_cmd3_i
-[WARN (VERI-1330)] jgtest.sv(41): actual bit length 3 differs from formal bit length 1 for port mbus_cmd2_i
-[WARN (VERI-1330)] jgtest.sv(42): actual bit length 3 differs from formal bit length 1 for port mbus_cmd1_i
-[WARN (VERI-1330)] jgtest.sv(43): actual bit length 3 differs from formal bit length 1 for port mbus_cmd0_i
-[WARN (VERI-1330)] jgtest.sv(44): actual bit length 32 differs from formal bit length 1 for port mbus_addr3_i
-[WARN (VERI-1330)] jgtest.sv(45): actual bit length 32 differs from formal bit length 1 for port mbus_addr2_i
-[WARN (VERI-1330)] jgtest.sv(46): actual bit length 32 differs from formal bit length 1 for port mbus_addr1_i
-[WARN (VERI-1330)] jgtest.sv(47): actual bit length 32 differs from formal bit length 1 for port mbus_addr0_i
-[WARN (VERI-1330)] jgtest.sv(53): actual bit length 32 differs from formal bit length 1 for port cbus_addr_o
-[WARN (VERI-1330)] jgtest.sv(54): actual bit length 3 differs from formal bit length 1 for port cbus_cmd3_o
-[WARN (VERI-1330)] jgtest.sv(55): actual bit length 3 differs from formal bit length 1 for port cbus_cmd2_o
-[WARN (VERI-1330)] jgtest.sv(56): actual bit length 3 differs from formal bit length 1 for port cbus_cmd1_o
-[WARN (VERI-1330)] jgtest.sv(57): actual bit length 3 differs from formal bit length 1 for port cbus_cmd0_o
-[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
-[INFO] Beginning multiple driver analysis
-[INFO] Finished multiple driver analysis
-[INFO] Module Name mesi_isc
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
+[ERROR (VERI-1137)] jgtest.sv(47): syntax error near ]
+[WARN (VERI-1763)] jgtest.sv(50): the sva directive is not sensitive to clock. The directive will be sampled on the posedge of the fastest clock.
+[ERROR (VERI-1072)] jgtest.sv(52): module v_mesi_isc ignored due to previous errors
+[ERROR (VERI-1072)] jgtest.sv(84): module Wrapper ignored due to previous errors
 Summary of errors detected:
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 2 errors detected in the design file(s).
+	[ERROR (VERI-1137)] jgtest.sv(47): syntax error near ]
+	[ERROR (VERI-1072)] jgtest.sv(52): module v_mesi_isc ignored due to previous errors
+	[ERROR (VERI-1072)] jgtest.sv(84): module Wrapper ignored due to previous errors
+ERROR at line 6 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
+ERROR (ENL034): 3 errors detected in the design file(s).
 
 % include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
 %% #Tcl script which can be used with JasperGold
@@ -255,169 +127,12 @@ ERROR (ENL034): 2 errors detected in the design file(s).
 [INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
 %% analyze -sv {jgtest.sv};
 [-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[WARN (VERI-1206)] jgtest.sv(31): overwriting previous definition of module v_mesi_isc
-[INFO (VERI-2142)] jgtest.sv(31): previous definition of module v_mesi_isc is here
-[WARN (VERI-1206)] jgtest.sv(63): overwriting previous definition of module Wrapper
-[INFO (VERI-2142)] jgtest.sv(63): previous definition of module Wrapper is here
-%% 
-%% #Elaborating the design
-%% elaborate -top {mesi_isc};
-INFO (ISW003): Top module name is "mesi_isc".
-[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
-[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
-[INFO (VERI-1108)] jgtest.sv(1): replacing existing cell v_mesi_isc
-[WARN (VERI-1330)] jgtest.sv(53): actual bit length 32 differs from formal bit length 1 for port cbus_addr_o
-[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
-[INFO] Beginning multiple driver analysis
-[INFO] Finished multiple driver analysis
-[INFO] Module Name mesi_isc
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-Summary of errors detected:
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 2 errors detected in the design file(s).
-
-% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
-%% #Tcl script which can be used with JasperGold
-%% #Use "source lab4.tcl" in the console to source this script
-%% 
-%% #Reading the files 
-%% analyze -verilog {mesi_isc.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
-[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
-[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
-[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
-%% analyze -sv {jgtest.sv};
-[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[WARN (VERI-1206)] jgtest.sv(31): overwriting previous definition of module v_mesi_isc
-[INFO (VERI-2142)] jgtest.sv(31): previous definition of module v_mesi_isc is here
-[WARN (VERI-1206)] jgtest.sv(63): overwriting previous definition of module Wrapper
-[INFO (VERI-2142)] jgtest.sv(63): previous definition of module Wrapper is here
-%% 
-%% #Elaborating the design
-%% elaborate -top {mesi_isc};
-INFO (ISW003): Top module name is "mesi_isc".
-[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
-[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
-[INFO (VERI-1108)] jgtest.sv(1): replacing existing cell v_mesi_isc
-[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
-[INFO] Beginning multiple driver analysis
-[INFO] Finished multiple driver analysis
-[INFO] Module Name mesi_isc
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-Summary of errors detected:
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad" if you want to black box this module/entity.
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos" if you want to black box this module/entity.
-ERROR at line 9 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 2 errors detected in the design file(s).
-
-% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
-%% #Tcl script which can be used with JasperGold
-%% #Use "source lab4.tcl" in the console to source this script
-%% 
-%% #Reading the files 
-%% analyze -verilog {mesi_isc.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
-[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
-[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
-[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
-%% analyze -sv {jgtest.sv};
-[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[WARN (VERI-1206)] jgtest.sv(31): overwriting previous definition of module v_mesi_isc
-[INFO (VERI-2142)] jgtest.sv(31): previous definition of module v_mesi_isc is here
-[WARN (VERI-1206)] jgtest.sv(63): overwriting previous definition of module Wrapper
-[INFO (VERI-2142)] jgtest.sv(63): previous definition of module Wrapper is here
 %% analyze -verilog {mesi_isc_broad.v};
 [-- (VERI-1482)] Analyzing Verilog file mesi_isc_broad.v
 [INFO (VERI-1328)] mesi_isc_broad.v(46): analyzing included file mesi_isc_define.v
 %% analyze -verilog {mesi_isc_breq_fifos.v};
 [-- (VERI-1482)] Analyzing Verilog file mesi_isc_breq_fifos.v
 [INFO (VERI-1328)] mesi_isc_breq_fifos.v(66): analyzing included file mesi_isc_define.v
-%% 
-%% #Elaborating the design
-%% elaborate -top {mesi_isc};
-INFO (ISW003): Top module name is "mesi_isc".
-[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
-[INFO (VERI-1018)] mesi_isc_broad.v(48): compiling module mesi_isc_broad
-[WARN (VERI-1063)] mesi_isc_broad.v(136): instantiating unknown module mesi_isc_broad_cntl
-[WARN (VERI-1063)] mesi_isc_broad.v(167): instantiating unknown module mesi_isc_basic_fifo
-[WARN (VDB-1002)] mesi_isc_broad.v(100): net broad_snoop_addr[31] does not have a driver
-[INFO (VERI-1018)] mesi_isc_breq_fifos.v(68): compiling module mesi_isc_breq_fifos:(BROAD_ID_WIDTH=5)
-[WARN (VERI-1063)] mesi_isc_breq_fifos.v(166): instantiating unknown module mesi_isc_breq_fifos_cntl
-[WARN (VERI-1063)] mesi_isc_breq_fifos.v(223): instantiating unknown module mesi_isc_basic_fifo
-[WARN (VDB-1002)] mesi_isc_breq_fifos.v(134): net broad_cpu_id_array[7] does not have a driver
-[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
-[INFO (VERI-1108)] jgtest.sv(1): replacing existing cell v_mesi_isc
-[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
-[INFO] Beginning multiple driver analysis
-[INFO] Finished multiple driver analysis
-[INFO] Module Name mesi_isc
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad_cntl" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad_cntl" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_basic_fifo" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_basic_fifo" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos_cntl" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos_cntl" if you want to black box this module/entity.
-WARNING (WNL059): If you are analyzing with "-mfcu" or "-sfcu" and "-L", try using "elaborate -L libname", "set_analyze_libunboundsearch" or "analyze +libunboundsearch"
-WARNING (WNL009): Module "mesi_isc_broad_cntl" is not defined and is not black boxed.
-    Use "-bboxm mesi_isc_broad_cntl" if you want to black box this module/entity.
-WARNING (WNL009): Module "mesi_isc_basic_fifo" is not defined and is not black boxed.
-    Use "-bboxm mesi_isc_basic_fifo" if you want to black box this module/entity.
-WARNING (WNL009): Module "mesi_isc_breq_fifos_cntl" is not defined and is not black boxed.
-    Use "-bboxm mesi_isc_breq_fifos_cntl" if you want to black box this module/entity.
-Summary of errors detected:
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_broad_cntl" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_broad_cntl" if you want to black box this module/entity.
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_basic_fifo" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_basic_fifo" if you want to black box this module/entity.
-	ERROR (ENL058): Unable to elaborate module/entity "mesi_isc_breq_fifos_cntl" because this module/entity is missing or it contains errors.
-    Re-analyze it or use "-bbox_m mesi_isc_breq_fifos_cntl" if you want to black box this module/entity.
-ERROR at line 11 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 3 errors detected in the design file(s).
-
-% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
-%% #Tcl script which can be used with JasperGold
-%% #Use "source lab4.tcl" in the console to source this script
-%% 
-%% #Reading the files 
-%% analyze -verilog {mesi_isc.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
-[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
-[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
-[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
-%% analyze -sv {jgtest.sv};
-[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[WARN (VERI-1206)] jgtest.sv(31): overwriting previous definition of module v_mesi_isc
-[INFO (VERI-2142)] jgtest.sv(31): previous definition of module v_mesi_isc is here
-[WARN (VERI-1206)] jgtest.sv(63): overwriting previous definition of module Wrapper
-[INFO (VERI-2142)] jgtest.sv(63): previous definition of module Wrapper is here
-%% analyze -verilog {mesi_isc_broad.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc_broad.v
-[INFO (VERI-1328)] mesi_isc_broad.v(46): analyzing included file mesi_isc_define.v
-[WARN (VERI-1206)] mesi_isc_broad.v(169): overwriting previous definition of module mesi_isc_broad
-[INFO (VERI-2142)] mesi_isc_broad.v(169): previous definition of module mesi_isc_broad is here
-%% analyze -verilog {mesi_isc_breq_fifos.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc_breq_fifos.v
-[INFO (VERI-1328)] mesi_isc_breq_fifos.v(66): analyzing included file mesi_isc_define.v
-[WARN (VERI-1206)] mesi_isc_breq_fifos.v(396): overwriting previous definition of module mesi_isc_breq_fifos
-[INFO (VERI-2142)] mesi_isc_breq_fifos.v(396): previous definition of module mesi_isc_breq_fifos is here
 %% analyze -verilog {mesi_isc_basic_fifo.v};
 [-- (VERI-1482)] Analyzing Verilog file mesi_isc_basic_fifo.v
 [INFO (VERI-1328)] mesi_isc_basic_fifo.v(47): analyzing included file mesi_isc_define.v
@@ -440,15 +155,11 @@ INFO (ISW003): Top module name is "mesi_isc".
 [WARN (VERI-1209)] mesi_isc_basic_fifo.v(123): expression size 32 truncated to fit in target size 2
 [WARN (VERI-1209)] mesi_isc_basic_fifo.v(155): expression size 32 truncated to fit in target size 2
 [WARN (VERI-1209)] mesi_isc_basic_fifo.v(158): expression size 32 truncated to fit in target size 2
-[INFO (VERI-1108)] mesi_isc_broad.v(48): replacing existing cell mesi_isc_broad
 [INFO (VERI-1018)] mesi_isc_breq_fifos.v(68): compiling module mesi_isc_breq_fifos:(BROAD_ID_WIDTH=5)
 [INFO (VERI-1018)] mesi_isc_breq_fifos_cntl.v(50): compiling module mesi_isc_breq_fifos_cntl:(BROAD_ID_WIDTH=5)
 [WARN (VERI-1209)] mesi_isc_breq_fifos_cntl.v(373): expression size 32 truncated to fit in target size 3
 [INFO (VERI-1018)] mesi_isc_basic_fifo.v(49): compiling module mesi_isc_basic_fifo:(DATA_WIDTH=41,FIFO_SIZE=2,FIFO_SIZE_LOG2=1)
-[INFO (VERI-1108)] mesi_isc_breq_fifos.v(68): replacing existing cell mesi_isc_breq_fifos:(BROAD_ID_WIDTH=5)
-[INFO (VERI-1018)] jgtest.sv(1): compiling module v_mesi_isc
-[INFO (VERI-1108)] jgtest.sv(1): replacing existing cell v_mesi_isc
-[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
+[INFO (VERI-1018)] jgtest.sv(19): compiling module v_mesi_isc
 [INFO] Beginning multiple driver analysis
 [INFO] Finished multiple driver analysis
 [INFO] Module Name mesi_isc
@@ -473,25 +184,495 @@ INFO (IPF031): Settings used for this proof:
     proofgrid_restarts            = 10
 background
 %% #
+INFO (IPF036): Starting proof on task: "<embedded>", 2 properties to prove with 0 already proven/unreachable
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis phase 2 of 4.
+INFO (IRS031): Running reset analysis phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 748 of 748 design flops, 0 of 0 design latches, 5 of 7 internal elements.
+Using multistage preprocessing
+Starting reduce
+Finished reduce in 0.004s
+Performing Proof Simplification...
+0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Hp: Proof Simplification Iteration 1	[0.00 s]
+0.Hp: Proof Simplification Iteration 2	[0.00 s]
+0.Hp: Proof Simplification Iteration 3	[0.00 s]
+Proof Simplification completed in 0.01 s
+About to start distributed ProofGrid in its own thread with a limit of 20 pending notifications.
+ProofGrid usable level: 2
+0.Ht: Proofgrid shell started at 30509@luigi(local) jg_28409_luigi_1
+0.Hp: Proofgrid shell started at 30508@luigi(local) jg_28409_luigi_1
+0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.N: Proofgrid shell started at 30511@luigi(local) jg_28409_luigi_1
+0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Ht: Trace Attempt  1	[0.00 s]
+0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.N: Starting proof for property "mesi_isc.mesi_bind.assertcore3_broad_snoop"	[0.00 s].
+0.Ht: A trace with 1 cycles was found. [0.00 s]
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore3_broad_snoop:precondition1" was covered in 1 cycles in 0.00 s.
+0.Ht: Trace Attempt  2	[0.00 s]
+0.Ht: A trace with 2 cycles was found. [0.00 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 2 cycles was found for the property "mesi_isc.mesi_bind.assertcore3_broad_snoop" in 0.01 s.
+0.Ht: All properties determined. [0.00 s]
+Initiating shutdown of proof (@ 0.00 s)
+0.Ht: Exited with Success (@ 0.00 s)
+0.Hp: Interrupted (multi)
+0.Hp: All properties determined. [0.01 s]
+0.B: Proofgrid shell started at 30514@luigi(local) jg_28409_luigi_1
+0.B: Stopping job (no undetermined properties)
+0.Hp: Exited with Success (@ 0.01 s)
+0.N: All properties determined. [0.00 s]
+0.B: Interrupted. [0.00 s]
+0.N: Exited with Success (@ 0.01 s)
+ProofGrid usable level: 0
+0.B: Exited with Success (@ 0.01 s)
+ProofGrid usable level: 0
+All pending notifications were processed.
+INFO (IPF059): Completed proof on task: <embedded>
 
 ==============================================================
 SUMMARY
 ==============================================================
-	Properties Considered : 0
-	      assertions      : 0
-	       - proven       : 0
-	       - marked_proven: 0
-	       - cex          : 0
-	       - ar_cex       : 0
-	       - undetermined : 0
-	       - unprocessed  : 0
-	       - error        : 0
-	      covers          : 0
-	       - unreachable  : 0
-	       - covered      : 0
-	       - ar_covered   : 0
-	       - undetermined : 0
-	       - unprocessed  : 0
-	       - error        : 0
+	Properties Considered : 2
+	      assertions      : 1
+	       - proven       : 0 (0%)
+	       - marked_proven: 0 (0%)
+	       - cex          : 1 (100%)
+	       - ar_cex       : 0 (0%)
+	       - undetermined : 0 (0%)
+	       - unprocessed  : 0 (0%)
+	       - error        : 0 (0%)
+	      covers          : 1
+	       - unreachable  : 0 (0%)
+	       - covered      : 1 (100%)
+	       - ar_covered   : 0 (0%)
+	       - undetermined : 0 (0%)
+	       - unprocessed  : 0 (0%)
+	       - error        : 0 (0%)
+[<embedded>] % visualize -violation -property <embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop -new_window
+INFO (IVS015): Setting Visualize task to "<embedded>".
+INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop".
+cex
+[<embedded>] % include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+%% #Tcl script which can be used with JasperGold
+%% #Use "source lab4.tcl" in the console to source this script
+%% 
+%% #Reading the files 
+%% analyze -verilog {mesi_isc.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
+[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
+[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
+%% analyze -sv {jgtest.sv};
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
+[WARN (VERI-1206)] jgtest.sv(52): overwriting previous definition of module v_mesi_isc
+[INFO (VERI-2142)] jgtest.sv(52): previous definition of module v_mesi_isc is here
+[WARN (VERI-1206)] jgtest.sv(84): overwriting previous definition of module Wrapper
+[INFO (VERI-2142)] jgtest.sv(84): previous definition of module Wrapper is here
+%% analyze -verilog {mesi_isc_broad.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_broad.v
+[INFO (VERI-1328)] mesi_isc_broad.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_broad.v(169): overwriting previous definition of module mesi_isc_broad
+[INFO (VERI-2142)] mesi_isc_broad.v(169): previous definition of module mesi_isc_broad is here
+%% analyze -verilog {mesi_isc_breq_fifos.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_breq_fifos.v
+[INFO (VERI-1328)] mesi_isc_breq_fifos.v(66): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_breq_fifos.v(396): overwriting previous definition of module mesi_isc_breq_fifos
+[INFO (VERI-2142)] mesi_isc_breq_fifos.v(396): previous definition of module mesi_isc_breq_fifos is here
+%% analyze -verilog {mesi_isc_basic_fifo.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_basic_fifo.v
+[INFO (VERI-1328)] mesi_isc_basic_fifo.v(47): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_basic_fifo.v(232): overwriting previous definition of module mesi_isc_basic_fifo
+[INFO (VERI-2142)] mesi_isc_basic_fifo.v(232): previous definition of module mesi_isc_basic_fifo is here
+%% analyze -verilog {mesi_isc_breq_fifos_cntl.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_breq_fifos_cntl.v
+[INFO (VERI-1328)] mesi_isc_breq_fifos_cntl.v(48): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_breq_fifos_cntl.v(375): overwriting previous definition of module mesi_isc_breq_fifos_cntl
+[INFO (VERI-2142)] mesi_isc_breq_fifos_cntl.v(375): previous definition of module mesi_isc_breq_fifos_cntl is here
+%% analyze -verilog {mesi_isc_broad_cntl.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_broad_cntl.v
+[INFO (VERI-1328)] mesi_isc_broad_cntl.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_broad_cntl.v(314): overwriting previous definition of module mesi_isc_broad_cntl
+[INFO (VERI-2142)] mesi_isc_broad_cntl.v(314): previous definition of module mesi_isc_broad_cntl is here
+%% analyze -verilog {mesi_isc_define.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_define.v
+%% 
+%% #Elaborating the design
+%% elaborate -top {mesi_isc};
+INFO (ISW003): Top module name is "mesi_isc".
+[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
+[INFO (VERI-1018)] mesi_isc_broad.v(48): compiling module mesi_isc_broad
+[INFO (VERI-1018)] mesi_isc_broad_cntl.v(48): compiling module mesi_isc_broad_cntl
+[INFO (VERI-1108)] mesi_isc_broad_cntl.v(48): replacing existing cell mesi_isc_broad_cntl
+[INFO (VERI-1018)] mesi_isc_basic_fifo.v(49): compiling module mesi_isc_basic_fifo:(DATA_WIDTH=41)
+[WARN (VERI-1209)] mesi_isc_basic_fifo.v(123): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] mesi_isc_basic_fifo.v(155): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] mesi_isc_basic_fifo.v(158): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1108)] mesi_isc_basic_fifo.v(49): replacing existing cell mesi_isc_basic_fifo:(DATA_WIDTH=41)
+[INFO (VERI-1108)] mesi_isc_broad.v(48): replacing existing cell mesi_isc_broad
+[INFO (VERI-1018)] mesi_isc_breq_fifos.v(68): compiling module mesi_isc_breq_fifos:(BROAD_ID_WIDTH=5)
+[INFO (VERI-1018)] mesi_isc_breq_fifos_cntl.v(50): compiling module mesi_isc_breq_fifos_cntl:(BROAD_ID_WIDTH=5)
+[WARN (VERI-1209)] mesi_isc_breq_fifos_cntl.v(373): expression size 32 truncated to fit in target size 3
+[INFO (VERI-1108)] mesi_isc_breq_fifos_cntl.v(50): replacing existing cell mesi_isc_breq_fifos_cntl:(BROAD_ID_WIDTH=5)
+[INFO (VERI-1018)] mesi_isc_basic_fifo.v(49): compiling module mesi_isc_basic_fifo:(DATA_WIDTH=41,FIFO_SIZE=2,FIFO_SIZE_LOG2=1)
+[INFO (VERI-1108)] mesi_isc_basic_fifo.v(49): replacing existing cell mesi_isc_basic_fifo:(DATA_WIDTH=41,FIFO_SIZE=2,FIFO_SIZE_LOG2=1)
+[INFO (VERI-1108)] mesi_isc_breq_fifos.v(68): replacing existing cell mesi_isc_breq_fifos:(BROAD_ID_WIDTH=5)
+[INFO (VERI-1018)] jgtest.sv(19): compiling module v_mesi_isc
+[INFO (VERI-1108)] jgtest.sv(19): replacing existing cell v_mesi_isc
+[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
+[INFO] Beginning multiple driver analysis
+[INFO] Finished multiple driver analysis
+[INFO] Module Name mesi_isc
+INFO (IVS027): Removed Visualize window "visualize:0".
+INFO (INL003): Clearing all state information (assumes, stopats, etc.).
+mesi_isc
+%% 
+%% #You will need to add commands below
+%% #Set the clock
+%% clock clk
+%% #Set Reset
+%% reset "rst"
+INFO (IPM031): Invalidating proof results of all properties in the Property Manager.
+INFO (IRS006): Current reset condition is "rst".
+%% 
+%% #Prove all
+%% prove -bg -all
+INFO (IPF031): Settings used for this proof:
+    time_limit                    = 86400s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = Hp Ht N B 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+background
+INFO (IPF036): Starting proof on task: "<embedded>", 2 properties to prove with 0 already proven/unreachable
+%% #
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis phase 2 of 4.
+INFO (IRS031): Running reset analysis phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 748 of 748 design flops, 0 of 0 design latches, 14 of 16 internal elements.
+Using multistage preprocessing
+Starting reduce
+Finished reduce in 0.002s
+Performing Proof Simplification...
+0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Hp: Proof Simplification Iteration 1	[0.00 s]
+0.Hp: Proof Simplification Iteration 2	[0.00 s]
+0.Hp: Proof Simplification Iteration 3	[0.00 s]
+Proof Simplification completed in 0.01 s
+About to start distributed ProofGrid in its own thread with a limit of 20 pending notifications.
+ProofGrid usable level: 2
+0.Hp: Proofgrid shell started at 31556@luigi(local) jg_28409_luigi_2
+0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Ht: Proofgrid shell started at 31557@luigi(local) jg_28409_luigi_2
+0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Ht: Trace Attempt  1	[0.00 s]
+0.Hp: Trace Attempt  1	[0.01 s]
+0.Ht: A trace with 1 cycles was found. [0.00 s]
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore3_broad_snoop:precondition1" was covered in 1 cycles in 0.00 s.
+0.Ht: Trace Attempt  2	[0.00 s]
+0.Ht: Trace Attempt  3	[0.00 s]
+0.Ht: Trace Attempt  4	[0.00 s]
+0.Ht: Trace Attempt  5	[0.01 s]
+0.N: Proofgrid shell started at 31558@luigi(local) jg_28409_luigi_2
+0.N: Cluster is entering permanent allocation mode.
+0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.N: Starting proof for property "mesi_isc.mesi_bind.assertcore3_broad_snoop"	[0.00 s].
+0.N: Trace Attempt  1	[0.00 s]
+0.B: Proofgrid shell started at 31562@luigi(local) jg_28409_luigi_2
+0.B: Cluster is entering permanent allocation mode.
+0.N: Trace Attempt  1	[0.00 s]
+0.N: Trace Attempt  2	[0.00 s]
+0.N: Trace Attempt  3	[0.00 s]
+0.B: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.B: Starting proof for property "mesi_isc.mesi_bind.assertcore3_broad_snoop"	[0.00 s].
+0.N: Trace Attempt  3	[0.00 s]
+0.B: Trace Attempt  1	[0.00 s]
+0.N: Trace Attempt  3	[0.01 s]
+0.B: Trace Attempt  2	[0.00 s]
+0.B: Trace Attempt  3	[0.00 s]
+0.Ht: Trace Attempt 11	[0.01 s]
+0.Ht: A trace with 11 cycles was found. [0.01 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore3_broad_snoop" in 0.02 s.
+0.Ht: All properties determined. [0.01 s]
+Initiating shutdown of proof (@ 0.02 s)
+0.Hp: Interrupted (multi)
+0.Hp: All properties determined. [0.02 s]
+0.Ht: Exited with Success (@ 0.02 s)
+0.N: All properties determined. [0.01 s]
+0.Hp: Exited with Success (@ 0.02 s)
+0.B: All properties determined. [0.01 s]
+0.B: Exited with Success (@ 0.02 s)
+0.N: Exited with Success (@ 0.02 s)
+ProofGrid usable level: 0
+ProofGrid usable level: 0
+All pending notifications were processed.
+INFO (IPF059): Completed proof on task: <embedded>
+
+==============================================================
+SUMMARY
+==============================================================
+	Properties Considered : 2
+	      assertions      : 1
+	       - proven       : 0 (0%)
+	       - marked_proven: 0 (0%)
+	       - cex          : 1 (100%)
+	       - ar_cex       : 0 (0%)
+	       - undetermined : 0 (0%)
+	       - unprocessed  : 0 (0%)
+	       - error        : 0 (0%)
+	      covers          : 1
+	       - unreachable  : 0 (0%)
+	       - covered      : 1 (100%)
+	       - ar_covered   : 0 (0%)
+	       - undetermined : 0 (0%)
+	       - unprocessed  : 0 (0%)
+	       - error        : 0 (0%)
+[<embedded>] % visualize -violation -property <embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop -new_window
+INFO (IVS015): Setting Visualize task to "<embedded>".
+INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop".
+cex
+[<embedded>] % include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+%% #Tcl script which can be used with JasperGold
+%% #Use "source lab4.tcl" in the console to source this script
+%% 
+%% #Reading the files 
+%% analyze -verilog {mesi_isc.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
+[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
+[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
+%% analyze -sv {jgtest.sv};
+[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
+[WARN (VERI-1206)] jgtest.sv(52): overwriting previous definition of module v_mesi_isc
+[INFO (VERI-2142)] jgtest.sv(52): previous definition of module v_mesi_isc is here
+[WARN (VERI-1206)] jgtest.sv(84): overwriting previous definition of module Wrapper
+[INFO (VERI-2142)] jgtest.sv(84): previous definition of module Wrapper is here
+%% analyze -verilog {mesi_isc_broad.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_broad.v
+[INFO (VERI-1328)] mesi_isc_broad.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_broad.v(169): overwriting previous definition of module mesi_isc_broad
+[INFO (VERI-2142)] mesi_isc_broad.v(169): previous definition of module mesi_isc_broad is here
+%% analyze -verilog {mesi_isc_breq_fifos.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_breq_fifos.v
+[INFO (VERI-1328)] mesi_isc_breq_fifos.v(66): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_breq_fifos.v(396): overwriting previous definition of module mesi_isc_breq_fifos
+[INFO (VERI-2142)] mesi_isc_breq_fifos.v(396): previous definition of module mesi_isc_breq_fifos is here
+%% analyze -verilog {mesi_isc_basic_fifo.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_basic_fifo.v
+[INFO (VERI-1328)] mesi_isc_basic_fifo.v(47): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_basic_fifo.v(232): overwriting previous definition of module mesi_isc_basic_fifo
+[INFO (VERI-2142)] mesi_isc_basic_fifo.v(232): previous definition of module mesi_isc_basic_fifo is here
+%% analyze -verilog {mesi_isc_breq_fifos_cntl.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_breq_fifos_cntl.v
+[INFO (VERI-1328)] mesi_isc_breq_fifos_cntl.v(48): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_breq_fifos_cntl.v(375): overwriting previous definition of module mesi_isc_breq_fifos_cntl
+[INFO (VERI-2142)] mesi_isc_breq_fifos_cntl.v(375): previous definition of module mesi_isc_breq_fifos_cntl is here
+%% analyze -verilog {mesi_isc_broad_cntl.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_broad_cntl.v
+[INFO (VERI-1328)] mesi_isc_broad_cntl.v(46): analyzing included file mesi_isc_define.v
+[WARN (VERI-1206)] mesi_isc_broad_cntl.v(314): overwriting previous definition of module mesi_isc_broad_cntl
+[INFO (VERI-2142)] mesi_isc_broad_cntl.v(314): previous definition of module mesi_isc_broad_cntl is here
+%% analyze -verilog {mesi_isc_define.v};
+[-- (VERI-1482)] Analyzing Verilog file mesi_isc_define.v
+%% 
+%% #Elaborating the design
+%% elaborate -top {mesi_isc};
+INFO (ISW003): Top module name is "mesi_isc".
+[INFO (VERI-1018)] mesi_isc.v(48): compiling module mesi_isc
+[INFO (VERI-1018)] mesi_isc_broad.v(48): compiling module mesi_isc_broad
+[INFO (VERI-1018)] mesi_isc_broad_cntl.v(48): compiling module mesi_isc_broad_cntl
+[INFO (VERI-1108)] mesi_isc_broad_cntl.v(48): replacing existing cell mesi_isc_broad_cntl
+[INFO (VERI-1018)] mesi_isc_basic_fifo.v(49): compiling module mesi_isc_basic_fifo:(DATA_WIDTH=41)
+[WARN (VERI-1209)] mesi_isc_basic_fifo.v(123): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] mesi_isc_basic_fifo.v(155): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] mesi_isc_basic_fifo.v(158): expression size 32 truncated to fit in target size 2
+[INFO (VERI-1108)] mesi_isc_basic_fifo.v(49): replacing existing cell mesi_isc_basic_fifo:(DATA_WIDTH=41)
+[INFO (VERI-1108)] mesi_isc_broad.v(48): replacing existing cell mesi_isc_broad
+[INFO (VERI-1018)] mesi_isc_breq_fifos.v(68): compiling module mesi_isc_breq_fifos:(BROAD_ID_WIDTH=5)
+[INFO (VERI-1018)] mesi_isc_breq_fifos_cntl.v(50): compiling module mesi_isc_breq_fifos_cntl:(BROAD_ID_WIDTH=5)
+[WARN (VERI-1209)] mesi_isc_breq_fifos_cntl.v(373): expression size 32 truncated to fit in target size 3
+[INFO (VERI-1108)] mesi_isc_breq_fifos_cntl.v(50): replacing existing cell mesi_isc_breq_fifos_cntl:(BROAD_ID_WIDTH=5)
+[INFO (VERI-1018)] mesi_isc_basic_fifo.v(49): compiling module mesi_isc_basic_fifo:(DATA_WIDTH=41,FIFO_SIZE=2,FIFO_SIZE_LOG2=1)
+[INFO (VERI-1108)] mesi_isc_basic_fifo.v(49): replacing existing cell mesi_isc_basic_fifo:(DATA_WIDTH=41,FIFO_SIZE=2,FIFO_SIZE_LOG2=1)
+[INFO (VERI-1108)] mesi_isc_breq_fifos.v(68): replacing existing cell mesi_isc_breq_fifos:(BROAD_ID_WIDTH=5)
+[INFO (VERI-1018)] jgtest.sv(19): compiling module v_mesi_isc
+[INFO (VERI-1108)] jgtest.sv(19): replacing existing cell v_mesi_isc
+[INFO (VERI-1108)] mesi_isc.v(48): replacing existing cell mesi_isc
+[INFO] Beginning multiple driver analysis
+[INFO] Finished multiple driver analysis
+[INFO] Module Name mesi_isc
+INFO (IVS027): Removed Visualize window "visualize:0".
+INFO (INL003): Clearing all state information (assumes, stopats, etc.).
+mesi_isc
+%% 
+%% #You will need to add commands below
+%% #Set the clock
+%% clock clk
+%% #Set Reset
+%% reset "rst"
+INFO (IPM031): Invalidating proof results of all properties in the Property Manager.
+INFO (IRS006): Current reset condition is "rst".
+%% 
+%% #Prove all
+%% prove -bg -all
+INFO (IPF031): Settings used for this proof:
+    time_limit                    = 86400s
+    per_property_time_limit       = 1s * 10 ^ scan
+    engine_mode                   = Hp Ht N B 
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+background
+INFO (IPF036): Starting proof on task: "<embedded>", 2 properties to prove with 0 already proven/unreachable
+%% #
+INFO (IRS029): Starting reset analysis: phase 1 of 4.
+INFO (IRS030): Running reset analysis phase 2 of 4.
+INFO (IRS031): Running reset analysis phase 3 of 4.
+INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
+INFO (IRS024): Reset iterations 0 to 4 analyzed.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 748 of 748 design flops, 0 of 0 design latches, 104 of 106 internal elements.
+Using multistage preprocessing
+Starting reduce
+Finished reduce in 0.008s
+Performing Proof Simplification...
+0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Hp: Proof Simplification Iteration 1	[0.00 s]
+0.Hp: Proof Simplification Iteration 2	[0.00 s]
+0.Hp: Proof Simplification Iteration 3	[0.00 s]
+Proof Simplification completed in 0.01 s
+About to start distributed ProofGrid in its own thread with a limit of 20 pending notifications.
+ProofGrid usable level: 2
+0.Hp: Proofgrid shell started at 33312@luigi(local) jg_28409_luigi_3
+0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Ht: Proofgrid shell started at 33313@luigi(local) jg_28409_luigi_3
+0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Hp: Trace Attempt  1	[0.01 s]
+0.N: Proofgrid shell started at 33314@luigi(local) jg_28409_luigi_3
+0.Hp: A trace with 1 cycles was found. [0.01 s]
+INFO (IPF047): 0.Hp: The cover property "mesi_isc.mesi_bind.assertcore3_broad_snoop:precondition1" was covered in 1 cycles in 0.01 s.
+0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.N: Starting proof for property "mesi_isc.mesi_bind.assertcore3_broad_snoop"	[0.00 s].
+0.Ht: Trace Attempt  1	[0.00 s]
+0.Ht: Trace Attempt  2	[0.00 s]
+0.Ht: Trace Attempt  3	[0.00 s]
+0.Ht: Trace Attempt  4	[0.00 s]
+0.Ht: Trace Attempt  5	[0.00 s]
+0.N: Trace Attempt  1	[0.00 s]
+0.B: Proofgrid shell started at 33319@luigi(local) jg_28409_luigi_3
+0.B: Cluster is entering permanent allocation mode.
+0.B: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.N: Trace Attempt  1	[0.00 s]
+0.N: Trace Attempt  2	[0.00 s]
+0.N: Trace Attempt  3	[0.00 s]
+0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.B: Starting proof for property "mesi_isc.mesi_bind.assertcore3_broad_snoop"	[0.00 s].
+0.N: Trace Attempt  3	[0.01 s]
+0.N: Trace Attempt  3	[0.01 s]
+0.B: Trace Attempt  1	[0.00 s]
+0.B: Trace Attempt  2	[0.00 s]
+0.B: Trace Attempt  3	[0.00 s]
+0.B: Trace Attempt  4	[0.01 s]
+0.N: Trace Attempt  4	[0.01 s]
+0.N: Trace Attempt  3	[0.01 s]
+0.B: Trace Attempt  5	[0.01 s]
+0.N: Trace Attempt  5	[0.02 s]
+0.N: Trace Attempt  3	[0.02 s]
+0.N: Trace Attempt  3	[0.03 s]
+0.N: Trace Attempt  3	[0.03 s]
+0.N: Trace Attempt  3	[0.04 s]
+0.N: Trace Attempt  3	[0.06 s]
+0.N: Trace Attempt  3	[0.06 s]
+0.N: Trace Attempt  3	[0.07 s]
+0.N: Trace Attempt  3	[0.08 s]
+0.N: Trace Attempt  3	[0.09 s]
+0.N: Trace Attempt  3	[0.10 s]
+0.N: Trace Attempt  3	[0.12 s]
+0.N: Trace Attempt  3	[0.13 s]
+0.N: Trace Attempt  3	[0.14 s]
+0.N: Trace Attempt  3	[0.16 s]
+0.N: Trace Attempt  3	[0.18 s]
+0.N: Trace Attempt  3	[0.19 s]
+0.N: Trace Attempt  3	[0.21 s]
+0.N: Trace Attempt  3	[0.23 s]
+0.N: Trace Attempt  3	[0.24 s]
+0.N: Trace Attempt  3	[0.26 s]
+0.N: Trace Attempt  3	[0.28 s]
+0.N: Trace Attempt  3	[0.30 s]
+0.N: Trace Attempt  3	[0.33 s]
+0.N: Trace Attempt  3	[0.35 s]
+0.N: Trace Attempt  3	[0.37 s]
+0.N: Trace Attempt  3	[0.40 s]
+0.N: Trace Attempt  3	[0.42 s]
+0.N: Trace Attempt  3	[0.45 s]
+0.N: Trace Attempt  3	[0.48 s]
+0.N: Trace Attempt  3	[0.51 s]
+0.N: Trace Attempt  3	[0.54 s]
+0.N: Trace Attempt  3	[0.56 s]
+0.N: Trace Attempt  3	[0.61 s]
+0.N: Trace Attempt  3	[0.66 s]
+0.N: Trace Attempt  3	[0.70 s]
+0.N: Trace Attempt  3	[0.76 s]
+0.N: Trace Attempt  3	[0.79 s]
+0.N: Trace Attempt  3	[0.83 s]
+0.N: Trace Attempt  3	[0.86 s]
+0.N: Trace Attempt  3	[0.90 s]
+0.N: Trace Attempt  3	[0.93 s]
+ProofGrid usable level: 1
+0.N: Trace Attempt  3	[0.97 s]
+0.Ht: Trace Attempt 101	[0.06 s]
+0.Ht: A trace with 101 cycles was found. [0.98 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 101 cycles was found for the property "mesi_isc.mesi_bind.assertcore3_broad_snoop" in 0.99 s.
+0.Ht: All properties determined. [0.97 s]
+Initiating shutdown of proof (@ 0.99 s)
+0.N: All properties determined. [0.97 s]
+0.Hp: Interrupted (multi)
+0.Hp: All properties determined. [0.98 s]
+0.N: Exited with Success (@ 0.99 s)
+0.Ht: Exited with Success (@ 0.99 s)
+0.Hp: Exited with Success (@ 0.99 s)
+0.B: Trace Attempt 101	[0.93 s]
+0.B: All properties determined. [0.99 s]
+0.B: Exited with Success (@ 1.01 s)
+ProofGrid usable level: 0
+ProofGrid usable level: 0
+All pending notifications were processed.
+INFO (IPF059): Completed proof on task: <embedded>
+
+==============================================================
+SUMMARY
+==============================================================
+	Properties Considered : 2
+	      assertions      : 1
+	       - proven       : 0 (0%)
+	       - marked_proven: 0 (0%)
+	       - cex          : 1 (100%)
+	       - ar_cex       : 0 (0%)
+	       - undetermined : 0 (0%)
+	       - unprocessed  : 0 (0%)
+	       - error        : 0 (0%)
+	      covers          : 1
+	       - unreachable  : 0 (0%)
+	       - covered      : 1 (100%)
+	       - ar_covered   : 0 (0%)
+	       - undetermined : 0 (0%)
+	       - unprocessed  : 0 (0%)
+	       - error        : 0 (0%)
+[<embedded>] % visualize -violation -property <embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop -new_window
+INFO (IVS015): Setting Visualize task to "<embedded>".
+INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop".
+cex
+[<embedded>] % visualize -violation -property <embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop -new_window
+INFO (IVS015): Setting Visualize task to "<embedded>".
+INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::mesi_isc.mesi_bind.assertcore3_broad_snoop".
+cex
 INFO: Waiting for proof threads to stop...
 INFO: Proof threads stopped.
