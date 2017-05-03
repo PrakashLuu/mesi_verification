@@ -42,10 +42,13 @@ module v_mesi_isc(
     input mbus_ack1_o,
     input mbus_ack0_o
 );
+    property write_broad_response1;
+        @(posedge clk)
+            ($rose(mbus_cmd3_i[1]) && $rose(mbus_cmd3_i[0]) ) |-> (cbus_cmd2_o == 3'b1 && cbus_cmd1_o == 3'b1 && cbus_cmd0_o == 3'b1); 
+    endproperty
 
-    begin
+    assertcore3_broad_snoop: assert property(write_broad_response1);
 
-    end
 endmodule
 
 module Wrapper;
@@ -78,4 +81,4 @@ bind mesi_isc v_mesi_isc mesi_bind(
      .mbus_ack1_o(mbus_ack1_o),
      .mbus_ack0_o(mbus_ack0_o)
  );
-endmodule
+ endmodule
