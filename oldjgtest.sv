@@ -42,20 +42,6 @@ module v_mesi_isc(
     input mbus_ack1_o,
     input mbus_ack0_o
 );
-    property write_broad_response1;
-        @(posedge clk)
-            (mbus_cmd0_i == 3'd3 ) |-> ##[1:10] (cbus_cmd1_o == 3'd1);
-    endproperty
-
-    property write_broad_response2;
-        @(posedge clk)
-            (mbus_cmd0_i == 3'd3 ) |-> ##[1:10] (cbus_cmd2_o == 3'd1);
-    endproperty
-    
-    property write_broad_response3;
-        @(posedge clk)
-            (mbus_cmd0_i == 3'd3 ) |-> ##[1:10] (cbus_cmd3_o == 3'd1);
-    endproperty
     property getenable0;
 	@(posedge clk) (cbus_ack1_i == 1 && cbus_ack2_i == 1 && cbus_ack3_i == 1) |-> ##[1:10] (cbus_cmd0_o == 3'd3);
     endproperty
@@ -68,15 +54,25 @@ module v_mesi_isc(
     property getenable3;
 	@(posedge clk) (cbus_ack0_i == 1 && cbus_ack1_i == 1 && cbus_ack2_i == 1) |-> ##[1:10] (cbus_cmd3_o == 3'd3);
     endproperty
+    property getsnoop0;
+	@(posedge clk) (mbus_cmd0_i == 3'd3) |-> ##[1:10] (cbus_cmd1_o == 3'd1);
+    endproperty
+    property getsnoop1;
+	@(posedge clk) (mbus_cmd0_i == 3'd3) |-> ##[1:10] (cbus_cmd2_o == 3'd1);
+    endproperty
+    property getsnoop2;
+	@(posedge clk) (mbus_cmd0_i == 3'd3) |-> ##[1:10] (cbus_cmd3_o == 3'd1);
+    endproperty
 
-    assertcore1_broad_snoop: assert property(write_broad_response1);
-    assertcore2_broad_snoop: assert property(write_broad_response2);
-    assertcore3_broad_snoop: assert property(write_broad_response3);
-
-        enable0 : assert property (getenable0);
-	enable1 : assert property (getenable1);
-	enable2 : assert property (getenable2);
-	enable3 : assert property (getenable3);
+	enable0 : cover property (getenable0);
+	enable1 : cover property (getenable1);
+	enable2 : cover property (getenable2);
+	enable3 : cover property (getenable3);
+	snoop0  : cover property (getsnoop0);
+	snoop1  : cover property (getsnoop1);
+	snoop2  : cover property (getsnoop2);
+	      
+  
 endmodule
 
 module Wrapper;
@@ -109,4 +105,4 @@ bind mesi_isc v_mesi_isc mesi_bind(
      .mbus_ack1_o(mbus_ack1_o),
      .mbus_ack0_o(mbus_ack0_o)
  );
- endmodule
+endmodule
