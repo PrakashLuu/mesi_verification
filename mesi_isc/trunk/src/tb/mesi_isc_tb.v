@@ -315,8 +315,11 @@ begin
                                               stat_cpu_access_wr[0] +
                                               stat_cpu_access_rd[0]);
   $display ("Total count of passed exclusive states: %d", exgood);
-  $display ("Total count of passed modified states: %d", exgood);
-  $display ("Total count of passed shared states: %d", exgood);
+  $display ("Total count of failed exclusive states: %d", exbad);
+  $display ("Total count of passed modified states: %d", modgood);
+  $display ("Total count of failed modified states: %d", modbad);
+  $display ("Total count of passed shared states: %d", sharegood);
+  $display ("Total count of failed shared states: %d", sharebad);
 
   $finish;
 end
