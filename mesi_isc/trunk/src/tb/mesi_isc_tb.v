@@ -291,7 +291,7 @@ begin
   rst = 1;
   repeat (10) @(negedge clk);
   rst = 0;
-  repeat (20000) @(negedge clk);   // Watchdog
+  repeat (20000000) @(negedge clk);   // Watchdog
   $display ("Watchdog finish\n");
   $display ("Statistic\n");
   $display ("CPU 3. WR:%d RD:%d NOP:%d  \n", stat_cpu_access_wr[3],
