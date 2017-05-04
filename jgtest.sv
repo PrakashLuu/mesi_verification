@@ -129,23 +129,23 @@ module v_mesi_isc(
 	enable2 : assert property (getenable2);
 	enable3 : assert property (getenable3);
 
-    assertcore01_broad_snoop: cover property(write_broad_response01);
-    assertcore02_broad_snoop: cover property(write_broad_response02);
-    assertcore03_broad_snoop: cover property(write_broad_response03);
-    assertcore10_broad_snoop: cover property(write_broad_response10);
-    assertcore12_broad_snoop: cover property(write_broad_response12);
-    assertcore13_broad_snoop: cover property(write_broad_response13);
-    assertcore20_broad_snoop: cover property(write_broad_response20);
-    assertcore21_broad_snoop: cover property(write_broad_response21);
-    assertcore23_broad_snoop: cover property(write_broad_response23);
-    assertcore30_broad_snoop: cover property(write_broad_response30);
-    assertcore31_broad_snoop: cover property(write_broad_response31);
-    assertcore32_broad_snoop: cover property(write_broad_response32);
+    covercore01_broad_snoop: cover property(write_broad_response01);
+    covercore02_broad_snoop: cover property(write_broad_response02);
+    covercore03_broad_snoop: cover property(write_broad_response03);
+    covercore10_broad_snoop: cover property(write_broad_response10);
+    covercore12_broad_snoop: cover property(write_broad_response12);
+    covercore13_broad_snoop: cover property(write_broad_response13);
+    covercore20_broad_snoop: cover property(write_broad_response20);
+    covercore21_broad_snoop: cover property(write_broad_response21);
+    covercore23_broad_snoop: cover property(write_broad_response23);
+    covercore30_broad_snoop: cover property(write_broad_response30);
+    covercore31_broad_snoop: cover property(write_broad_response31);
+    covercore32_broad_snoop: cover property(write_broad_response32);
 
-        enable0 : cover property (getenable0);
-	enable1 : cover property (getenable1);
-	enable2 : cover property (getenable2);
-	enable3 : cover property (getenable3);
+        coverenable0 : cover property (getenable0);
+	coverenable1 : cover property (getenable1);
+	coverenable2 : cover property (getenable2);
+	coverenable3 : cover property (getenable3);
 endmodule
 
 module Wrapper;
