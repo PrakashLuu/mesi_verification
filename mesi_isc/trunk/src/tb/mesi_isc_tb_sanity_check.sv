@@ -109,12 +109,15 @@ endtask
 // Checks that, at any time, there are not 2 cache lines or more, that contains
 // the same memory address, with stats M or state E.
 
-reg [31:0] exgood, modgood, sharegood;
+reg [31:0] exgood, modgood, sharegood, exbad, modbad, sharebad;
 initial 
 begin
     exgood = 0;
     modgood = 0;
     sharegood = 0;
+    exbad = 0;
+    modbad = 0;
+    sharebad = 0;
 end
 always @(posedge clk or posedge rst)
   for (k=0; k < 4; k = k + 1)
@@ -158,7 +161,10 @@ begin
       )
         exgood = exgood + 1;
       else
+      begin
           $display("error in exclusive");
+          exbad = exbad + 1;
+      end
         //make sure modified is working
     if ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_M &&
             mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I &&
@@ -183,8 +189,11 @@ begin
 
     ) 
         modgood = modgood + 1;
-      else 
+      else
+      begin 
           $display("error in modified");
+          modbad = modbad + 1;
+      end
         //make sure shared is working
     if ((mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S &&
             (mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_I || mesi_isc_tb_cpu2.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_S ) &&
@@ -210,7 +219,10 @@ begin
       )
     sharegood = sharegood + 1;
       else 
+      begin 
           $display("error in shared");
+          sharebad = sharebad + 1;
+      end
   //               \ /
   if(mesi_isc_tb_cpu3.cache_state[mbus_addr] == `MESI_ISC_TB_CPU_MESI_E |
   //               \ /
