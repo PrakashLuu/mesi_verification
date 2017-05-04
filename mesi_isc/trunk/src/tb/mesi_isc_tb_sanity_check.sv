@@ -99,7 +99,7 @@ begin
              mbus_wr_data,
              mbus_addr,
              $time);
-    @(negedge clk) $finish();
+    //@(negedge clk) $finish();
   end
 end
 endtask

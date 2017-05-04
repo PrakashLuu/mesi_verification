@@ -148,7 +148,7 @@ reg    [1:0]            cpu_priority;
 reg    [3:0]            cpu_selected;   
 reg                     mem_access;
 integer                 stimulus_rand_numb [9:0];
-integer                 seed;
+integer                 seed = 10;
 reg    [1:0]            stimulus_rand_cpu_select;
 reg    [1:0]            stimulus_op;
 reg    [7:0]            stimulus_addr;
@@ -205,7 +205,7 @@ always @(posedge clk or posedge rst)
     // Calculate the random numbers for this cycle. Use one $random command
     // to perform one series of random number depends on the seed.
     for (m = 0; m < 9; m = m + 1)
-      stimulus_rand_numb[m] = $random(seed);
+      stimulus_rand_numb[m] = $urandom;
 
     // For the current cycle check all the CPU starting in a random CPU ID 
     stimulus_rand_cpu_select = $unsigned(stimulus_rand_numb[0]) % 4; // The
