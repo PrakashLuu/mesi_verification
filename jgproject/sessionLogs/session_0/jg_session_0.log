@@ -5,10 +5,10 @@
 # version   : 2015.09 FCS 64 bits
 # build date: 2015.09.29 22:07:32 PDT
 #----------------------------------------
-# started Wed May 03 22:04:44 CDT 2017
+# started Thu May 04 18:42:17 CDT 2017
 # hostname  : luigi
-# pid       : 24322
-# arguments : '-label' 'session_0' '-console' 'luigi:40183' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
+# pid       : 25238
+# arguments : '-label' 'session_0' '-console' 'luigi:38779' '-style' 'windows' '-proj' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/sessionLogs/session_0' '-init' '-hidden' '/home/ecelrc/students/blidsky/mesi_verification/jgproject/.tmp/.initCmds.tcl'
 
 Any disclosure about the Cadence Design Systems software or its use
 model to any third party violates the written Non-Disclosure Agreement
@@ -47,7 +47,7 @@ JasperGold Apps Analysis Session - /home/ecelrc/students/blidsky/mesi_verificati
 
 INFO: successfully checked out licenses "jasper_interactive" and "jasper_fpv".
 INFO: reading configuration file "/home/ecelrc/students/blidsky/.config/jasper/jaspergold.conf".
-% include /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl
+% include /home/ecelrc/students/blidsky/mesi_verification/project.tcl
 %% #Tcl script which can be used with JasperGold
 %% #Use "source lab4.tcl" in the console to source this script
 %% 
@@ -57,74 +57,6 @@ INFO: reading configuration file "/home/ecelrc/students/blidsky/.config/jasper/j
 [INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
 %% analyze -sv {jgtest.sv};
 [-- (VERI-1482)] Analyzing Verilog file /misc/linuxws/packages/cadence_2016/jasper_2015.09/lib/verilog/packages/std/std.sv into library std
-[-- (VERI-1482)] Analyzing Verilog file jgtest.sv
-[ERROR (VERI-1116)] jgtest.sv(132): assertcore01_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(114): previous declaration of assertcore01_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(133): assertcore02_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(115): previous declaration of assertcore02_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(134): assertcore03_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(116): previous declaration of assertcore03_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(135): assertcore10_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(117): previous declaration of assertcore10_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(136): assertcore12_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(118): previous declaration of assertcore12_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(137): assertcore13_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(119): previous declaration of assertcore13_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(138): assertcore20_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(120): previous declaration of assertcore20_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(139): assertcore21_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(121): previous declaration of assertcore21_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(140): assertcore23_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(122): previous declaration of assertcore23_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(141): assertcore30_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(123): previous declaration of assertcore30_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(142): assertcore31_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(124): previous declaration of assertcore31_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(143): assertcore32_broad_snoop is already declared
-[INFO (VERI-1967)] jgtest.sv(125): previous declaration of assertcore32_broad_snoop is from here
-[ERROR (VERI-1116)] jgtest.sv(145): enable0 is already declared
-[INFO (VERI-1967)] jgtest.sv(127): previous declaration of enable0 is from here
-[ERROR (VERI-1116)] jgtest.sv(146): enable1 is already declared
-[INFO (VERI-1967)] jgtest.sv(128): previous declaration of enable1 is from here
-[ERROR (VERI-1116)] jgtest.sv(147): enable2 is already declared
-[INFO (VERI-1967)] jgtest.sv(129): previous declaration of enable2 is from here
-[ERROR (VERI-1116)] jgtest.sv(148): enable3 is already declared
-[INFO (VERI-1967)] jgtest.sv(130): previous declaration of enable3 is from here
-[ERROR (VERI-1072)] jgtest.sv(149): module v_mesi_isc ignored due to previous errors
-[ERROR (VERI-1072)] jgtest.sv(181): module Wrapper ignored due to previous errors
-Summary of errors detected:
-	[ERROR (VERI-1116)] jgtest.sv(132): assertcore01_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(133): assertcore02_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(134): assertcore03_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(135): assertcore10_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(136): assertcore12_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(137): assertcore13_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(138): assertcore20_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(139): assertcore21_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(140): assertcore23_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(141): assertcore30_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(142): assertcore31_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(143): assertcore32_broad_snoop is already declared
-	[ERROR (VERI-1116)] jgtest.sv(145): enable0 is already declared
-	[ERROR (VERI-1116)] jgtest.sv(146): enable1 is already declared
-	[ERROR (VERI-1116)] jgtest.sv(147): enable2 is already declared
-	[ERROR (VERI-1116)] jgtest.sv(148): enable3 is already declared
-	[ERROR (VERI-1072)] jgtest.sv(149): module v_mesi_isc ignored due to previous errors
-	[ERROR (VERI-1072)] jgtest.sv(181): module Wrapper ignored due to previous errors
-ERROR at line 6 in file /home/ecelrc/students/blidsky/mesi_verification/lab4.tcl, more info in Tcl-variable errorInfo
-ERROR (ENL034): 18 errors detected in the design file(s).
-
-% include {/home/ecelrc/students/blidsky/mesi_verification/lab4.tcl}
-%% #Tcl script which can be used with JasperGold
-%% #Use "source lab4.tcl" in the console to source this script
-%% 
-%% #Reading the files 
-%% analyze -verilog {mesi_isc.v};
-[-- (VERI-1482)] Analyzing Verilog file mesi_isc.v
-[INFO (VERI-1328)] mesi_isc.v(46): analyzing included file mesi_isc_define.v
-[WARN (VERI-1206)] mesi_isc.v(203): overwriting previous definition of module mesi_isc
-[INFO (VERI-2142)] mesi_isc.v(203): previous definition of module mesi_isc is here
-%% analyze -sv {jgtest.sv};
 [-- (VERI-1482)] Analyzing Verilog file jgtest.sv
 %% analyze -verilog {mesi_isc_broad.v};
 [-- (VERI-1482)] Analyzing Verilog file mesi_isc_broad.v
@@ -183,16 +115,16 @@ INFO (IPF031): Settings used for this proof:
     proofgrid_restarts            = 10
 background
 %% #
-INFO (IPF036): Starting proof on task: "<embedded>", 48 properties to prove with 0 already proven/unreachable
+INFO (IPF036): Starting proof on task: "<embedded>", 50 properties to prove with 0 already proven/unreachable
 INFO (IRS029): Starting reset analysis: phase 1 of 4.
 INFO (IRS030): Running reset analysis phase 2 of 4.
 INFO (IRS031): Running reset analysis phase 3 of 4.
 INFO (IRS020): Starting the reset analysis simulation with a limit of 100 iterations (phase 4 of 4).
 INFO (IRS024): Reset iterations 0 to 4 analyzed.
-INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 748 of 748 design flops, 0 of 0 design latches, 400 of 400 internal elements.
+INFO (IRS018): Reset analysis simulation executed for 3 iterations. Assigned values for 748 of 748 design flops, 0 of 0 design latches, 414 of 414 internal elements.
 Using multistage preprocessing
 Starting reduce
-Finished reduce in 0.011s
+Finished reduce in 0.008s
 Performing Proof Simplification...
 0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
 0.Hp: Proof Simplification Iteration 1	[0.00 s]
@@ -201,47 +133,54 @@ Performing Proof Simplification...
 Proof Simplification completed in 0.01 s
 0.Hp: Identified and disabled 8 duplicated targets.
 About to start distributed ProofGrid in its own thread with a limit of 20 pending notifications.
-ProofGrid usable level: 40
-0.Hp: Proofgrid shell started at 28613@luigi(local) jg_24322_luigi_1
-0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.Ht: Proofgrid shell started at 28614@luigi(local) jg_24322_luigi_1
+ProofGrid usable level: 42
+0.Ht: Proofgrid shell started at 25647@luigi(local) jg_25238_luigi_1
+0.N: Proofgrid shell started at 25658@luigi(local) jg_25238_luigi_1
+0.Hp: Proofgrid shell started at 25636@luigi(local) jg_25238_luigi_1
 0.Ht: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.Ht: Trace Attempt  1	[0.00 s]
-0.Ht: A trace with 1 cycles was found. [0.00 s]
-0.Ht: A trace with 1 cycles was found. [0.00 s]
-0.Ht: A trace with 1 cycles was found. [0.00 s]
-0.Ht: A trace with 1 cycles was found. [0.00 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore01_broad_snoop:precondition1" was covered in 1 cycles in 0.01 s.
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.enable0:precondition1" was covered in 1 cycles in 0.01 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop:precondition1".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore02_broad_snoop:precondition1" was covered in 1 cycles in 0.01 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop:precondition1".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore03_broad_snoop:precondition1" was covered in 1 cycles in 0.01 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop:precondition1".
+0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.N: Starting proof for property "mesi_isc.mesi_bind.assertsanity_1"	[0.00 s].
+0.N: Trace Attempt  1	[0.00 s]
+0.N: Trace Attempt  1	[0.00 s]
+0.N: Trace Attempt  2	[0.00 s]
+0.N: Trace Attempt  3	[0.00 s]
+0.B: Proofgrid shell started at 25667@luigi(local) jg_25238_luigi_1
+0.Ht: Trace Attempt  1	[0.01 s]
 0.Ht: A trace with 1 cycles was found. [0.01 s]
 0.Ht: A trace with 1 cycles was found. [0.01 s]
 0.Ht: A trace with 1 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore10_broad_snoop:precondition1" was covered in 1 cycles in 0.01 s.
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore12_broad_snoop:precondition1" was covered in 1 cycles in 0.01 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop:precondition1".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore13_broad_snoop:precondition1" was covered in 1 cycles in 0.01 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop:precondition1".
 0.Ht: A trace with 1 cycles was found. [0.01 s]
 0.Ht: A trace with 1 cycles was found. [0.01 s]
 0.Ht: A trace with 1 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore20_broad_snoop:precondition1" was covered in 1 cycles in 0.02 s.
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore21_broad_snoop:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop:precondition1".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore23_broad_snoop:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop:precondition1".
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertsanity_1:precondition1" was covered in 1 cycles in 0.02 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore30_broad_snoop:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertsanity_1:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.enable0:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertsanity_1:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.enable1:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertsanity_1:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.enable2:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertsanity_1:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.enable3:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertsanity_1:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore31_broad_snoop:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertsanity_1:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore32_broad_snoop:precondition1" was covered in 1 cycles in 0.02 s by the incidental trace "mesi_isc.mesi_bind.assertsanity_1:precondition1".
 0.Ht: A trace with 1 cycles was found. [0.01 s]
 0.Ht: A trace with 1 cycles was found. [0.01 s]
 0.Ht: A trace with 1 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore30_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s.
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore31_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s by the incidental trace "mesi_isc.mesi_bind.assertcore30_broad_snoop:precondition1".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore32_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s by the incidental trace "mesi_isc.mesi_bind.assertcore30_broad_snoop:precondition1".
-0.N: Proofgrid shell started at 28615@luigi(local) jg_24322_luigi_1
-0.B: Proofgrid shell started at 28623@luigi(local) jg_24322_luigi_1
-0.Hp: Trace Attempt  1	[0.01 s]
-0.Hp: A trace with 1 cycles was found. [0.01 s]
-0.Hp: A trace with 1 cycles was found. [0.01 s]
-0.Hp: A trace with 1 cycles was found. [0.01 s]
-INFO (IPF047): 0.Hp: The cover property "mesi_isc.mesi_bind.enable1:precondition1" was covered in 1 cycles in 0.05 s.
-INFO (IPF047): 0.Hp: The cover property "mesi_isc.mesi_bind.enable2:precondition1" was covered in 1 cycles in 0.05 s by the incidental trace "mesi_isc.mesi_bind.enable1:precondition1".
-INFO (IPF047): 0.Hp: The cover property "mesi_isc.mesi_bind.enable3:precondition1" was covered in 1 cycles in 0.05 s by the incidental trace "mesi_isc.mesi_bind.enable1:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore01_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore02_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore03_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop:precondition1".
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore10_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore12_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore13_broad_snoop:precondition1" was covered in 1 cycles in 0.03 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop:precondition1".
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+0.Ht: A trace with 1 cycles was found. [0.01 s]
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore20_broad_snoop:precondition1" was covered in 1 cycles in 0.04 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore21_broad_snoop:precondition1" was covered in 1 cycles in 0.04 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop:precondition1".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.assertcore23_broad_snoop:precondition1" was covered in 1 cycles in 0.04 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop:precondition1".
 0.Ht: Trace Attempt  2	[0.01 s]
 0.Ht: Trace Attempt  3	[0.01 s]
 0.Ht: Trace Attempt  4	[0.01 s]
@@ -253,34 +192,104 @@ INFO (IPF047): 0.Hp: The cover property "mesi_isc.mesi_bind.enable3:precondition
 0.Ht: A trace with 5 cycles was found. [0.01 s]
 0.Ht: A trace with 5 cycles was found. [0.01 s]
 0.Ht: A trace with 5 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore01_broad_snoop" was covered in 5 cycles in 0.06 s.
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore02_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore03_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore21_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore23_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore31_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore32_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore01_broad_snoop" was covered in 5 cycles in 0.07 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore02_broad_snoop" was covered in 5 cycles in 0.07 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore20_broad_snoop" was covered in 5 cycles in 0.07 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore21_broad_snoop" was covered in 5 cycles in 0.07 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore30_broad_snoop" was covered in 5 cycles in 0.07 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore31_broad_snoop" was covered in 5 cycles in 0.07 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore32_broad_snoop" was covered in 5 cycles in 0.07 s by the incidental trace "mesi_isc.mesi_bind.covercore01_broad_snoop".
 0.Ht: A trace with 5 cycles was found. [0.01 s]
 0.Ht: A trace with 5 cycles was found. [0.01 s]
 0.Ht: A trace with 5 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore10_broad_snoop" was covered in 5 cycles in 0.06 s.
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore13_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore10_broad_snoop".
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore20_broad_snoop" was covered in 5 cycles in 0.06 s by the incidental trace "mesi_isc.mesi_bind.covercore10_broad_snoop".
 0.Ht: A trace with 5 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore12_broad_snoop" was covered in 5 cycles in 0.07 s.
 0.Ht: A trace with 5 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore30_broad_snoop" was covered in 5 cycles in 0.07 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore03_broad_snoop" was covered in 5 cycles in 0.08 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore10_broad_snoop" was covered in 5 cycles in 0.08 s by the incidental trace "mesi_isc.mesi_bind.covercore03_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore12_broad_snoop" was covered in 5 cycles in 0.08 s by the incidental trace "mesi_isc.mesi_bind.covercore03_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore13_broad_snoop" was covered in 5 cycles in 0.08 s by the incidental trace "mesi_isc.mesi_bind.covercore03_broad_snoop".
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.covercore23_broad_snoop" was covered in 5 cycles in 0.08 s by the incidental trace "mesi_isc.mesi_bind.covercore03_broad_snoop".
 0.Ht: Trace Attempt  6	[0.01 s]
 0.Ht: A trace with 6 cycles was found. [0.01 s]
 INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.coverenable0" was covered in 6 cycles in 0.08 s.
 0.Ht: A trace with 6 cycles was found. [0.01 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.coverenable1" was covered in 6 cycles in 0.08 s.
-0.Ht: A trace with 6 cycles was found. [0.02 s]
-INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.coverenable2" was covered in 6 cycles in 0.08 s.
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.coverenable1" was covered in 6 cycles in 0.09 s.
+0.Ht: A trace with 6 cycles was found. [0.01 s]
+INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.coverenable2" was covered in 6 cycles in 0.09 s.
 0.Ht: A trace with 6 cycles was found. [0.02 s]
 INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.coverenable3" was covered in 6 cycles in 0.09 s.
-0.N: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.N: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.N: Trace Attempt  3	[0.00 s]
+0.N: Trace Attempt  3	[0.01 s]
+0.N: Trace Attempt  4	[0.01 s]
+0.N: Trace Attempt  3	[0.01 s]
+0.N: Trace Attempt  5	[0.01 s]
+0.B: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
+0.B: Starting proof for property "mesi_isc.mesi_bind.assertsanity_1"	[0.00 s].
+0.B: Trace Attempt  1	[0.00 s]
+0.B: Trace Attempt  2	[0.00 s]
+0.B: Trace Attempt  3	[0.00 s]
+0.B: Trace Attempt  4	[0.01 s]
+0.B: Trace Attempt  5	[0.01 s]
+0.B: Trace Attempt 12	[0.06 s]
+0.B: A trace with 12 cycles was found. [0.07 s]
+INFO (IPF055): 0.B: A counterexample (cex) with 12 cycles was found for the property "mesi_isc.mesi_bind.assertsanity_1" in 0.00 s.
+0.B: Starting proof for property "mesi_isc.mesi_bind.assertcore01_broad_snoop"	[0.00 s].
+0.B: Trace Attempt  1	[0.00 s]
+0.B: Trace Attempt  2	[0.00 s]
+0.B: Trace Attempt  3	[0.00 s]
+0.B: Trace Attempt  4	[0.00 s]
+0.B: Trace Attempt  5	[0.01 s]
+0.Hp: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
+0.Ht: Trace Attempt 11	[0.02 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore10_broad_snoop" in 0.12 s.
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore30_broad_snoop" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable1" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable2" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable3" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore12_broad_snoop" in 0.13 s.
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore13_broad_snoop" in 0.13 s by the incidental trace "mesi_isc.mesi_bind.assertcore12_broad_snoop".
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable0" in 0.13 s by the incidental trace "mesi_isc.mesi_bind.assertcore12_broad_snoop".
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore20_broad_snoop" in 0.13 s.
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore21_broad_snoop" in 0.13 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop".
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore23_broad_snoop" in 0.13 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop".
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+0.Ht: A trace with 11 cycles was found. [0.03 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore31_broad_snoop" in 0.14 s.
+INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore32_broad_snoop" in 0.14 s by the incidental trace "mesi_isc.mesi_bind.assertcore31_broad_snoop".
+0.Ht: Trace Attempt 12	[0.03 s]
+0.Ht: A trace with 12 cycles was found. [0.04 s]
+0.Ht: A trace with 12 cycles was found. [0.04 s]
+0.Ht: A trace with 12 cycles was found. [0.04 s]
+INFO (IPF055): 0.Ht: A counterexample (cex) with 12 cycles was found for the property "mesi_isc.mesi_bind.assertcore01_broad_snoop" in 0.14 s.
+INFO (IPF055): 0.Ht: A counterexample (cex) with 12 cycles was found for the property "mesi_isc.mesi_bind.assertcore02_broad_snoop" in 0.14 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop".
+INFO (IPF055): 0.Ht: A counterexample (cex) with 12 cycles was found for the property "mesi_isc.mesi_bind.assertcore03_broad_snoop" in 0.14 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop".
+0.Ht: All properties determined. [0.04 s]
+Initiating shutdown of proof (@ 0.13 s)
+0.N: Trace Attempt  3	[0.02 s]
+0.N: Trace Attempt  3	[0.03 s]
+0.N: Trace Attempt  3	[0.04 s]
+0.N: Trace Attempt  3	[0.04 s]
+0.N: Trace Attempt  3	[0.05 s]
+0.N: Trace Attempt  3	[0.06 s]
+0.N: Trace Attempt  3	[0.08 s]
+0.B: Trace Attempt 11	[0.04 s]
+0.B: All properties determined. [0.12 s]
+0.Hp: Interrupted (multi)
+0.Hp: Interrupted. [0.06 s]
+0.Ht: Exited with Success (@ 0.16 s)
+0.N: Cluster is entering permanent allocation mode.
 0.N: Starting proof for property "mesi_isc.mesi_bind.assertcore01_broad_snoop"	[0.00 s].
 0.N: Trace Attempt  1	[0.00 s]
 0.N: Trace Attempt  1	[0.00 s]
@@ -288,87 +297,11 @@ INFO (IPF047): 0.Ht: The cover property "mesi_isc.mesi_bind.coverenable3" was co
 0.N: Trace Attempt  3	[0.00 s]
 0.N: Trace Attempt  3	[0.00 s]
 0.N: Trace Attempt  3	[0.00 s]
-0.N: Trace Attempt  4	[0.01 s]
-0.N: Trace Attempt  3	[0.01 s]
-0.N: Trace Attempt  5	[0.01 s]
-0.N: Trace Attempt  3	[0.01 s]
-0.N: Trace Attempt  3	[0.02 s]
-0.N: Trace Attempt  3	[0.02 s]
-0.N: Trace Attempt  3	[0.03 s]
-0.N: Trace Attempt  3	[0.04 s]
-0.N: Trace Attempt  3	[0.05 s]
-0.N: Trace Attempt  3	[0.06 s]
-0.B: clocks: 1, declared: 1, disabling: 0, posedge: 1, negedge: 0, noedge: 0, bothedge: 0
-0.B: Next scan (0) will use per property time limit: 1s * 10 ^ 0 = 1s
-0.B: Starting proof for property "mesi_isc.mesi_bind.assertcore01_broad_snoop"	[0.00 s].
-0.B: Trace Attempt  1	[0.00 s]
-0.B: Trace Attempt  2	[0.00 s]
-0.B: Trace Attempt  3	[0.00 s]
-0.B: Trace Attempt  4	[0.01 s]
-0.B: Trace Attempt  5	[0.01 s]
-0.B: Trace Attempt 12	[0.05 s]
-0.B: A trace with 12 cycles was found. [0.06 s]
-0.B: A trace with 12 cycles was found. There may exist shorter traces (as short as 11 cycles) [0.06 s]
-0.B: A trace with 12 cycles was found. There may exist shorter traces (as short as 11 cycles) [0.06 s]
-INFO (IPF055): 0.B: A counterexample (cex) with 12 cycles was found for the property "mesi_isc.mesi_bind.assertcore01_broad_snoop" in 0.00 s.
-INFO (IPF055): 0.B: A counterexample (cex) with 12 cycles was found for the property "mesi_isc.mesi_bind.assertcore02_broad_snoop" in 0.00 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop".
-INFO (IPF055): 0.B: A counterexample (cex) with 12 cycles was found for the property "mesi_isc.mesi_bind.assertcore03_broad_snoop" in 0.00 s by the incidental trace "mesi_isc.mesi_bind.assertcore01_broad_snoop".
-0.B: Starting proof for property "mesi_isc.mesi_bind.assertcore10_broad_snoop"	[0.00 s].
-0.B: Trace Attempt  1	[0.00 s]
-0.B: Trace Attempt  2	[0.00 s]
-0.B: Trace Attempt  3	[0.00 s]
-0.B: Trace Attempt  4	[0.00 s]
-0.B: Trace Attempt  5	[0.01 s]
-0.Ht: Trace Attempt 11	[0.02 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore10_broad_snoop" in 0.11 s.
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore30_broad_snoop" in 0.11 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable1" in 0.11 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable2" in 0.11 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable3" in 0.11 s by the incidental trace "mesi_isc.mesi_bind.assertcore10_broad_snoop".
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore12_broad_snoop" in 0.12 s.
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore13_broad_snoop" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore12_broad_snoop".
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore31_broad_snoop" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore12_broad_snoop".
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore32_broad_snoop" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore12_broad_snoop".
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.enable0" in 0.12 s by the incidental trace "mesi_isc.mesi_bind.assertcore12_broad_snoop".
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-0.Ht: A trace with 11 cycles was found. [0.03 s]
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore20_broad_snoop" in 0.13 s.
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore21_broad_snoop" in 0.13 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop".
-INFO (IPF055): 0.Ht: A counterexample (cex) with 11 cycles was found for the property "mesi_isc.mesi_bind.assertcore23_broad_snoop" in 0.13 s by the incidental trace "mesi_isc.mesi_bind.assertcore20_broad_snoop".
-0.Ht: Trace Attempt 12	[0.03 s]
-0.Ht: All properties determined. [0.04 s]
-Initiating shutdown of proof (@ 0.13 s)
-0.N: Cluster is entering permanent allocation mode.
-0.N: Starting proof for property "mesi_isc.mesi_bind.assertcore10_broad_snoop"	[0.00 s].
-0.N: Trace Attempt  1	[0.00 s]
-0.N: Trace Attempt  1	[0.00 s]
-0.N: Trace Attempt  2	[0.00 s]
-0.N: Trace Attempt  3	[0.00 s]
-0.N: Trace Attempt  3	[0.00 s]
-0.N: Trace Attempt  3	[0.00 s]
-0.N: Trace Attempt  4	[0.01 s]
-0.N: Starting proof for property "mesi_isc.mesi_bind.assertcore12_broad_snoop"	[0.00 s].
-0.N: All properties determined. [0.10 s]
-0.Ht: Exited with Success (@ 0.15 s)
-0.N: Exited with Success (@ 0.15 s)
-0.B: Trace Attempt 10	[0.04 s]
-0.B: Interrupted. [0.10 s]
-0.Hp: Interrupted (multi)
-0.Hp: Interrupted. [0.11 s]
-0.B: Exited with Success (@ 0.15 s)
-0.Hp: Exited with Success (@ 0.15 s)
+0.N: All properties determined. [0.11 s]
+0.B: Exited with Success (@ 0.16 s)
+0.Hp: Exited with Success (@ 0.16 s)
 ProofGrid usable level: 0
+0.N: Exited with Success (@ 0.16 s)
 ProofGrid usable level: 0
 All pending notifications were processed.
 INFO (IPF059): Completed proof on task: <embedded>
@@ -376,19 +309,25 @@ INFO (IPF059): Completed proof on task: <embedded>
 ==============================================================
 SUMMARY
 ==============================================================
-	Properties Considered : 48
-	      assertions      : 16
+	Properties Considered : 50
+	      assertions      : 17
 	       - proven       : 0 (0%)
 	       - marked_proven: 0 (0%)
-	       - cex          : 16 (100%)
+	       - cex          : 17 (100%)
 	       - ar_cex       : 0 (0%)
 	       - undetermined : 0 (0%)
 	       - unprocessed  : 0 (0%)
 	       - error        : 0 (0%)
-	      covers          : 32
+	      covers          : 33
 	       - unreachable  : 0 (0%)
-	       - covered      : 32 (100%)
+	       - covered      : 33 (100%)
 	       - ar_covered   : 0 (0%)
 	       - undetermined : 0 (0%)
 	       - unprocessed  : 0 (0%)
 	       - error        : 0 (0%)
+[<embedded>] % visualize -violation -property <embedded>::mesi_isc.mesi_bind.assertsanity_1 -new_window
+INFO (IVS015): Setting Visualize task to "<embedded>".
+INFO (IVS008): Expanding analysis region to enable visualization of "<embedded>::mesi_isc.mesi_bind.assertsanity_1".
+cex
+INFO: Waiting for proof threads to stop...
+INFO: Proof threads stopped.

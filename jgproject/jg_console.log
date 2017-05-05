@@ -1,27 +1,31 @@
-2017-05-03 22:04:43.500947 (24239) main____ INFO    ----------------------------------------
-2017-05-03 22:04:43.501397 (24239) main____ INFO    JasperGold version info
-2017-05-03 22:04:43.501422 (24239) main____ INFO      tool      : JasperGold 2015.09
-2017-05-03 22:04:43.501445 (24239) main____ INFO      version   : 2015.09 FCS 64 bits
-2017-05-03 22:04:43.501461 (24239) main____ INFO      build date: 2015.09.29 22:07:28 PDT
-2017-05-03 22:04:43.501473 (24239) main____ INFO    ----------------------------------------
-2017-05-03 22:04:43.501483 (24239) main____ INFO    Runtime info:
-2017-05-03 22:04:43.501497 (24239) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
-2017-05-03 22:04:43.501515 (24239) main____ INFO      hostname  : luigi
-2017-05-03 22:04:43.501529 (24239) main____ INFO      pid       : 24239
-2017-05-03 22:04:43.501541 (24239) main____ INFO      arguments : '-style' 'windows'
-2017-05-03 22:04:43.501552 (24239) main____ INFO    ----------------------------------------
-2017-05-03 22:04:43.503855 (24239) lic__man INFO    Claim 'main' for <ui>.
-2017-05-03 22:04:43.508812 (24239) lic_core INFO    (1) checking out 'jasper_interactive' ...
-2017-05-03 22:04:43.528924 (24239) lic_core INFO    ... (1) checkout succeeded
-2017-05-03 22:04:43.529027 (24239) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-03 22:04:43.529073 (24239) lic_core INFO    (2) checking out 'jasper_fpv' ...
-2017-05-03 22:04:43.547915 (24239) lic_core INFO    ... (2) checkout succeeded
-2017-05-03 22:04:44.315500 (24239) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-03 22:04:44.447818 (24239) lic__man INFO    Unclaim 'fpv' for <ui>.
-2017-05-03 22:04:44.447881 (24239) lic__man INFO    Claim 'fpv' for <ui>.
-2017-05-03 22:04:44.462048 (24239) session_ INFO    Starting analysis session with session id 'session_0' ...
-2017-05-03 22:04:44.466644 (24239) session_ INFO    Analysis session with session id 'session_0' started (pid: 24322)
-2017-05-03 22:04:49.825774 (24239) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.76:35588)
-2017-05-03 22:07:34.308444 (24239) lic__man INFO    Unclaim everything for 'session_0*'.
-2017-05-03 22:07:34.558216 (24239) lic__man INFO    Claim 'fpv' for 'session_0'.
-2017-05-03 22:07:35.161490 (24239) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2017-05-04 18:42:16.612005 (25199) main____ INFO    ----------------------------------------
+2017-05-04 18:42:16.612340 (25199) main____ INFO    JasperGold version info
+2017-05-04 18:42:16.612368 (25199) main____ INFO      tool      : JasperGold 2015.09
+2017-05-04 18:42:16.612403 (25199) main____ INFO      version   : 2015.09 FCS 64 bits
+2017-05-04 18:42:16.612424 (25199) main____ INFO      build date: 2015.09.29 22:07:28 PDT
+2017-05-04 18:42:16.612439 (25199) main____ INFO    ----------------------------------------
+2017-05-04 18:42:16.612451 (25199) main____ INFO    Runtime info:
+2017-05-04 18:42:16.612467 (25199) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
+2017-05-04 18:42:16.612486 (25199) main____ INFO      hostname  : luigi
+2017-05-04 18:42:16.612500 (25199) main____ INFO      pid       : 25199
+2017-05-04 18:42:16.612515 (25199) main____ INFO      arguments : '-style' 'windows'
+2017-05-04 18:42:16.612527 (25199) main____ INFO    ----------------------------------------
+2017-05-04 18:42:16.616134 (25199) lic__man INFO    Claim 'main' for <ui>.
+2017-05-04 18:42:16.621550 (25199) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2017-05-04 18:42:16.663149 (25199) lic_core INFO    ... (1) checkout succeeded
+2017-05-04 18:42:16.663353 (25199) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-04 18:42:16.663414 (25199) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2017-05-04 18:42:16.682584 (25199) lic_core INFO    ... (2) checkout succeeded
+2017-05-04 18:42:17.502660 (25199) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-04 18:42:17.625894 (25199) lic__man INFO    Unclaim 'fpv' for <ui>.
+2017-05-04 18:42:17.625954 (25199) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-04 18:42:17.645572 (25199) session_ INFO    Starting analysis session with session id 'session_0' ...
+2017-05-04 18:42:17.650253 (25199) session_ INFO    Analysis session with session id 'session_0' started (pid: 25238)
+2017-05-04 18:42:23.144404 (25199) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.76:54062)
+2017-05-04 18:42:25.740905 (25199) lic__man INFO    Unclaim everything for 'session_0*'.
+2017-05-04 18:42:26.005834 (25199) lic__man INFO    Claim 'fpv' for 'session_0'.
+2017-05-04 18:42:26.672839 (25199) lic__man INFO    Unclaim everything for 'session_0/prove-0'.
+2017-05-04 18:52:03.120912 (25199) lic__man INFO    Entering idle state.
+2017-05-04 19:14:08.986505 (25199) lic__man INFO    Leaving idle state.
+2017-05-04 19:14:09.043382 (25199) main____ INFO    About to exit: requested from GUI
+2017-05-04 19:14:09.175150 (25199) main____ INFO    Exiting.

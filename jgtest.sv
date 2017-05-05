@@ -110,6 +110,16 @@ module v_mesi_isc(
     property getenable3;
 	@(posedge clk) (cbus_ack0_i == 1 && cbus_ack1_i == 1 && cbus_ack2_i == 1) |-> ##[1:10] (cbus_cmd3_o == 3'd3);
     endproperty
+    
+    property assure;
+        @(posedge clk) 
+            (mbus_cmd3_i == 3'd3 &&
+            mbus_cmd2_i == 0 &&
+            mbus_cmd1_i == 0 &&
+            mbus_cmd0_i == 0) |-> ##[1:10] (cbus_cmd2_o == 3'd1 && cbus_cmd1_o == 3'd1 && cbus_cmd0_o == 3'd1);
+    endproperty
+
+    assertsanity_1 : assert property(assure);
 
     assertcore01_broad_snoop: assert property(write_broad_response01);
     assertcore02_broad_snoop: assert property(write_broad_response02);
